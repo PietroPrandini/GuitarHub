@@ -17,7 +17,6 @@ This project is written in [LaTex](https://www.latex-project.org/) and use the [
 
 ### Install the Songs package
 [Get Songs Package](http://songs.sourceforge.net/downloads.html)
-[Documentation of Songs package](http://songs.sourceforge.net/songsdoc/songs.html)
 
 ## Add a new song
 * Copy the songTemp.tex from the repo in the right subdirectory of GuitarHub/tex/, example:
