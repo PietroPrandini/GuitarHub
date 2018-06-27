@@ -21,20 +21,20 @@ This project is written in [LaTex](https://www.latex-project.org/) and use the [
 ## Add a new song
 * Copy the songTemp.tex from the repo in the right subdirectory of GuitarHub/tex/, example:
 ```
-cd ./GuitarHub
-cp songTemp.tex tex/exampleDir/
+$ cd ./GuitarHub
+$ cp songTemp.tex tex/exampleDir/
 ```
 * Rename the copy with the title name of the song you want to write (avoid special carachters and spaces), example:
 ```
-mv tex/exampleDir/songTemp.tex tex/exampleDir/TitleSong.tex
+$ mv tex/exampleDir/songTemp.tex tex/exampleDir/Title\ song.tex
 ```
 * Write the music (see the [documentation of Songs package](http://songs.sourceforge.net/songsdoc/songs.html))
 * Add the song in a chapter input file, example:
 ```
-echo '\input{tex/exampleDir/TitleSong.tex}' >> tex/exampleChapter.tex
+$ echo '\input{"tex/exampleDir/TitleSong.tex"}' >> tex/exampleChapter.tex
 ```
 Warning: this command is an example, it isn't put the song by alphabetical order.
-* Add the chapter in the book, example:
+* Add the chapter in the GuitarChords.tex, example:
 ```
 ...
 \documentclass[openright]{book}
