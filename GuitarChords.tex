@@ -110,7 +110,6 @@
 \input{FirstPageGuitarChords.tex} % Front page
 
 %	Set license: use it at your own risk
-% English license
 %\vspace*{\fill}
 %\begin{center}
 %	\includegraphics[]{img/cc-by-sa_88x31}
@@ -118,61 +117,54 @@
 %This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA. \par
 %\pagebreak
 
-%	Set license: use it at your own risk
-% Italian license
-%\vspace*{\fill}
-%\begin{center}
-%	\includegraphics[]{img/cc-by-sa_88x31}
-%\end{center} \par
-%Quest'opera \`e stata rilasciata con licenza Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale. Per leggere una copia della licenza visita il sito web http://creativecommons.org/licenses/by-sa/4.0/ o spedisci una lettera a Creative Commons, PO Box 1866, Mountain View, CA 94042, USA. \par
-%\pagebreak
-
 %	Showing indexes
+\checkodd
 \showindex[2]{Canti per la Liturgia, per le Celebrazioni e per la Preghiera}{chiesa}
 \showindex[2]{Party}{party}
 \showindex[2]{Christmas}{christmas}
 
-% New chapter
-% Start on a right page and the title is in a blank page
+%	New chapter
+%	Start on a right page and the title is in a blank page
 \checkodd
 \vspace*{\stretch{3}}
 \songchapter{Canti per la Liturgia, per le Celebrazioni e per la Preghiera}
 \vspace*{\stretch{5}}
 \newpage
-% Songs of this chapter
+%	Songs of this chapter
 \begin{songs}{chiesa}
 	\input{tex/chiesa.tex}
 \end{songs}
 
-% New chapter
-% Start on a right page and the title is in a blank page
+%	New chapter
+%	Start on a right page and the title is in a blank page
 \checkodd
 \vspace*{\stretch{3}}
 \songchapter{Party}
 \vspace*{\stretch{5}}
 \newpage
-% Songs of this chapter
+%	Songs of this chapter
 \begin{songs}{party}
 	\input{tex/party.tex}
 \end{songs}
 
-% New chapter
-% Start on a right page and the title is in a blank page
+%	New chapter
+%	Start on a right page and the title is in a blank page
 \checkodd
 \vspace*{\stretch{3}}
 \songchapter{Christmas}
 \vspace*{\stretch{5}}
 \newpage
-% Songs of this chapter
+%	Songs of this chapter
 \begin{songs}{christmas}
 	\input{tex/christmas.tex}
 \end{songs}
 
-% End of the book
-% Useful if you wuold like to write something at the end of this book
+\newpage
+%	End of the book
+%	Useful if you wuold like to write something at the end of this book
 \checkodd
 \vspace*{\stretch{3}}
-.
+. % Write here
 \vspace*{\stretch{5}}
 
 \end{document}
