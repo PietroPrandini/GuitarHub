@@ -31,7 +31,7 @@ $ mv tex/exampleDir/songTemp.tex tex/exampleDir/Title\ song.tex
 * Write the music (see the [documentation of Songs package](http://songs.sourceforge.net/songsdoc/songs.html))
 * Add the song in a chapter input file, example:
 ```
-$ echo '\input{"tex/exampleDir/TitleSong.tex"}' >> tex/exampleChapter.tex
+$ echo '\input{"tex/exampleDir/Title song.tex"}' >> tex/exampleChapter.tex
 ```
 Warning: this command is an example, it isn't put the song by alphabetical order.
 * Add the chapter in the GuitarChords.tex, example:
