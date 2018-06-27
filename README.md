@@ -15,6 +15,7 @@ To avoid inconsistencies about adding a new song in a already printed book, ther
 * Every song use at most 2 pages and in this case the first of these pages will be an even page: you haven't got any problem about reading it.
 * Support to English and Italian languages.
 * You are welcome to add your favourite songs with a pull request.
+* The book is licensed by a Free Culture License.
 
 ## Getting started
 This project is written in [LaTex](https://www.latex-project.org/) and use the [Songs package](http://songs.sourceforge.net/).
