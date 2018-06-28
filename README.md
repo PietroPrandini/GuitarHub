@@ -6,7 +6,7 @@ The primary aim of this project is to create a printable  booklet with guitar ch
 
 ## Considerations
 This book is meant mainly for the guitar player that would like to have a chords book that is updated periodically without the losage of formatting and any other related problems.
-It is highly recommended to print the content of this booklet in a single-sided manner - when a new song is added you can print it out and add it to a desired location. In order to avoid inconsistencies in adding new songs to your collection, songs are not labeled with any numbers. You can, for example, order the songs alphabetically.
+It is highly recommended to print the content of this booklet in a single-sided manner and put it in a ring notebook - when a new song is added you can print it out and add it to a desired location. In order to avoid inconsistencies in adding new songs to your collection, songs are not labeled with any numbers. You can, for example, order the songs alphabetically.
 
 ## Features
 * The booklet is available to be printed at once, including all the songs till date. Then you can expand it by adding the newly released songs without the necessity to reprint the whole booklet.
@@ -20,7 +20,7 @@ It is highly recommended to print the content of this booklet in a single-sided 
 * There is a simple template to support the writing of the song (songTemp.tex).
 
 ## Getting started
-This project is written in [LaTex](https://www.latex-project.org/) with the use the [Songs package](http://songs.sourceforge.net/).
+This project is written in [LaTex](https://www.latex-project.org/) with the use of the [Songs package](http://songs.sourceforge.net/).
 
 ### Install a Latex environment
 [Guide about the installation process of the LaTex environment](https://www.latex-project.org/get/)
