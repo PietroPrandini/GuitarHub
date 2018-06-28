@@ -113,7 +113,7 @@ $ cp songTemp.tex tex/exampleDir/
 ```
 $ mv tex/exampleDir/songTemp.tex tex/exampleDir/Title\ song.tex
 ```
-* Write the music (see the [documentation of Songs package](http://songs.sourceforge.net/songsdoc/songs.html) for others useful tips)
+* Write the music (see the [documentation of the Songs package](http://songs.sourceforge.net/songsdoc/songs.html) for others useful tips)
 * Add the song in a chapter input file, example:
 ```
 $ echo '\input{"tex/exampleDir/Title song.tex"}' >> tex/exampleChapter.tex
