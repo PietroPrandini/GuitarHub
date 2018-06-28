@@ -70,7 +70,7 @@ by={Ronan Keating} % Authors, composers, and other contributors
 
 %	\textnote{} % Notes for both lyric and chorded songs
 %	\musicnote{} % Notes visible only in chorded books (not visible in lyric mode)
-% \rep{n} % Repeat n times
+%	\rep{n} % Repeat n times
 
 %	Writing chords
 %
@@ -88,9 +88,9 @@ by={Ronan Keating} % Authors, composers, and other contributors
 
 %	You can print the book with solfedge note names
 %	by uncomment a line of the GuitarChords.tex:
-%		```
-%		%\input{SolfedgeNotesName.tex} % Solfedge note names
-%		```
+%	```
+%	%\input{SolfedgeNotesName.tex} % Solfedge note names
+%	```
 
 \endsong
 ```
