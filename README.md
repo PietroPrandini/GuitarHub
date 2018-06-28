@@ -13,7 +13,7 @@ To avoid inconsistencies about adding a new song in a already printed book, ther
 * Print once time the book and then update it by printing only new songs and new indexes without reprint all the book's pages.
 * The format of the sheet is ISO A5 to support the portability.
 * Every song use at most 2 pages and in this case the first of these pages will be an even page: you haven't got any problem about reading it.
-* Support to the English and the Italian notation of the notes.
+* Support both alphabetic and solfedge note names.
 * You are welcome to add your favourite songs with a pull request.
 * The book is licensed by a Free Culture License.
 * There is a simple template to support the writing of the song (songTemp.tex).
@@ -29,7 +29,7 @@ This project is written in [LaTex](https://www.latex-project.org/) and use the [
 
 ### Install a text editor or an IDE specific for LaTex document
 A [text editor](https://en.wikipedia.org/wiki/Text_editor) or an IDE specific for LaTex document is useful to edit songs and the code of this book.
-There are many text editors ([Atom](https://atom.io/), [Vim](https://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/) and many IDE for LaTex ([Texmaker](http://www.xm1math.net/texmaker/), [TeXstudio](https://sourceforge.net/projects/texstudio/), [TeXworks](https://www.tug.org/texworks/)) but you can use the ones you prefer.
+There are many text editors ([Atom](https://atom.io/), [Vim](https://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/)) and many IDE for LaTex ([Texmaker](http://www.xm1math.net/texmaker/), [TeXstudio](https://sourceforge.net/projects/texstudio/), [TeXworks](https://www.tug.org/texworks/)) but you can use the ones you prefer.
 
 ## Simple song template
 The songTemp.tex is a simple template that support the writing of any song.
