@@ -148,6 +148,19 @@ Warning: this command is an example, it isn't put the song by alphabetical order
 ...
 \end{document}
 ```
+* Build GuitarChords.tex (that generates the \*.sxd files, useful for indexes):
+```
+$ pdflatex GuitarChords.tex
+```
+* (Re)Generate the index:
+```
+$ texlua /path/to/songidx.lua exampleChapter.sxd
+```
+* Generate updated GuitarChords.pdf:
+```
+$ pdflatex GuitarChords.tex
+```
+
 ## Change the note names
 ### Examples
 * Alphabetic note names:
