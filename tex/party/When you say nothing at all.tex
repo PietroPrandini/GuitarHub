@@ -1,21 +1,21 @@
-\beginsong{%Titles
+\beginsong{%Title
 When you say nothing at all}[
-by={Ronan Keating}%authors, composers, and other contributors
-%,cr={}%copyright information
-%,li={}%licensing information
-%,sr={}%related scripture references
-%,index={}%an extra index entry for a line of lyrics
-%,ititle={}%an extra index entry for a hidden title
+by={Ronan Keating} % Authors, composers, and other contributors
+%,cr={} % Copyright information
+%,li={} % Licensing information
+%,sr={} % Related scripture references
+%,index={} % An extra index entry for a line of lyrics
+%,ititle={} % An extra index entry for a hidden title
 ]
 
 %\capo{0}
-\transpose{0}
+\transpose{0} % Automatic transpositions from +0 to +12 semitones
 
-\beginverse*
+\beginverse* % * not count the verse
 	{\nolyrics Intro: \[G]\[D]\[C]\[D] \rep{2}}
 \endverse
 
-\beginverse\memorize
+\beginverse\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
 	\[G]It's am\[D]azing how \[C]you can speak \[D]right to my \[G]heart \[D]\[C]\[D]
 	\[G]Without \[D]saying a \[C]word, you can \[D]light up the \[G]dark \[D]\[C]\[D]
 	\[C]Try as I may I can \[D]never explain
@@ -34,12 +34,28 @@ by={Ronan Keating}%authors, composers, and other contributors
 	^What's been ^said between ^your heart and ^mine
 \endverse
 
-%                 Do     Re     Mi     Fa     Sol    La     Si
-%Naturali:        \[C]   \[D]   \[E]   \[F]   \[G]   \[A]   \[B]
-%Bemolli:         \[C&]  \[D&]  \[E&]  \[F&]  \[G&]  \[A&]  \[B&]
-%Diesis:          \[C#]  \[D#]  \[E#]  \[F#]  \[G#]  \[A#]  \[B#]
-%Minori:          \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]  \[Am]  \[Bm]
-%Bemolli minori:  \[C&m] \[D&m] \[E&m] \[F&m] \[G&m] \[A&m] \[B&m]
-%Diesis minori:   \[C#m] \[D#m] \[E#m] \[F#m] \[G#m] \[A#m] \[B#m]
+%	\textnote{} % Notes for both lyric and chorded songs
+%	\musicnote{} % Notes visible only in chorded books (not visible in lyric mode)
+% \rep{n} % Repeat n times
+
+%	Writing chords
+%
+% Alphabetic note names:     A      B      C      D      E      F      G
+% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL
+%
+%	Compatible notation:
+%
+% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]
+% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]
+% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]
+% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]
+% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]
+% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]
+
+%	You can print the book with solfedge note names
+%	by uncomment a line of the GuitarChords.tex:
+%		```
+%		%\input{SolfedgeNotesName.tex} % Solfedge note names
+%		```
 
 \endsong
