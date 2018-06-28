@@ -12,9 +12,9 @@ To avoid inconsistencies about adding a new song in a already printed book, ther
 ## Features
 * Print once time the book and then update it by printing only new songs and new indexes without reprint all the book's pages.
 * The format of the sheet is ISO A5 to support the portability.
-* Every song use at most 2 pages and in this case the first of these pages will be an even page: you haven't got any problem about reading it.
+* Every song use at most 2 pages and in this case the first of these pages will be an even page: you haven't got any problem about reading it.  
 ![only2pages](img/forReadme/only2pages.png)
-* Write the song with alphabetic note names and you can generate that song in both alphabetic and solfedge note names without rewriting it.
+* Write the song with alphabetic note names and you can generate that song in both alphabetic and solfedge note names without rewriting it.  
 ![alphabetic](img/forReadme/alphabetic.png) ![solfedge](img/forReadme/solfedge.png)
 * You are welcome to add your favourite songs with a pull request.
 * The book is licensed by a Free Culture License.
@@ -100,7 +100,7 @@ by={Ronan Keating} % Authors, composers, and other contributors
 
 \endsong
 ```
-The result:
+The result:  
 ![songSample](img/forReadme/songSample.png)
 
 ## Add a new song
