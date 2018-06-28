@@ -17,7 +17,7 @@ To avoid inconsistencies about adding a new song in a already printed book, ther
 * Support both alphabetic and solfedge note names.
 ![alphabetic](img/forReadme/alphabetic.png) ![solfedge](img/forReadme/solfedge.png)
 * You are welcome to add your favourite songs with a pull request.
-* The book is licensed by a Free Culture License. ![license](img/cc-by-sa_80x15.png)
+* The book is licensed by a Free Culture License.
 * There is a simple template to support the writing of the song (songTemp.tex).
 
 ## Getting started
