@@ -27,10 +27,14 @@ This project is written in [LaTex](https://www.latex-project.org/) and use the [
 ### Install the Songs package
 [Get Songs Package](http://songs.sourceforge.net/downloads.html)
 
-## Song template
+### Install a text editor or an IDE specific for LaTex document
+A [text editor](https://en.wikipedia.org/wiki/Text_editor) or an IDE specific for LaTex document is useful to edit songs and the code of this book.
+There are many text editors ([Atom](https://atom.io/), [Vim](https://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/) and many IDE for LaTex ([Texmaker](http://www.xm1math.net/texmaker/), [TeXstudio](https://sourceforge.net/projects/texstudio/), [TeXworks](https://www.tug.org/texworks/)) but you can use the ones you prefer.
+
+## Simple song template
 The songTemp.tex is a simple template that support the writing of any song.
 You don't need any special skills to write a song with this template.
-Here you an example of a song:
+Here you an example of a song writed by the songTemp.tex:
 ```
 \beginsong{%Title
 When you say nothing at all}[
