@@ -33,7 +33,7 @@ A [text editor](https://en.wikipedia.org/wiki/Text_editor) or an IDE specific fo
 There are many text editors ([Atom](https://atom.io/), [Vim](https://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/)) and many IDE for LaTex ([Texmaker](http://www.xm1math.net/texmaker/), [TeXstudio](https://sourceforge.net/projects/texstudio/), [TeXworks](https://www.tug.org/texworks/)) but you can use the ones you prefer.
 
 ## songTemp.tex : a simple song template
-The *songTemp.tex* is a simple template that support the writing of any song.
+The *songTemp.tex* is a simple template that supports the writing of any song.
 You don't need any special skills to write a song with this template.
 
 ### Using songTemp.tex: an example
