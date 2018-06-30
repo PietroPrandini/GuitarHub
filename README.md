@@ -17,7 +17,7 @@ It is highly recommended to print the content of this booklet in a single-sided 
 ![alphabetic](img/forReadme/alphabetic.png) ![solfedge](img/forReadme/solfedge.png)
 * You are welcome to add your favourite songs with a pull request.
 * The book is licensed by a Free Culture License.
-* There is a simple template to support the writing of the song (songTemp.tex).
+* There is a simple template to support the writing of the song (*SongTemp.tex*).
 
 ## Getting started
 This project is written in [LaTex](https://www.latex-project.org/) with the use of the [Songs package](http://songs.sourceforge.net/).
@@ -32,12 +32,12 @@ This project is written in [LaTex](https://www.latex-project.org/) with the use 
 A [text editor](https://en.wikipedia.org/wiki/Text_editor) or an IDE specific for LaTex document is useful to edit songs and the code of this book.
 There are many text editors ([Atom](https://atom.io/), [Vim](https://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/)) and many IDE for LaTex ([Texmaker](http://www.xm1math.net/texmaker/), [TeXstudio](https://sourceforge.net/projects/texstudio/), [TeXworks](https://www.tug.org/texworks/)) but you can use the ones you prefer.
 
-## songTemp.tex : a simple song template
-The *songTemp.tex* is a simple template that supports the writing of any song.
+## *SongTemp.tex* : a simple song template
+The *SongTemp.tex* is a simple template that supports the writing of any song.
 You don't need any special skills to write a song with this template.
 
-### Using songTemp.tex: an example
-Here you an example of a song writed by the *songTemp.tex*:  
+### Using *SongTemp.tex*: an example
+Here you an example of a song writed by the *SongTemp.tex*:  
 ![songSample](img/forReadme/songSample.png)  
 ```
 \beginsong{%Title
@@ -104,14 +104,14 @@ by={Ronan Keating} % Authors, composers, and other contributors
 ```
 
 ## Add a new song
-* Copy the songTemp.tex from the repo in the right subdirectory of GuitarHub/tex/, example:
+* Copy the *SongTemp.tex* from the repo in the right subdirectory of GuitarHub/tex/, example:
 ```
 $ cd ./GuitarHub
-$ cp songTemp.tex tex/exampleDir/
+$ cp SongTemp.tex tex/exampleDir/
 ```
 * Rename the copy with the title name of the song you want to write, example:
 ```
-$ mv tex/exampleDir/songTemp.tex tex/exampleDir/Title\ song.tex
+$ mv tex/exampleDir/SongTemp.tex tex/exampleDir/Title\ song.tex
 ```
 * Write the music (see the [documentation of the Songs package](http://songs.sourceforge.net/songsdoc/songs.html) for others useful tips)
 * Add the song in a chapter input file, example:
