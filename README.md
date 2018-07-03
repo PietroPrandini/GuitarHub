@@ -15,6 +15,7 @@ It is highly recommended to print the content of this booklet in a single-sided 
 ![only2pages](img/forReadme/only2pages.png)
 * Write the song with alphabetic note names and then you can generate that song in both alphabetic and solfedge note names without rewriting it.  
 ![alphabetic](img/forReadme/alphabetic.png) ![solfedge](img/forReadme/solfedge.png)
+* Easy automatic transpositions of the chords.
 * You are welcome to add your favourite songs with a pull request.
 * The book is licensed by a Free Culture License.
 * There is a simple template to support the writing of the song (*SongTemp.tex*).
