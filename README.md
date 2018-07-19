@@ -13,8 +13,8 @@ It is highly recommended to print the content of this booklet in a single-sided 
 * The format of a single sheet is ISO A5 which supports the idea of  portability.
 * Each song uses at most 2 pages whilst the first page would always be an even number in such case: you haven't got any problem about reading it.  
 ![only2pages](img/forReadme/only2pages.png)
-* Write the song with alphabetic note names and then you can generate that song in both alphabetic and solfedge note names without rewriting it.  
-![alphabetic](img/forReadme/alphabetic.png) ![solfedge](img/forReadme/solfedge.png)
+* Write the song with alphabetic note names and then you can generate that song in both alphabetic and solfege note names without rewriting it.  
+![alphabetic](img/forReadme/alphabetic.png) ![solfege](img/forReadme/solfege.png)
 * Easy automatic transpositions of the chords.
 * You are welcome to add your favourite songs with a pull request.
 * The book is licensed by a Free Culture License.
@@ -95,7 +95,7 @@ by={Ronan Keating} % Authors, composers, and other contributors
 % Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]
 % Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]
 
-%	You can print the book with solfedge note names
+%	You can print the book with solfege note names
 %	by uncomment a line of the GuitarChords.tex:
 %	```
 %	%\input{SolfedgeNoteNames.tex} % Solfedge note names
