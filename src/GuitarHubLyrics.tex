@@ -1,0 +1,23 @@
+%	Next lines is for compiling with arara package
+
+%	Generating abc and sxd files
+%
+%	Warning: convert the images to the eps format before latex compiling
+%		example imagemagick command:
+%		$ convert example.png example.eps
+%
+%	arara: latex: {shell: yes}
+%	arara: pdflatex: {shell: yes}
+%	
+%	Generate .sbx files of the index
+%	arara: songidx: {input: ./chiesa}
+%	arara: songidx: {input: ./jukebox}
+%	arara: songidx: {input: ./christmas}
+%
+%	Last compiling with complete indexes
+%	arara: pdflatex: {shell: yes}
+
+\input{GuitarHubPreamble.tex}
+\usepackage[lyric]{songs}
+\input{GuitarHubSongPreamble.tex}
+\input{GuitarHubBody.tex}

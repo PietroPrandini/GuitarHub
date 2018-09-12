@@ -1,0 +1,51 @@
+\documentclass[openright]{book}
+%	Preamble
+\usepackage[a5paper,left=15mm,right=15mm,bottom=10mm,top=15mm]{geometry}
+\usepackage[utf8]{inputenc} % For special sybols
+\usepackage{graphicx} % For pictures
+\usepackage{latexsym} % For arrow
+\usepackage{ulem} % For \xout
+\usepackage{ifthen} % For if-then-else funtions
+\usepackage[bookmarks]{hyperref} % For indexes
+
+%	Header and footer
+\usepackage{fancyhdr}
+	\pagestyle{fancy}
+%	\renewcommand{\chaptermark}[1]{\markboth{\textsc{#1}}{}}
+	\fancyhf{}
+	\fancyhead[LE,RO]{%\thepage
+	}
+	\fancyhead[RE,LO]{%\leftmark
+	}
+  \fancyhead[C]{%\leftmark
+  }
+
+%	\fancyfoot[C]{\includegraphics[]{img/cc-by-sa_80x15}}
+
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+
+\usepackage[generate,ps2eps]{abc}
+	
+%	Formatting: if the page is even, add a black page before.
+%	(Useful to format the start of a chapter)
+\newcommand{\checkodd}{
+	\ifthenelse{\isodd{\thepage}}{
+		%if page is odd: ok
+	}{
+		%else: page is even: add a page before
+		\vspace*{\fill}
+		\clearpage
+	}
+}
+%	Formatting: if the page is odd, add a black page before.
+%	(Useful to format the end of the book)
+\newcommand{\checkeven}{
+	\ifthenelse{\isodd{\thepage}}{
+		%page is odd: add a page before
+		\vspace*{\fill}
+		\clearpage
+	}{
+		%else: page is even: ok
+	}
+}
