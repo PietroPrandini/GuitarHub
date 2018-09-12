@@ -4,3 +4,8 @@
 **/*.sbx
 **/*.sxc
 **/*.sxd
+src/*.dvi
+src/*.abc
+src/*.eps
+src/*.ps
+src/*.pdf
