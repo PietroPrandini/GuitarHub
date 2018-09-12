@@ -150,15 +150,9 @@ Warning: this command is an example, it isn't put the song by alphabetical order
 ...
 \end{document}
 ```
-* Build GuitarChords.tex (that generates the \*.sxd files, useful for indexes):
+* Run GuitarHubGenerator.sh
 ```
-$ pdflatex GuitarChords.tex
+$ cd /path/to/GuitarHub/src/
+$ sh GuitarHubGenerator.sh
 ```
-* (Re)Generate the index:
-```
-$ texlua /path/to/songidx.lua exampleChapter.sxd
-```
-* Generate updated GuitarChords.pdf:
-```
-$ pdflatex GuitarChords.tex
-```
+* See your work in the master GuitarHub directory.
