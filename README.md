@@ -33,6 +33,15 @@ This project is written in [LaTex](https://www.latex-project.org/) with the use 
 A [text editor](https://en.wikipedia.org/wiki/Text_editor) or an IDE specific for LaTex document is useful to edit songs and the code of this book.
 There are many text editors ([Atom](https://atom.io/), [Vim](https://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/)) and many IDE for LaTex ([Texmaker](http://www.xm1math.net/texmaker/), [TeXstudio](https://sourceforge.net/projects/texstudio/), [TeXworks](https://www.tug.org/texworks/)) but you can use the ones you prefer.
 
+## Generate the booklets
+### Example with GuitarHubGenerator.sh
+```
+$ cd /path/to/GuitarHub/src/
+$ sh GuitarHubGenerator.sh
+```
+This produce a guitar chord booklet with alphabetic note names, a lyrics booklet and a guitar chord booklet with solfege note names in /path/to/GuitarHub/ .
+Note: this script works with [arara, the cool Tex automation tool,](https://github.com/cereda/arara) and the [songs package](http://songs.sourceforge.net/) properly installed (pay attention for the rule of songidx, an example of it that works with texlua is in [GuitarHub/src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml)).
+
 ## *SongTemp.tex* : a simple song template
 The *SongTemp.tex* is a simple template that supports the writing of any song.
 You don't need any special skills to write a song with this template.
@@ -153,11 +162,3 @@ $ texlua /path/to/songidx.lua exampleChapter.sxd
 ```
 $ pdflatex GuitarChords.tex
 ```
-
-## Generate the booklets
-### Example with GuitarHubGenerator.sh
-```
-$ cd /path/to/GuitarHub/src/
-$ sh GuitarHubGenerator.sh
-```
-This produce the booklets in /path/to/GuitarHub/ .
