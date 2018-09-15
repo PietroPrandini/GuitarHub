@@ -10,3 +10,4 @@ rm *.abc
 rm *.eps
 rm *.ps
 rm *.pdf
+rm *.mx1
