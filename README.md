@@ -21,6 +21,13 @@ It is highly recommended to print the content of this booklet in a single-sided 
 * There is a simple template to support the writing of the song (*SongTemp.tex*).
 
 ## Getting started
+* Print the brochure format of the book ([GuitarHubAlphabeticNoteNamesBrochure.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubAlphabeticNoteNamesBrochure.pdf) or [GuitarHubLyricsBrochure.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubLyricsBrochure.pdf) or [GuitarHubSolfegeNoteNamesBrochure.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNamesBrochure.pdf))) with this settings:
+![printerSettings](src/img/forReadme/printerSettings)
+* Divide every sheets by two equally parts.
+* Make some holes on every sheets.
+* Assemble them into the GuitarHub booklet!
+
+## For Developers
 This project is written in [LaTex](https://www.latex-project.org/) with the use of the [Songs package](http://songs.sourceforge.net/).
 
 ### Install a Latex environment

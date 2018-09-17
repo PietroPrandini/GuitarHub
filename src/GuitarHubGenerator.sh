@@ -32,5 +32,5 @@ mv GuitarHubAlphabeticNoteNamesBrochure.pdf ../GuitarHubAlphabeticNoteNamesBroch
 mv GuitarHubLyricsBrochure.pdf ../GuitarHubLyricsBrochure.pdf
 mv GuitarHubSolfegeNoteNamesBrochure.pdf ../GuitarHubSolfegeNoteNamesBrochure.pdf
 echo '
---> pdf generated moved to the main directory of GuitarHub
+--> pdf generated is moved to the main directory of GuitarHub
 '

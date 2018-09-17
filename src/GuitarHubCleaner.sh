@@ -6,6 +6,8 @@ rm *.dvi
 rm *.log
 rm *.out
 rm *.sxc
+
+#	for abc package
 rm *.abc
 rm *.eps
 rm *.ps
