@@ -9,6 +9,7 @@
 %	arara: pdflatex
 %
 %	Generate .sbx files of the index
+%	arara: songidx: {input: ./chords}
 %	arara: songidx: {input: ./chiesa}
 %	arara: songidx: {input: ./jukebox}
 %	arara: songidx: {input: ./christmas}
@@ -18,6 +19,6 @@
 
 \input{GuitarHubPreamble.tex}
 \usepackage[chorded]{songs}
-\input{SolfegeNoteNames.tex}
+\input{OutputSolfegeNoteNames.tex}
 \input{GuitarHubSongPreamble.tex}
 \input{GuitarHubBody.tex}

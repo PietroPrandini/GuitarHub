@@ -2,18 +2,18 @@
 A guitar chords and lyrics booklet.
 
 ## Purpose
-The primary aim of this project is to create a printable  booklet with guitar chords.
+The primary aim of this project is to create a printable booklet with guitar chords.
 
 ## Considerations
 This book is meant mainly for the guitar players that would like to have a chords book that is updated periodically without the losage of formatting and any other related problems.
-It is highly recommended to print the content of this booklet in a single-sided manner and put it in a ring notebook - when a new song is added you can print it out and add it to a desired location. In order to avoid inconsistencies in adding new songs to your collection, songs are not labeled with any numbers. You can, for example, order the songs alphabetically.
+It is highly recommended to print the content of this booklet and put it in a ring notebook - when a new song is added you can print it out and add it to a desired location. In order to avoid inconsistencies in adding new songs to your collection, songs are not labeled with any numbers. You can, for example, order the songs alphabetically.
 
 ## Features
 * The booklet is available to be printed at once, including all the songs till date. Then you can expand it by adding the newly released songs without the necessity to reprint the whole booklet.
 * The format of a single sheet is ISO A5 which supports the idea of  portability.
 * Each song uses at most 2 pages whilst the first page would always be an even number in such case: you haven't got any problem about reading it.  
 ![only2pages](src/img/forReadme/only2pages.png)
-* Write the song with alphabetic note names and then you can generate that song in both alphabetic and solfege note names without rewriting it.  
+* Write the song with alphabetic note names and then you can generate that song in both alphabetic and solfege note names without rewriting it. 
 ![alphabetic](src/img/forReadme/alphabetic.png) ![solfege](src/img/forReadme/solfege.png)
 * Easy automatic transpositions of the chords.
 * You are welcome to add your favourite songs with a pull request.
