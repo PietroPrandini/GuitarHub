@@ -174,4 +174,4 @@ $ pdflatex GuitarHubAlphabeticNoteNamesBooklet.tex
 ```
 $ mv GuitarHubAlphabeticNoteNamesBooklet.pdf ../GuitarHubAlphabeticNoteNamesBooklet.pdf
 ```
-*Note: repeat this points for every tyoe of the GuitarHub booklets*
+*Note: repeat this points for every type of the GuitarHub booklets*
