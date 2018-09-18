@@ -18,151 +18,158 @@ It is highly recommended to print the content of this booklet in a single-sided 
 * Easy automatic transpositions of the chords.
 * You are welcome to add your favourite songs with a pull request.
 * The book is licensed by a Free Culture License.
-* There is a simple template to support the writing of the song (*SongTemp.tex*).
+* There is a simple template to support the writing of the song (*src/SongTemp.tex*).
+* There is a script (*src/GuitarHubGenerator.sh*) that generate every booklets in the main folder of GuitarHub.
 
 ## Getting started
-* Print the brochure format of the book ([GuitarHubAlphabeticNoteNamesBrochure.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubAlphabeticNoteNamesBrochure.pdf) or [GuitarHubLyricsBrochure.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubLyricsBrochure.pdf) or [GuitarHubSolfegeNoteNamesBrochure.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNamesBrochure.pdf))) with this settings:
+If you would like to have a printed version of the booklet you could:
+### Download it
+Download the booklet format of GuitarHub:
+* [GuitarHubAlphabeticNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubAlphabeticNoteNamesBooklet.pdf)
+* [GuitarHubLyricsBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubLyricsBooklet.pdf)
+* [GuitarHubSolfegeNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNamesBooklet.pdf))
+### Print it
+Print the copy downloaded with this settings:
 ![printerSettings](src/img/forReadme/printerSettings.png)
-* Divide every sheets in two equally parts:
+### Setup it
+* Divide every sheet in two equally parts like this:
 ![divide](src/img/forReadme/divide.jpg)
 * Make some holes like these on every sheets:
 ![holes](src/img/forReadme/holes.jpg)
 * Assemble them into the GuitarHub booklet!
 ![assemble](src/img/forReadme/assemble.jpg)
+### Rock it
+Now you could be a GuitarHub hero.
+
+#### Note
+If you would have the books without a page settings like a booklet you can find them here:
+* [GuitarHubAlphabeticNoteNames.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubAlphabeticNoteNames.pdf)
+* [GuitarHubLyrics.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubLyrics.pdf)
+* [GuitarHubSolfegeNoteNames.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNames.pdf)
 
 ## For Developers
-This project is written in [LaTex](https://www.latex-project.org/) with the use of the [Songs package](http://songs.sourceforge.net/).
+This project would be a community project: you are welcome to participate to it.
 
-### Install a Latex environment
+### Tools
+The GuitarHub booklets are written in [LaTex](https://www.latex-project.org/) with the use of the [Songs package](http://songs.sourceforge.net/).
+
+#### A Latex environment
 [Guide about the installation process of the LaTex environment](https://www.latex-project.org/get/)
 
-### Install the Songs package
+#### The Songs package
 [Guide about the installation process of the Songs package](http://songs.sourceforge.net/downloads.html)
 
-### Install a text editor or an IDE specific for LaTex document
+#### Arara: the cool Tex automation Tool
+[Arara](https://github.com/cereda/arara) is useful to generate easily the booklets and particularly the indexes.
+If you would use arara you have to have properly installed the songs package and you have to pay attiontion for the rule of songidx (an example of this rule that works with texlua is in [src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml))
+
+#### A text editor or an IDE specific for LaTex documents
 A [text editor](https://en.wikipedia.org/wiki/Text_editor) or an IDE specific for LaTex document is useful to edit songs and the code of this book.
 There are many text editors ([Atom](https://atom.io/), [Vim](https://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/)) and many IDE for LaTex ([Texmaker](http://www.xm1math.net/texmaker/), [TeXstudio](https://sourceforge.net/projects/texstudio/), [TeXworks](https://www.tug.org/texworks/)) but you can use the ones you prefer.
 
-## Generate the booklets
-### Example with GuitarHubGenerator.sh
+### Procedures
+#### Setup a new chapter
+*Note: if you would like to add a new song to an existing chapter you can skip the setting up of a new chapter.*
+This booklet could have many chapters.
+Every chapter has a directory in src/tex/ directory and an input .tex file, both named with its name.
+The directory contain the songs files of the chapter and the input .tex file add them to the booklets.
+If you would like to create a new chapter you have to create them.
+Then you have to declare it to the src/GuitarChordsPreamble.tex.
+Finally you can add every songs of the new chapter to the booklet in src/GuitarHubBody.tex.
+##### Creating a new chapter, an example:
+###### *Creating* the chapter directory and the input .tex file:
+Open a terminal and then create them in /path/to/GuitarHub/src/tex/
 ```
-$ cd /path/to/GuitarHub/src/
-$ sh GuitarHubGenerator.sh
+$ cd /path/to/GuitarHub/src/tex/
+$ mkdir newChapter
+$ touch newChapter.tex
 ```
-This produce a guitar chord booklet with alphabetic note names, a lyrics booklet and a guitar chord booklet with solfege note names in /path/to/GuitarHub/ .
-Note: this script works with [arara, the cool Tex automation tool,](https://github.com/cereda/arara) and the [songs package](http://songs.sourceforge.net/) properly installed (pay attention for the rule of songidx, an example of it that works with texlua is in [GuitarHub/src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml)).
-
-## *SongTemp.tex* : a simple song template
-The *SongTemp.tex* is a simple template that supports the writing of any song.
-You don't need any special skills to write a song with this template.
-
-### Using *SongTemp.tex*: an example
-Here you an example of a song writed by the *SongTemp.tex*:  
-![songSample](src/img/forReadme/songSample.png)  
+###### *Declaring* the chapter in the src/GuitarChordsPreamble.tex:
+Open src/GuitarChordsPreamble.tex with a text editor and declare it
 ```
-\beginsong{%Title
-When you say nothing at all}[
-by={Ronan Keating} % Authors, composers, and other contributors
-%,cr={} % Copyright information
-%,li={} % Licensing information
-%,sr={} % Related scripture references
-%,index={} % An extra index entry for a line of lyrics
-%,ititle={} % An extra index entry for a hidden title
-]
-
-%\capo{0}
-\transpose{0} % Automatic transpositions from +0 to +12 semitones
-
-\beginverse* % * not count the verse
-	{\nolyrics Intro: \[G]\[D]\[C]\[D] \rep{2}}
-\endverse
-
-\beginverse\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
-	\[G]It's am\[D]azing how \[C]you can speak \[D]right to my \[G]heart \[D]\[C]\[D]
-	\[G]Without \[D]saying a \[C]word, you can \[D]light up the \[G]dark \[D]\[C]\[D]
-	\[C]Try as I may I can \[D]never explain
-	\[G]What I \[D]hear when you \[C]don't say a \[D]thing
-\endverse
-\beginchorus
-	The \[G]smile on your \[D]face lets me \[C]know that you \[D]need me
-	There's a \[G]truth in \[D]your eyes saying \[C]you'll never \[D]leave me
-	The \[G]touch of your \[D]hand says you'll \[C]catch me wherever I \[D]fall \[Em]\[D]
-	\[C]You say it best, \[D]when you say nothing at \[G]all \[D]\[C]\[D]
-\endchorus
-\beginverse
-	^All day ^long I can ^hear people ^talking out ^loud ^^^
-	^But when ^you hold me ^near, you ^drown out the ^crowd ^^^
-	^Try as they may they could ^never define
-	^What's been ^said between ^your heart and ^mine
-\endverse
-
-%	\textnote{} % Notes for both lyric and chorded songs
-%	\musicnote{} % Notes visible only in chorded books (not visible in lyric mode)
-%	\rep{n} % Repeat n times
-
-%	Writing chords
-%
-% Alphabetic note names:     A      B      C      D      E      F      G
-% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL
-%
-%	Compatible notation:
-%
-% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]
-% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]
-% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]
-% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]
-% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]
-% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]
-
-\endsong
+%...
+%	Indexes
+%...
+\newindex{newChapter}{newChapter} %new chapter declared
+%...
 ```
-
-## Add a new song
-* Copy the *SongTemp.tex* from the repo in the right subdirectory of GuitarHub/tex/, example:
+###### *Adding* the song chapter to the booklet:
+Open src/GuitarChordsBody.tex with a text editor and add it
 ```
-$ cd ./GuitarHub
-$ cp SongTemp.tex tex/exampleDir/
-```
-* Rename the copy with the title name of the song you want to write, example:
-```
-$ mv tex/exampleDir/SongTemp.tex tex/exampleDir/Title\ song.tex
-```
-* Write the music (see the [documentation of the Songs package](http://songs.sourceforge.net/songsdoc/songs.html) for others useful tips)
-* Add the song in a chapter input file, example:
-```
-$ echo '\input{"tex/exampleDir/Title song.tex"}' >> tex/exampleChapter.tex
-```
-Warning: this command is an example, it isn't put the song by alphabetical order.
-* Add the chapter in the GuitarChords.tex, example:
-```
-...
-\documentclass[openright]{book}
-...
-\usepackage[chorded]{songs}
-...
-\newindex{exampleChapter}{exampleChapter}
-...
-\begin{document}
-...
-\showindex[2]{Example of a Chapter}{exampleChapter} % view index
-...
-% New chapter
-% Start on a right page and the title is in a blank page
+\begindocument
+%...
+%	New chapter
+%	Start on a right page and the title is in a blank page
 \checkodd
 \vspace*{\stretch{3}}
-\songchapter{Example of a Chapter}
+\songchapter{New Chapter} % full name of the new chapter
 \vspace*{\stretch{5}}
 \newpage
-% Songs of this chapter
-\begin{songs}{exampleChapter}
-	\input{tex/exampleChapter.tex}
+%	Songs of this chapter
+\begin{songs}{newChapter} % name declared in src/GuitarChordsPreamble.tex
+	\input{tex/newChapter.tex} % input file .tex of the new chapter
 \end{songs}
-...
-\end{document}
+%...
 ```
-* Run GuitarHubGenerator.sh
+
+#### Add a new song
+Every song is associated to an existing chapter, if the chapter doesn't exist firstly you have to setup it.
+To support the writing of new song it is provided a template: *SongTemp.tex*.
+You don't need any special skills to write a song with this template.
+You can find it in the src/ directory and you could copy it to the chapter of the new song.
+Then you have to rename it with the name of the new song.
+Now it's the time for declaring it in the input .tex file of the chapter you would add the this song.
+Finally you can write it.
+##### Creating a new song, an example:
+###### *Copying* the SongTemp.tex from src/ to the directory of the chapter you would like to add the song:
+```
+$ cd ./GuitarHub/src/
+$ cp SongTemp.tex tex/chapterName/
+```
+###### *Renaming* the copy with the title name of the new song
+```
+$ mv "tex/chapterName/SongTemp.tex" "tex/chapterName/Title song.tex"
+```
+###### *Adding* the song in the chapter input file
+```
+$ echo '\input{"tex/chapterName/Title song.tex"}' >> tex/chapterName.tex
+```
+*Warning: this command is an example, it isn't put the song by alphabetical order.*
+
+### Generate the booklets
+When you add some songs to GuitarHub structure, you have to generate the booklets.
+With the script src/GuitarHubGenerator.sh you can generate every booklets easily with only a command.
+Otherwise if you prefer you can generate these manually.
+#### Generating the booklets with GuitarHubGenerator.sh, an example:
 ```
 $ cd /path/to/GuitarHub/src/
 $ sh GuitarHubGenerator.sh
 ```
-* See your work in the master GuitarHub directory.
+This produce the guitar chord booklet with alphabetic note names, the lyrics booklet and the guitar chord booklet with solfege note names and every of these in single pages ISO A5 and in the booklet page settings ISO A4 in /path/to/GuitarHub/ .
+Note: this script works with [arara, the cool Tex automation tool,](https://github.com/cereda/arara) and the [songs package](http://songs.sourceforge.net/) properly installed (pay attention for the rule of songidx, an example of it that works with texlua is in [src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml)).
+#### Generating the booklets manually, an example:
+##### with arara
+You can find the commands in src/GuitarHubGenerator.sh.
+
+##### without arara
+* Open a terminal and change the directory
+```
+$ cd /path/to/GuitarHub/src/
+```
+* First compiling (generate some files useful for make the indexes)
+```
+$ pdflatex GuitarHubAlphabeticNoteNamesBooklet.tex
+```
+* Generate the indexes (repeat this point for every chapters)
+```
+$ texlua /usr/local/share/songs/songidx.lua "chapterName.sxd"
+```
+* Final compiling (add the generated indexes)
+```
+$ pdflatex GuitarHubAlphabeticNoteNamesBooklet.tex
+```
+* Move the generated .pdf of the booklets to the root directory of the project
+```
+$ mv GuitarHubAlphabeticNoteNamesBooklet.pdf ../GuitarHubAlphabeticNoteNamesBooklet.pdf
+```
+*Note: repeat this points for every tyoe of the GuitarHub booklets*

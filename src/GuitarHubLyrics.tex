@@ -6,16 +6,15 @@
 %		example imagemagick command:
 %		$ convert example.png example.eps
 %
-%	arara: latex: {shell: yes}
-%	arara: pdflatex: {shell: yes}
-%	
+%	arara: pdflatex
+%
 %	Generate .sbx files of the index
 %	arara: songidx: {input: ./chiesa}
 %	arara: songidx: {input: ./jukebox}
 %	arara: songidx: {input: ./christmas}
 %
 %	Last compiling with complete indexes
-%	arara: pdflatex: {shell: yes}
+%	arara: pdflatex
 
 \input{GuitarHubPreamble.tex}
 \usepackage[lyric]{songs}

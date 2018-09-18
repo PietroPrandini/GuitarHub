@@ -13,24 +13,24 @@ echo '
 arara GuitarHubSolfegeNoteNames.tex
 
 echo '
---> Generating GuitarHubAlphabeticNoteNamesBrochure.pdf'
-arara GuitarHubAlphabeticNoteNamesBrochure.tex
+--> Generating GuitarHubAlphabeticNoteNamesBooklet.pdf'
+arara GuitarHubAlphabeticNoteNamesBooklet.tex
 
 echo '
---> Generating GuitarHubLyricsBrochure.pdf'
-arara GuitarHubLyricsBrochure.tex
+--> Generating GuitarHubLyricsBooklet.pdf'
+arara GuitarHubLyricsBooklet.tex
 
 echo '
---> Generating GuitarHubSolfegeNoteNamesBrochure.pdf'
-arara GuitarHubSolfegeNoteNamesBrochure.tex
+--> Generating GuitarHubSolfegeNoteNamesBooklet.pdf'
+arara GuitarHubSolfegeNoteNamesBooklet.tex
 
 #	Moving the files generated
 mv GuitarHubAlphabeticNoteNames.pdf ../GuitarHubAlphabeticNoteNames.pdf
 mv GuitarHubSolfegeNoteNames.pdf ../GuitarHubSolfegeNoteNames.pdf
 mv GuitarHubLyrics.pdf ../GuitarHubLyrics.pdf
-mv GuitarHubAlphabeticNoteNamesBrochure.pdf ../GuitarHubAlphabeticNoteNamesBrochure.pdf
-mv GuitarHubLyricsBrochure.pdf ../GuitarHubLyricsBrochure.pdf
-mv GuitarHubSolfegeNoteNamesBrochure.pdf ../GuitarHubSolfegeNoteNamesBrochure.pdf
+mv GuitarHubAlphabeticNoteNamesBooklet.pdf ../GuitarHubAlphabeticNoteNamesBooklet.pdf
+mv GuitarHubLyricsBooklet.pdf ../GuitarHubLyricsBooklet.pdf
+mv GuitarHubSolfegeNoteNamesBooklet.pdf ../GuitarHubSolfegeNoteNamesBooklet.pdf
 echo '
 --> pdf generated is moved to the main directory of GuitarHub
 '
