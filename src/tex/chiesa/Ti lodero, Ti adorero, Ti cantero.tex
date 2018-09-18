@@ -11,9 +11,11 @@ by={D. Basta - R. Baldi} % Authors, composers, and other contributors
 %\capo{0}
 \transpose{0} % Automatic transpositions from +0 to +12 semitones
 
+	\ifchorded
 	\beginverse* % * not count the verse
 		{\nolyrics Intro: |  | \[Em] \[C] | \[G] \[D] | \[Em] \[C] | \[G] \[D] | \[D] | }
 	\endverse
+	\fi
 
 	\beginverse\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
 		%verse
@@ -54,9 +56,11 @@ by={D. Basta - R. Baldi} % Authors, composers, and other contributors
 		Ti lode\[Em]r\`o, Ti adore\[C]r\`o, benedi\[G]r\`o | soltanto \[D]Te. | \[D] 
 	\endchorus
 
+	\ifchorded
 	\beginverse*
 		{\nolyrics Strum: \[E] | \[F#m] \[D] | \[A] \[E] | \[F#m] \[D] |}
 	\endverse
+	\fi
 	
 	\transpose{2}
 	\beginverse*

@@ -12,10 +12,12 @@ by={Giovani}%authors, composers, and other contributors
 \transpose{0}
 \meter{4}{4}
 
+	\ifchorded
 	\beginverse* % * not count the verse
 		{\nolyrics Intro: | \[G] \[C] | \[D] \[G] |}
 	\endverse
-  
+	\fi
+
 	\beginverse*\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
 		%verse
 		\[G]Santo, \[C]santo, \[D]santo il Si\[G]gnore
@@ -32,9 +34,11 @@ by={Giovani}%authors, composers, and other contributors
 		o\[Am]sanna ne\[D]ll'alto dei \[G]cieli\[G].
 	\endchorus
 	
+	\ifchorded
 	\beginverse* % * not count the verse
 		{\nolyrics Strum: | \[Em] \[C] | \[D] \[G] }
 	\endverse
+	\fi
 	
 	\beginverse*
 		Bene|\[Em]detto c\[C]olui che \[D4]vie\[G]ne

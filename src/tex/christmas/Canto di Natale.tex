@@ -8,10 +8,12 @@ by={Modena},
 ]
 \transpose{0}
 
+\ifchorded
   \beginverse*
 	{\nolyrics Intro: \[Em] \[G] \[D] \[A] \[Em] \[G] \[D] \[G]
-	\[Em] \[G] \[D] \[A] \[Em] \[G] \[D] \[G]}
+	       \[Em] \[G] \[D] \[A] \[Em] \[G] \[D] \[G]}
   \endverse
+\fi
 
 	\beginverse\memorize
 	%verse
@@ -40,11 +42,15 @@ by={Modena},
 	\[C]e stasera ci faremo un bic\[G]chiere di scura ed un \[A]giro di walzer
 	con \[C]tanti saluti ad un altro Nat\[G A C]ale, ad un altro Nat\[G A C]ale.
 	\endchorus
-
+\ifchorded
   \beginverse*
 	{\nolyrics Strum: \[Em] \[G] \[D] \[A] \[Em] \[G] \[D] \[G]
 	\[Em] \[G] \[D] \[A] \[Em] \[G] \[D] \[G]}
   \endverse
+\fi
+\iflyric
+\textnote{Strumental}
+\fi
 
 	\beginverse
 	^Signora dei ^vicoli scuri ^non mollare la ^lotta
@@ -60,7 +66,7 @@ by={Modena},
 	un cordiale bev\[G A C]uto.
 	\endchorus
 
-	\textnote{No strum until ``un giorno di neve ...''}
+	\textnote{No istruments until ``un giorno di neve ...''}
 
 	\beginchorus
 	Ti ricordi c'incontrammo in un \[G]giorno di neve e di freddo

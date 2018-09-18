@@ -10,9 +10,11 @@
 %\capo{0}
 \transpose{0}
 
+\ifchorded
   \beginverse* % * not count the verse
 	  {\nolyrics Intro: \[Dm B& C Dm B& C Dm]}
   \endverse
+\fi
   
 	\beginchorus
 		\[Dm]Luce che sorgi \[C]nella \[Dm]notte, ca\[B&]ntiamo a\[C] te, o Sig\[Dm]nore!\[C]
@@ -46,10 +48,12 @@
 		can\[B&]tiamo a \[F]te, \[Gm]Cristo Ge\[Dm]s\`u,
 		can\[B&]tiamo a \[C]te, o Sign\[Dm]ore.
 	\endchorus
-	
+
+	\ifchorded	
 	\beginverse* % * not count the verse
 	  {\nolyrics Strum: \[Dm B& C Dm B& C Dm]}
   \endverse
+	\fi
 	
 	\beginverse
 		^Mentre l’at^tesa si ^fa invoca^zione tu ^vieni in mezzo a ^noi,

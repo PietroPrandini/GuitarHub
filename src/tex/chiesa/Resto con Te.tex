@@ -11,9 +11,11 @@ by={P.A. Sequeri, P. Stradi, M.T. Henderson, N.L. Uelmen, J.K. Belamide} % Autho
 %\capo{0}
 \transpose{0} % Automatic transpositions from +0 to +12 semitones
 
+	\ifchorded
 	\beginverse* % * not count the verse
 		{\nolyrics Intro: | | \[G] | \[D4] | \[Em7] | \[C] |}
 	\endverse
+	\fi
 
 	\beginverse\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
 		%verse
@@ -33,9 +35,11 @@ by={P.A. Sequeri, P. Stradi, M.T. Henderson, N.L. Uelmen, J.K. Belamide} % Autho
 		Resto con | \[G]Te. |
 	\endchorus
 
+	\ifchorded
 	\beginverse*
 		{\nolyrics Strum: | \[D4] | \[Em7] | \[C] | \[G] | \[D4] | \[Em7] | \[C] |}
 	\endverse
+	\fi
 
 	\beginverse
 		^Nube di man^dorlo in fio^re
@@ -54,10 +58,12 @@ by={P.A. Sequeri, P. Stradi, M.T. Henderson, N.L. Uelmen, J.K. Belamide} % Autho
 		Resto con | \[C]Te. \[D] |
 	\endchorus
 
+	\ifchorded
 	\beginverse*
 		{\nolyrics Strum: | \[G] | \[C] \[D] | \[G] | \[Am] | \[Em] | \[Am] | \[D] |
 			\[C] \[D] | \[Em] | \[C] \[D] | \[G] | \[C] | \[Am] | \[D4] | \[D] |}
 	\endverse
+	\fi
 
 	\beginchorus
 		\[G]Tu sei \[D]Re di stel\[Em]late immensità\[C]

@@ -10,10 +10,12 @@
 %\capo{0}
 \transpose{0}
 
+\ifchorded
   \beginverse* % * not count the verse
 	  {\nolyrics Intro: \[C] \[B&] \[F] \[C] x2}
   \endverse
-  
+\fi
+
 	\beginverse\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
 		%verse
 		\[C]Scende il cielo sulla terra
@@ -53,10 +55,10 @@
 		\[F]c'est Noel non scordiamolo \[Dm]mai
 		\[Am]buon Natale feliz \[Em]Navidad
 		\[Fm]e la pace \[Dm]sia sempre con \[G]noi.
+		\ifchorded
+	  	{\nolyrics \[C] \[B&] \[F] \[C] \rep{2}}
+		\fi
 	\endchorus
-	\beginverse* % * not count the verse
-	  {\nolyrics Strum: \[C] \[B&] \[F] \[C] x2}
-  \endverse
   
   \beginverse
   	\[C]Siamo popoli e nazioni

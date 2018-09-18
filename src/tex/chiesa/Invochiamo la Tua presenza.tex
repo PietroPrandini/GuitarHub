@@ -11,9 +11,11 @@ Invochiamo la Tua presenza}[
 %\capo{0}
 \transpose{0}
 
+	\ifchorded
 	\beginverse* % * not count the verse
 		{\nolyrics Intro: \[Dm] \[B&] \[F] \[C] \rep{2}}
 	\endverse
+	\fi
   
 	\beginverse\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
 		%verse
@@ -31,11 +33,10 @@ Invochiamo la Tua presenza}[
 		\[Dm]Vieni Spirito, \[B&]vieni Spirito \[F]scendi su di n\[C]oi.
 		\[Dm]Vieni Spirito,	\[B&]vieni Spirito \[F]scendi su di n\[C]oi.
 		Scendi su di \[Dm]noi.
-%		{\nolyrics Strum: \[Dm] \[B&] \[F] \[C] \rep{2}}
+		\ifchorded
+		{\nolyrics \[Dm] \[B&] \[F] \[C] \rep{2}}
+		\fi
 	\endchorus
-	\beginverse* % * not count the verse
-		{\nolyrics Strum: \[Dm] \[B&] \[F] \[C] \rep{2}}
-	\endverse
 
 	\beginverse
 		^Invochiamo la T^ua presenza, ^vieni Si^gnor.
@@ -57,7 +58,10 @@ Invochiamo la Tua presenza}[
 		\[Dm]Vieni Spirito, \[B&]vieni Spirito \[F]scendi su di n\[C]oi.
 		\[Dm]Vieni Spirito,	\[B&]vieni Spirito \[F]scendi su di n\[C]oi.
 	\endchorus
+
+	\iflyric
 	\textnote{+3 semitones}
+	\fi
 	
 	\transpose{3}
 	\prefersharps
@@ -69,11 +73,8 @@ Invochiamo la Tua presenza}[
 		\[Dm]Vieni Spirito, \[B&]vieni Spirito \[F]scendi su di n\[C]oi.
 		\[Dm]Vieni Spirito,	\[B&]vieni Spirito \[F]scendi su di n\[C]oi.
 		Scendi su di \[Dm]noi.
+		{\nolyrics \[Dm] \[B&] \[F]}
 	\endchorus
-	
-	\beginverse* % * not count the verse
-		{\nolyrics Strum: \[Dm] \[B&] \[F]}
-	\endverse
 %	\textnote{} %for notes
 
 %                 Do     Re     Mi     Fa     Sol    La     Si
