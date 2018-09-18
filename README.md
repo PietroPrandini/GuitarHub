@@ -39,8 +39,7 @@ Print the downloaded copy with these settings:
 ##### Assemble them into the GuitarHub booklet.
 ![assemble](src/img/forReadme/assemble.jpg)
 ### Rock it
-Now you could be a GuitarHub hero.
-You could share it with your frinds, you could add some songs, you could rock with it.
+Now you could share it with your frinds, now you could add some new songs to it, now you could rock some souls with it, now you could definitely be a GuitarHub hero.
 Thanks in advance for your heroism.
 
 #### Note
