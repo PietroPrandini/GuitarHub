@@ -27,19 +27,21 @@ If you would like to have a printed version of the booklet you could:
 Download the booklet format of GuitarHub:
 * [GuitarHubAlphabeticNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubAlphabeticNoteNamesBooklet.pdf)
 * [GuitarHubLyricsBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubLyricsBooklet.pdf)
-* [GuitarHubSolfegeNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNamesBooklet.pdf))
+* [GuitarHubSolfegeNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNamesBooklet.pdf)
 ### Print it
-Print the copy downloaded with this settings:
+Print the downloaded copy with these settings:
 ![printerSettings](src/img/forReadme/printerSettings.png)
-### Setup it
-* Divide every sheet in two equally parts like this:
+### Make it
+##### Divide every sheet in two equally parts like this:
 ![divide](src/img/forReadme/divide.jpg)
-* Make some holes like these on every sheets:
+##### Make some holes like these on every sheets:
 ![holes](src/img/forReadme/holes.jpg)
-* Assemble them into the GuitarHub booklet!
+##### Assemble them into the GuitarHub booklet.
 ![assemble](src/img/forReadme/assemble.jpg)
 ### Rock it
 Now you could be a GuitarHub hero.
+You could share it with your frinds, you could add some songs, you could rock with it.
+Thanks in advance for your heroism.
 
 #### Note
 If you would have the books without a page settings like a booklet you can find them here:
