@@ -3,6 +3,9 @@ A guitar chords and lyrics booklet.
 
 ## Purpose
 The primary aim of this project is to create a printable booklet with guitar chords.
+This booklet offer you many possibilities: you could share it with your friends, you could add some new songs to it,
+you could rock souls with it, you could definitely be a GuitarHub hero.
+Thanks in advance for your heroism.
 
 ## Considerations
 This book is meant mainly for the guitar players that would like to have a chords book that is updated periodically without the losage of formatting and any other related problems.
@@ -40,8 +43,7 @@ Print the downloaded copy with these settings:
 ##### Assemble them into the GuitarHub booklet.
 ![assemble](src/img/forReadme/assemble.jpg)
 ### Rock it
-Now you could share it with your frinds, now you could add some new songs to it, now you could rock some souls with it, now you could definitely be a GuitarHub hero.
-Thanks in advance for your heroism.
+Now be a new GuitarHub hero!
 
 #### Note
 If you would have the books without a page settings like a booklet you can find them here:
