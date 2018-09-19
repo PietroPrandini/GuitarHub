@@ -140,22 +140,22 @@ $ echo '\input{"tex/chapterName/Title song.tex"}' >> tex/chapterName.tex
 ```
 *Warning: this command is an example, it isn't put the song by alphabetical order.*
 
-## Generate the booklets
+### Generate the booklets
 When you add some songs to GuitarHub structure, you have to generate the booklets.
 With the script src/GuitarHubGenerator.sh you can generate every booklets easily with only a command.
 Otherwise if you prefer you can generate these manually.
-### Generating the booklets with GuitarHubGenerator.sh, an example:
+#### Generating the booklets with GuitarHubGenerator.sh, an example:
 ```
 $ cd /path/to/GuitarHub/src/
 $ sh GuitarHubGenerator.sh
 ```
 This produce the guitar chord booklet with alphabetic note names, the lyrics booklet and the guitar chord booklet with solfege note names and every of these in single pages ISO A5 and in the booklet page settings ISO A4 in /path/to/GuitarHub/ .
 Note: this script works with [arara, the cool Tex automation tool,](https://github.com/cereda/arara) and the [songs package](http://songs.sourceforge.net/) properly installed (pay attention for the rule of songidx, an example of it that works with texlua is in [src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml)).
-### Generating the booklets manually, an example:
-#### with arara
+#### Generating the booklets manually, an example:
+##### with arara
 You can find the commands in src/GuitarHubGenerator.sh.
 
-#### without arara
+##### without arara
 * Open a terminal and change the directory
 ```
 $ cd /path/to/GuitarHub/src/
