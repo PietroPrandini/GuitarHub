@@ -1,5 +1,6 @@
 # GuitarHub
 A guitar chords and lyrics booklet.
+![booklet](src/img/forReadme/IMG_20180919_115431.jpg)
 
 ## Purpose
 The primary aim of this project is to create a printable booklet with guitar chords.
