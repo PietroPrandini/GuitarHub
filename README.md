@@ -13,7 +13,8 @@ It is highly recommended to print the content of this booklet and put it in a ri
 * The format of a single sheet is ISO A5 which supports the idea of  portability.
 * Each song uses at most 2 pages whilst the first page would always be an even number in such case: you haven't got any problem about reading it.  
 ![only2pages](src/img/forReadme/only2pages.png)
-* Write the song with alphabetic note names and then you can generate that song in both alphabetic and solfege note names without rewriting it. 
+* Write the song with alphabetic note names and then you can generate that song in both alphabetic and solfege note names without rewriting it.
+
 ![alphabetic](src/img/forReadme/alphabetic.png) ![solfege](src/img/forReadme/solfege.png)
 * Easy automatic transpositions of the chords.
 * You are welcome to add your favourite songs with a pull request.
