@@ -3,9 +3,9 @@ A guitar chords and lyrics booklet.
 ![booklet](src/img/forReadme/IMG_20180919_115431.jpg)
 
 ## Purpose
-The primary aim of this project is to create a printable booklet with guitar chords.
+The primary aim of this project is to create a printable booklet with guitar chords.  
 This booklet offer you many possibilities: you could share it with your friends, you could add some new songs to it,
-you could rock souls with it, you could definitely be a GuitarHub hero.
+you could rock souls with it, you could definitely be a GuitarHub hero.  
 Thanks in advance for your heroism.
 
 ## Considerations
@@ -66,7 +66,7 @@ The GuitarHub booklets are written in [LaTex](https://www.latex-project.org/) wi
 
 #### Arara: the cool Tex automation Tool
 [Arara](https://github.com/cereda/arara) is useful to generate easily the booklets and particularly the indexes.
-If you would use arara you have to have properly installed the songs package and you have to pay attiontion for the rule of songidx (an example of this rule that works with texlua is in [src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml))
+If you would use arara you have to have properly installed the songs package and you have to pay attiontion for the rule of songidx (an example of this rule that works with texlua is in [src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml)
 
 #### A text editor or an IDE specific for LaTex documents
 A [text editor](https://en.wikipedia.org/wiki/Text_editor) or an IDE specific for LaTex document is useful to edit songs and the code of this book.
