@@ -72,8 +72,7 @@ If you would use arara you have to have properly installed the songs package and
 A [text editor](https://en.wikipedia.org/wiki/Text_editor) or an IDE specific for LaTex document is useful to edit songs and the code of this book.
 There are many text editors ([Atom](https://atom.io/), [Vim](https://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/)) and many IDE for LaTex ([Texmaker](http://www.xm1math.net/texmaker/), [TeXstudio](https://sourceforge.net/projects/texstudio/), [TeXworks](https://www.tug.org/texworks/)) but you can use the ones you prefer.
 
-### Procedures
-#### Setup a new chapter
+### Setup a new chapter
 *Note: if you would like to add a new song to an existing chapter you can skip the setting up of a new chapter.*
 This booklet could have many chapters.
 Every chapter has a directory in src/tex/ directory and an input .tex file, both named with its name.
@@ -81,15 +80,15 @@ The directory contain the songs files of the chapter and the input .tex file add
 If you would like to create a new chapter you have to create them.
 Then you have to declare it to the src/GuitarChordsPreamble.tex.
 Finally you can add every songs of the new chapter to the booklet in src/GuitarHubBody.tex.
-##### Creating a new chapter, an example:
-###### *Creating* the chapter directory and the input .tex file:
+#### Creating a new chapter, an example:
+##### *Creating* the chapter directory and the input .tex file:
 Open a terminal and then create them in /path/to/GuitarHub/src/tex/
 ```
 $ cd /path/to/GuitarHub/src/tex/
 $ mkdir newChapter
 $ touch newChapter.tex
 ```
-###### *Declaring* the chapter in the src/GuitarChordsPreamble.tex:
+##### *Declaring* the chapter in the src/GuitarChordsPreamble.tex:
 Open src/GuitarChordsPreamble.tex with a text editor and declare it
 ```
 %...
@@ -98,7 +97,7 @@ Open src/GuitarChordsPreamble.tex with a text editor and declare it
 \newindex{newChapter}{newChapter} %new chapter declared
 %...
 ```
-###### *Adding* the song chapter to the booklet:
+##### *Adding* the song chapter to the booklet:
 Open src/GuitarChordsBody.tex with a text editor and add it
 ```
 \begindocument
@@ -117,7 +116,7 @@ Open src/GuitarChordsBody.tex with a text editor and add it
 %...
 ```
 
-#### Add a new song
+### Add a new song
 Every song is associated to an existing chapter, if the chapter doesn't exist firstly you have to setup it.
 To support the writing of new song it is provided a template: *SongTemp.tex*.
 You don't need any special skills to write a song with this template.
@@ -125,38 +124,38 @@ You can find it in the src/ directory and you could copy it to the chapter of th
 Then you have to rename it with the name of the new song.
 Now it's the time for declaring it in the input .tex file of the chapter you would add the this song.
 Finally you can write it.
-##### Creating a new song, an example:
-###### *Copying* the SongTemp.tex from src/ to the directory of the chapter you would like to add the song:
+#### Creating a new song, an example:
+##### *Copying* the SongTemp.tex from src/ to the directory of the chapter you would like to add the song:
 ```
 $ cd ./GuitarHub/src/
 $ cp SongTemp.tex tex/chapterName/
 ```
-###### *Renaming* the copy with the title name of the new song
+##### *Renaming* the copy with the title name of the new song
 ```
 $ mv "tex/chapterName/SongTemp.tex" "tex/chapterName/Title song.tex"
 ```
-###### *Adding* the song in the chapter input file
+##### *Adding* the song in the chapter input file
 ```
 $ echo '\input{"tex/chapterName/Title song.tex"}' >> tex/chapterName.tex
 ```
 *Warning: this command is an example, it isn't put the song by alphabetical order.*
 
-### Generate the booklets
+## Generate the booklets
 When you add some songs to GuitarHub structure, you have to generate the booklets.
 With the script src/GuitarHubGenerator.sh you can generate every booklets easily with only a command.
 Otherwise if you prefer you can generate these manually.
-#### Generating the booklets with GuitarHubGenerator.sh, an example:
+### Generating the booklets with GuitarHubGenerator.sh, an example:
 ```
 $ cd /path/to/GuitarHub/src/
 $ sh GuitarHubGenerator.sh
 ```
 This produce the guitar chord booklet with alphabetic note names, the lyrics booklet and the guitar chord booklet with solfege note names and every of these in single pages ISO A5 and in the booklet page settings ISO A4 in /path/to/GuitarHub/ .
 Note: this script works with [arara, the cool Tex automation tool,](https://github.com/cereda/arara) and the [songs package](http://songs.sourceforge.net/) properly installed (pay attention for the rule of songidx, an example of it that works with texlua is in [src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml)).
-#### Generating the booklets manually, an example:
-##### with arara
+### Generating the booklets manually, an example:
+#### with arara
 You can find the commands in src/GuitarHubGenerator.sh.
 
-##### without arara
+#### without arara
 * Open a terminal and change the directory
 ```
 $ cd /path/to/GuitarHub/src/
