@@ -4,7 +4,7 @@ A guitar chords and lyrics booklet.
 
 ## Purpose
 The primary aim of this project is to create a printable booklet with guitar chords.  
-This booklet offer you many possibilities: you could share it with your friends, you could add some new songs to it,
+This booklet offers you many possibilities: you could share it with your friends, you could add some new songs to it,
 you could rock souls with it, you could definitely be a GuitarHub hero.  
 Thanks in advance for your heroism.
 
