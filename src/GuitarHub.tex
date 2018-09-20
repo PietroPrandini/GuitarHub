@@ -1,0 +1,65 @@
+%	arara commands
+%
+%	Warning: convert the images to the eps format before latex compiling
+%		example imagemagick command:
+%		$ convert example.png example.eps
+%
+%
+%	GuitarHubAlphabeticNoteNames
+%
+%	Generating abc and sxd files
+%	arara: pdflatex: {files: [./GuitarHubAlphabeticNoteNames.tex]}
+%
+%	Generate .sbx files of the index
+%	arara: songidx: {input: ./chords}
+%	arara: songidx: {input: ./chiesa}
+%	arara: songidx: {input: ./jukebox}
+%	arara: songidx: {input: ./christmas}
+%
+%	Last compiling with complete indexes
+%	arara: pdflatex: {files: [./GuitarHubAlphabeticNoteNames.tex]}
+%
+%
+%	GuitarHubLyrics
+%
+%	Generating abc and sxd files
+%	arara: pdflatex: {files: [./GuitarHubLyrics.tex]}
+%
+%	Generate .sbx files of the index
+%	arara: songidx: {input: ./chords}
+%	arara: songidx: {input: ./chiesa}
+%	arara: songidx: {input: ./jukebox}
+%	arara: songidx: {input: ./christmas}
+%
+%	Last compiling with complete indexes
+%	arara: pdflatex: {files: [./GuitarHubLyrics.tex]}
+%
+%
+%	GuitarHubSolfegeNoteNames
+%
+%	Generating abc and sxd files
+%	arara: pdflatex: {files: [./GuitarHubSolfegeNoteNames.tex]}
+%
+%	Generate .sbx files of the index
+%	arara: songidx: {input: ./chords}
+%	arara: songidx: {input: ./chiesa}
+%	arara: songidx: {input: ./jukebox}
+%	arara: songidx: {input: ./christmas}
+%
+%	Last compiling with complete indexes
+%	arara: pdflatex: {files: [./GuitarHubSolfegeNoteNames.tex]}
+%
+%
+%	GuitarHubAlphabeticNoteNamesBooklet
+%
+%	arara: pdflatex: {files: [./GuitarHubAlphabeticNoteNamesBooklet.tex]}
+%
+%
+%	GuitarHubLyricsBooklet
+%
+%	arara: pdflatex: {files: [./GuitarHubLyricsBooklet.tex]}
+%
+%
+%	GuitarHubSolfegeNoteNamesBooklet
+%
+%	arara: pdflatex: {files: [./GuitarHubSolfegeNoteNamesBooklet.tex]}
