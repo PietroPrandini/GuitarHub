@@ -3,10 +3,11 @@ A guitar chords and lyrics booklet.
 ![booklet](src/img/forReadme/IMG_20180919_115431.jpg)
 
 ## Purpose
-The primary aim of this project is to create a printable booklet with guitar chords.  
-This booklet offers you many possibilities: you could share it with your friends, you could add some new songs to it,
-you could rock souls with it, you could definitely be a GuitarHub hero.  
-Thanks in advance for your heroism.
+The primary aim of this project is to create a printable guitar chords booklet for everyone.  
+This booklet provides a lot of possibilities: you can update it with new songs without reprinting the whole book, you can share this booklet with your friends, you can use it for bringing the music in every street of the world, or rather, you can become a GuitarHub hero.  
+Thank you to use this booklet.  
+Thank you to share it.  
+Thank you for your heroism.  
 
 ## Considerations
 This book is meant mainly for the guitar players that would like to have a chords book that is updated periodically without the losage of formatting and any other related problems.
