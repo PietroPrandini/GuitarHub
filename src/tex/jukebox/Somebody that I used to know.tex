@@ -1,3 +1,6 @@
+\renewcommand{\lyricfont}{\sffamily\small}
+\renewcommand{\printchord}[1]{\rmfamily\bf#1\small}
+
 \beginsong{%Title
 Somebody that I used to know}[
 by={Gotye feat. Kimbra} % Authors, composers, and other contributors
@@ -11,29 +14,26 @@ by={Gotye feat. Kimbra} % Authors, composers, and other contributors
 %\capo{0}
 \transpose{0} % Automatic transpositions from +0 to +12 semitones
 
-%	\ifchorded
-%	\beginverse* % * not count the verse
-%		{\nolyrics Intro: }
-%	\endverse
-%	\fi
+	\ifchorded
+	\beginverse* % * not count the verse
+		{\nolyrics Intro: \[Dm] \[C] \[Dm] \[C] \rep{4}}
+	\endverse
+	\fi
 
 	\textnote{Gotye}
-	\beginverse*\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
+	\beginverse\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
 		%verse
 		\[Dm]Now and \[C]then I think of \[Dm]when we \[C]were \[Dm]toge\[C]ther \[Dm] \[C]
 		\[Dm]Like when you \[C]said you felt so \[Dm]happy \[C]you could \[Dm]die \[C] \[Dm] \[C]
 		\[Dm]Told \[C]myself that you were \[Dm]right for \[C]me
 		\[Dm]But felt so \[C]lonely in your \[Dm]company \[C]
 		\[Dm]But that was \[C]love and it's an \[Dm]ache I st\[C]ill re\[Dm]member \[C] \[Dm] \[C]
-	\endverse
-
 	\ifchorded
-	\beginverse*
 		{\nolyrics Strum: \[Dm] \[C] \[Dm] \[C] \rep{4}}
-	\endverse
 	\fi
+	\endverse
 
-	\beginverse*
+	\beginverse
 		^You can get ad^dicted to a ^certain ^kind of ^sadness ^ ^ ^
 		^Like resi^gnation to the ^end, ^always the ^end ^ ^ ^
 		^So when we ^found that we could ^not make ^sense
@@ -50,41 +50,45 @@ by={Gotye feat. Kimbra} % Authors, composers, and other contributors
 		\[Dm]You \[C]didn't have to \[B&]stoop so \[C]low
 		\[Dm]Have your \[C]friends collect your \[B&]records and then \[C]change your \[Dm]number
 		I \[C]guess that I don't \[B&]need that \[C]though
-		\[Dm]Now you're just \[C]somebody that I \[B&]used to \[C]know \rep{3}
+		\[Dm]Now you're just \[C]somebody that I \[B&]used to \[C]know
 	\endchorus
+	
+	\beginverse*
+		\ifchorded
+		{\nolyrics \[Dm] \[C] \[B&] \[C]}
+		\fi
+		\[Dm]Now you're just \[C]somebody that I \[B&]used to \[C]know
+		\ifchorded
+		{\nolyrics \[Dm] \[C] \[B&] \[C]}
+		\fi
+		\[Dm]Now you're just \[C]somebody that I \[B&]used to \[C]know
 
+	\ifchorded
+		{\nolyrics Strum: \[Dm] \[C] \[Dm] \[C] \rep{4}}
+	\fi
+	\endverse
+	
 	\textnote{Kimbra}
-	\beginverse*
-		Now and then I think of all the times you screwed me over
-		But had me believing it was always something that I'd done
-		But I don't wanna live that way
-		Reading into every word you say
-		You said that you could let it go
-		And I wouldn't catch you hung up on somebody that you used to know
+	\beginverse
+		^Now and ^then I think of ^all the times you s^crewed me ^over ^ ^ ^
+		^But had me ^believing it was ^always something ^that I'd ^done ^ ^ ^
+		\[C]But I don't wanna live that way
+		\[C]Reading into every word you say
+		\[C]You said that you could let it go
+		\[C]And I wouldn't catch you hung up on somebody that you used to know
 	\endverse
 
-	\textnote{Gotye}
-	\beginchorus
-		But you didn't have to cut me off
-		Make out like it never happened and that we were nothing
-		And I don't even need your love
-		But you treat me like a stranger and that feels so rough
-		No you didn't have to stoop so low
-		Have your friends collect your records and then change your number
-		I guess that I don't need that though
-		Now you're just somebody that I used to know
-	\endchorus
-
-	\beginverse*\memorize
-		\lrep Somebody \echo{I used to know}
-		Somebody \echo{Now you're somebody that I used to know} \rrep \rep{2}
-	\endverse
-
-	\beginverse*
-		\echo{I used to know}
-		\echo{That I used to know}
-		\echo{I used to know}
-		Somebody
+	\textnote{Chorus - Gotye}
+	
+	\beginverse\memorize
+		Some\[Dm]body \[C] \echo{\[B&]I used to \[C]know}
+		Some\[Dm]body \[C] \echo{that I \[B&]used to \[C]know}
+		Some\[Dm]body \[C] \echo{\[B&]I used to \[C]know}
+		Some\[Dm]body \echo{Now you're \[C]somebody that I \[B&]used to \[C]know}
+		\[Dm] \[C] \echo{I \[B&]used to \[C]know}
+		\[Dm] \[C] \echo{That I \[B&]used to \[C]know}
+		\[Dm] \[C] \echo{I \[B&]used to \[C]know}
+		\[Dm]Somebody \[C] \[B&] \[C]
 	\endverse
 
 %	\textnote{} % Notes for both lyric and chorded songs
@@ -106,3 +110,6 @@ by={Gotye feat. Kimbra} % Authors, composers, and other contributors
 % Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]
 
 \endsong
+
+\renewcommand{\lyricfont}{\sffamily}
+\renewcommand{\printchord}[1]{\rmfamily\bf#1}
