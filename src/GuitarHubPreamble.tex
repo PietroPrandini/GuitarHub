@@ -9,20 +9,17 @@
 \usepackage{ulem} % For \xout
 \usepackage{ifthen} % For if-then-else funtions
 \usepackage[bookmarks]{hyperref} % For indexes
+\usepackage{qrcode} % For qrcodes
 
 %	Header and footer
 \usepackage{fancyhdr}
 	\pagestyle{fancy}
-%	\renewcommand{\chaptermark}[1]{\markboth{\textsc{#1}}{}}
 	\fancyhf{}
-	\fancyhead[LE,RO]{%\thepage
-	}
-	\fancyhead[RE,LO]{%\leftmark
-	}
-  \fancyhead[C]{%\leftmark
-  }
-	\fancyfoot[LE,LO]{\includegraphics[height=3mm]{img/cc-by-sa_80x15}}
-	\fancyfoot[C]{{\tiny\href{https://github.com/PietroPrandini/GuitarHub/graphs/contributors}{https://github.com/PietroPrandini/GuitarHub/graphs/contributors}}}
+%	\fancyhead[L]{\sffamily\small\bfseries GuitarHub}
+%	\fancyhead[R]{\qrcode[hyperlink,height=5mm,version=0,level=L]{https://github.com/PietroPrandini/GuitarHub}}
+	%\fancyhead[C]{{\tiny\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub}}}
+
+	%\fancyfoot[C]{{\tiny\href{https://github.com/PietroPrandini/GuitarHub/graphs/contributors}{https://github.com/PietroPrandini/GuitarHub/graphs/contributors}}}
 
 	\renewcommand{\headrulewidth}{0pt}
 	\renewcommand{\footrulewidth}{0pt}
