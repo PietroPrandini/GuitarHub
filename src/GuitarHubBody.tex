@@ -17,7 +17,7 @@
 {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Canti per la Liturgia, per le Celebrazioni e per la Preghiera}{chiesa}} 
 {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Jukebox}{jukebox}}
 {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Christmas}{christmas}}
-
+\ifchorded
 %	New chapter
 %	Start on a right page and the title is in a blank page
 \checkodd
@@ -31,6 +31,7 @@
 	\input{tex/chords.tex}
 \end{songs}
 \songpos{3}
+\fi
 
 %	New chapter
 %	Start on a right page and the title is in a blank page
