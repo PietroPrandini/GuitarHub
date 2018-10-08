@@ -35,6 +35,21 @@
 %	arara: pdflatex: {files: [./GuitarHubLyrics.tex]}
 %
 %
+%	GuitarHubLyricsCompressedVersion
+%
+%	Generating abc and sxd files
+%	arara: pdflatex: {files: [./GuitarHubLyricsCompressedVersion.tex]}
+%
+%	Generate .sbx files of the index
+%	arara: songidx: {input: ./chords}
+%	arara: songidx: {input: ./chiesa}
+%	arara: songidx: {input: ./jukebox}
+%	arara: songidx: {input: ./christmas}
+%
+%	Last compiling with complete indexes
+%	arara: pdflatex: {files: [./GuitarHubLyricsCompressedVersion.tex]}
+%
+%
 %	GuitarHubSolfegeNoteNames
 %
 %	Generating abc and sxd files
@@ -58,6 +73,11 @@
 %	GuitarHubLyricsBooklet
 %
 %	arara: pdflatex: {files: [./GuitarHubLyricsBooklet.tex]}
+%
+%
+%	GuitarHubLyricsCommpressedVersionBooklet
+%
+%	arara: pdflatex: {files: [./GuitarHubLyricsCompressedVersionBooklet.tex]}
 %
 %
 %	GuitarHubSolfegeNoteNamesBooklet
