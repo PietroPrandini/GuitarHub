@@ -10,6 +10,7 @@
 \usepackage{ifthen} % For if-then-else funtions
 \usepackage[bookmarks]{hyperref} % For indexes
 \usepackage{qrcode} % For qrcodes
+\usepackage{filemod} % For parsing the date of the files
 
 %	Header and footer
 \usepackage{fancyhdr}
@@ -25,7 +26,7 @@
 	\renewcommand{\footrulewidth}{0pt}
 
 \usepackage[generate,ps2eps]{abc}
-	
+
 %	Formatting: if the page is even, add a black page before.
 %	(Useful to format the start of a chapter)
 \newcommand{\checkodd}{
