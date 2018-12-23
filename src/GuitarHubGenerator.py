@@ -45,7 +45,7 @@ def currentdirectorycheck(dir):
 def updatesongcopyright(filepath):
     print("Updating the copyright of \"" + filepath + "\"")
     # Opens the song file
-    file = open(filepath, "r+")
+    file = open(filepath, "r")
 
     # Retrieves a copy of the file
     filetolines = file.readlines()
@@ -82,7 +82,7 @@ def updatesongcopyright(filepath):
     print("lineofoptionstop " + str(lineofoptionsstop))
 
     # prepares the copyright string
-    copyright = ",cr={\\centering{\\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub} \\href{http://creativecommons.org/licenses/by-sa/4.0/}{CC-BY-SA} \\filemodprintdate{\"" + filepath + "\"}}} % Copyright information"
+    copyright = ",cr={\\centering{\\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub} \\href{http://creativecommons.org/licenses/by-sa/4.0/}{CC-BY-SA} \\filemodprintdate{\"" + filepath + "\"}}}, % Copyright information\n"
 
     copyrightsimbol = "cr="
     lineofcopyright = -1
@@ -93,9 +93,15 @@ def updatesongcopyright(filepath):
                 lineofcopyright = line
                 break
     if lineofcopyright != -1:
-        print("last copyright " + filetolines[lineofcopyright])
+        print("last copyright \"" + filetolines[lineofcopyright] + "\"")
         filetolines[lineofcopyright] = copyright
-        print("updated copyright " + filetolines[lineofcopyright])
+        print("updated copyright \"" + filetolines[lineofcopyright] + "\"")
+        updates = ''.join(filetolines)
+        print(updates)
+        with open(filepath, "r+") as f:
+            f.write(updates)
+            f.truncate()
+            f.close()
     else:
         print("No copyright found for \"" + filepath + "\"")
 
@@ -127,4 +133,4 @@ for root, dirs, files in os.walk(os.getcwd() + "/tex/"):
         relativepath = root[indexofsrc + len(last_dir) + 1:] + "/" + file
         updatesongcopyright(relativepath)
 
-#booksgenerator()
+booksgenerator()
