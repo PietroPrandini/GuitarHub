@@ -82,7 +82,7 @@ def updatesongcopyright(filepath):
     print("lineofoptionstop " + str(lineofoptionsstop))
 
     # prepares the copyright string
-    copyright = ",cr={\\centering{\\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub} \\href{http://creativecommons.org/licenses/by-sa/4.0/}{CC-BY-SA} \\filemodprintdate{\"" + filepath + "\"}}}, % Copyright information\n"
+    copyright = ",cr={\\centering{\\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub} - \\href{http://creativecommons.org/licenses/by-sa/4.0/}{CC-BY-SA} - \\filemodprintdate{\"" + filepath + "\"}}}, % Copyright information\n"
 
     copyrightsimbol = "cr="
     lineofcopyright = -1
