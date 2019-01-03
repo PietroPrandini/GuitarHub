@@ -80,7 +80,7 @@ Every chapter has a directory in src/tex/ directory and an input .tex file, both
 The directory contain the songs files of the chapter and the input .tex file add them to the booklets.
 If you would like to create a new chapter you have to create them.
 Then you have to declare it to the src/GuitarChordsPreamble.tex.
-Finally you can add every songs of the new chapter to the booklet in src/GuitarHubBody.tex.
+Finally you can add every songs of the new chapter to the booklet in src/tex/commons/GuitarHubBody.tex.
 #### Creating a new chapter, an example:
 ##### *Creating* the chapter directory and the input .tex file:
 Open a terminal and then create them in /path/to/GuitarHub/src/tex/
@@ -126,21 +126,22 @@ Then you have to rename it with the name of the new song.
 Now it's the time for declaring it in the input .tex file of the chapter you would add the this song.
 Finally you can write it.
 #### Creating a new song, an example:
-##### *Copying* the SongTemp.tex from src/ to the directory of the chapter you would like to add the song:
+##### *Copying* the templates from src/ to the proper directories:
 ```
 $ cd ./GuitarHub/src/
-$ cp SongTemplate.tex tex/chapterName/
-$ cp SongBodyTemplate.tex tex/songs/
+$ cp TemplateSongBox.tex tex/chapterName/
+$ cp TemplateSongBody.tex tex/songs/
 ```
 ##### *Renaming* the copy with the title name of the new song
 ```
-$ mv "tex/chapterName/SongTemplate.tex" "tex/chapterName/Title song.tex"
-$ mv "tex/songs/SongBodyTemplate.tex" "tex/songs/Title song.tex"
+$ mv "tex/chapterName/TemplateSongBox.tex" "tex/chapterName/Title song.tex"
+$ mv "tex/songs/TemplateSongBody.tex" "tex/songs/Title song.tex"
 ```
 ##### *Adding* the song in the chapter input file
 ```
 $ echo '\input{"tex/chapterName/Title song.tex"}' >> tex/chapterName.tex
 ```
+##### *Start writing* the song
 *Warning: this command is an example, it isn't put the song by alphabetical order.*
 
 ### Generate the booklets
