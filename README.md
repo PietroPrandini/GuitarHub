@@ -22,10 +22,10 @@ It is highly recommended to print the content of this booklet and put it in a ri
 
 ![alphabetic](src/img/forReadme/alphabetic.png) ![solfege](src/img/forReadme/solfege.png)
 * Easy automatic transpositions of the chords.
-* You are welcome to add your favourite songs with a pull request.
+* You are welcome to add your favourite songs.
 * The book is licensed by a Free Culture License.
-* There is a simple template to support the writing of the song (*src/SongTemp.tex*).
-* There is a script (*src/GuitarHubGenerator.sh*) that generate every booklets in the main folder of GuitarHub.
+* There is support for writing songs.
+* There is support for generating the booklets.
 
 ## Getting started
 If you would like to have a printed version of the booklet you could:
@@ -129,11 +129,13 @@ Finally you can write it.
 ##### *Copying* the SongTemp.tex from src/ to the directory of the chapter you would like to add the song:
 ```
 $ cd ./GuitarHub/src/
-$ cp SongTemp.tex tex/chapterName/
+$ cp SongTemplate.tex tex/chapterName/
+$ cp SongBodyTemplate.tex tex/songs/
 ```
 ##### *Renaming* the copy with the title name of the new song
 ```
-$ mv "tex/chapterName/SongTemp.tex" "tex/chapterName/Title song.tex"
+$ mv "tex/chapterName/SongTemplate.tex" "tex/chapterName/Title song.tex"
+$ mv "tex/songs/SongBodyTemplate.tex" "tex/songs/Title song.tex"
 ```
 ##### *Adding* the song in the chapter input file
 ```
