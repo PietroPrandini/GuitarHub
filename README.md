@@ -129,8 +129,8 @@ Finally you can write it.
 ##### *Copying* the templates from src/ to the proper directories:
 ```
 $ cd ./GuitarHub/src/
-$ cp TemplateSongBox.tex tex/chapterName/
-$ cp TemplateSongBody.tex tex/songs/
+$ cp templates/SongBox.tex tex/chapterName/
+$ cp templates/SongBody.tex tex/songs/
 ```
 ##### *Renaming* the copy with the title name of the new song
 ```
