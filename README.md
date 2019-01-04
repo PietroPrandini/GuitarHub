@@ -16,6 +16,7 @@ It is highly recommended to print the content of this booklet and put it in a ri
 ## Features
 * The booklet is available to be printed at once, including all the songs till date. Then you can expand it by adding the newly released songs without the necessity to reprint the whole booklet.
 * The format of a single sheet is ISO A5 which supports the idea of  portability.
+* Each song starts at a page with an even number to support the updating process.
 * Each song uses at most 2 pages whilst the first page would always be an even number in such case: you haven't got any problem about reading it.  
 ![only2pages](src/img/forReadme/only2pages.png)
 * Write the song with alphabetic note names and then you can generate that song in both alphabetic and solfege note names without rewriting it.
@@ -186,6 +187,6 @@ $ mv GuitarHubAlphabeticNoteNames.pdf ../GuitarHubAlphabeticNoteNames.pdf
 *Note: repeat this points for every type of the GuitarHub booklets*
 
 ## A special thanks to
-* *Kevin Hamlen*, authors of the [songs package](http://songs.sourceforge.net/) and technical supporter of this project;
+* *Kevin Hamlen*, author of the [songs package](http://songs.sourceforge.net/) and technical supporter of this project;
 * *Paweł Andrejczuk*, english supporter;
 * The other contributors.
