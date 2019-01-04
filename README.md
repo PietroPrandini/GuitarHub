@@ -79,18 +79,18 @@ This booklet could have many chapters.
 Every chapter has a directory in src/tex/ directory and an input .tex file, both named with its name.
 The directory contain the songs files of the chapter and the input .tex file add them to the booklets.
 If you would like to create a new chapter you have to create them.
-Then you have to declare it to the src/GuitarChordsPreamble.tex.
+Then you have to declare it to the src/GuitarHubPreamble.tex.
 Finally you can add every songs of the new chapter to the booklet in src/tex/commons/GuitarHubBody.tex.
 #### Creating a new chapter, an example:
 ##### *Creating* the chapter directory and the input .tex file:
 Open a terminal and then create them in /path/to/GuitarHub/src/tex/
 ```
-$ cd /path/to/GuitarHub/src/tex/
+$ cd /path/to/GuitarHub/src/tex/songsChapter
 $ mkdir newChapter
 $ touch newChapter.tex
 ```
-##### *Declaring* the chapter in the src/GuitarChordsPreamble.tex:
-Open src/GuitarChordsPreamble.tex with a text editor and declare it
+##### *Declaring* the chapter in the src/GuitarHubPreamble.tex:
+Open src/tex/commons/GuitarHubPreamble.tex with a text editor and declare it
 ```
 %...
 %	Indexes
@@ -99,7 +99,7 @@ Open src/GuitarChordsPreamble.tex with a text editor and declare it
 %...
 ```
 ##### *Adding* the song chapter to the booklet:
-Open src/GuitarChordsBody.tex with a text editor and add it
+Open src/tex/commons/GuitarHubBody.tex with a text editor and add it
 ```
 \begindocument
 %...
@@ -111,8 +111,8 @@ Open src/GuitarChordsBody.tex with a text editor and add it
 \vspace*{\stretch{5}}
 \newpage
 %	Songs of this chapter
-\begin{songs}{newChapter} % name declared in src/GuitarChordsPreamble.tex
-	\input{tex/newChapter.tex} % input file .tex of the new chapter
+\begin{songs}{newChapter} % name declared in src/tex/commons/GuitarHubPreamble.tex
+	\input{tex/songsChapters/newChapter.tex} % input file .tex of the new chapter
 \end{songs}
 %...
 ```
@@ -129,17 +129,17 @@ Finally you can write it.
 ##### *Copying* the templates from src/ to the proper directories:
 ```
 $ cd ./GuitarHub/src/
-$ cp templates/SongBox.tex tex/chapterName/
+$ cp templates/SongBox.tex tex/songsChapters/chapterName/
 $ cp templates/SongBody.tex tex/songsBodies/
 ```
 ##### *Renaming* the copy with the title name of the new song
 ```
-$ mv "tex/chapterName/TemplateSongBox.tex" "tex/chapterName/Title song.tex"
+$ mv "tex/songsChapters/chapterName/TemplateSongBox.tex" "tex/songsChapters/chapterName/Title song.tex"
 $ mv "tex/songsBodies/TemplateSongBody.tex" "tex/songsBodies/Title song.tex"
 ```
 ##### *Adding* the song in the chapter input file
 ```
-$ echo '\input{"tex/chapterName/Title song.tex"}' >> tex/chapterName.tex
+$ echo '\input{"tex/songsChapters/chapterName/Title song.tex"}' >> tex/songsChapters/chapterName.tex
 ```
 ##### *Start writing* the song
 *Warning: this command is an example, it isn't put the song by alphabetical order.*
@@ -166,7 +166,7 @@ $ cd /path/to/GuitarHub/src/
 ```
 * First compiling (generate some files useful for make the indexes)
 ```
-$ pdflatex GuitarHubAlphabeticNoteNamesBooklet.tex
+$ pdflatex GuitarHubAlphabeticNoteNames.tex
 ```
 * Generate the indexes (repeat this point for every chapters)
 ```
@@ -174,10 +174,10 @@ $ texlua /usr/local/share/songs/songidx.lua "chapterName.sxd"
 ```
 * Final compiling (add the generated indexes)
 ```
-$ pdflatex GuitarHubAlphabeticNoteNamesBooklet.tex
+$ pdflatex GuitarHubAlphabeticNoteNames.tex
 ```
 * Move the generated .pdf of the booklets to the root directory of the project
 ```
-$ mv GuitarHubAlphabeticNoteNamesBooklet.pdf ../GuitarHubAlphabeticNoteNamesBooklet.pdf
+$ mv GuitarHubAlphabeticNoteNames.pdf ../GuitarHubAlphabeticNoteNames.pdf
 ```
 *Note: repeat this points for every type of the GuitarHub booklets*
