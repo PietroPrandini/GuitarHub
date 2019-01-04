@@ -21,28 +21,39 @@
 % \lrep ... \rrep \rep{n} % Margins of the repeat                              %
 % |                       % Measure bar                                        %
 %                                                                              %
+%%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
+% *                           % Used after \beginverse for delimiters of a     %
+%                             %   unnumbered verse                             %
+% \memorize                   % Used after \beginverse for using chords        %
+%                             %   with the symbol ^ in the next verses         %
+% \beginchorus ... \endchorus % Used for delimiters of a chorus                %
+% \ifchorded ... \fi          % Conditional sentences: only if chorded books   %
+% \iflyrics ... \fi           % Conditional sentences: only if lyrics book     %
+% \nolyrics                   % For parts with no lyrics                       %
+%                                                                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Start of the song
+% Start of the song body
 
-%\meter{4}{4}
+\meter{4}{4}
 
-%	\ifchorded
-%	\beginverse* % * not count the verse
-%		{\nolyrics Intro: }
-%	\endverse
-%	\fi
+\ifchorded
+	\beginverse*
+		{\nolyrics Intro: }
+	\endverse
+\fi
 
-%	\beginverse\memorize % \memorize sets the chords you would like to use with ^ in the next verses
-		%verse
-%	\endverse
+\beginverse\memorize
+	%verse
+\endverse
 
-%	\beginchorus
-		%chorus
-%	\endchorus
+\beginchorus
+	%chorus
+\endchorus
 
-%	\ifchorded
-%	\beginverse* % * not count the verse
-%		{\nolyrics Strum: }
-%	\endverse
-%	\fi
+\ifchorded
+	\beginverse*
+		{\nolyrics Strum: }
+	\endverse
+\fi
