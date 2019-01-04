@@ -15,9 +15,9 @@
 
 %	Showing the lists of the songs
 %{\makeatletter\def\SB@ellipspread#1#2{\begin{flushleft}- #1\par\end{flushleft}}\showindex[2]{Chords}{chords}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Canti per la Liturgia, per le Celebrazioni e per la Preghiera\\\tiny{\filemodprintdate{"tex/chiesa.tex"}}}{chiesa}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Jukebox\\\tiny{\filemodprintdate{"tex/jukebox.tex"}}}{jukebox}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Christmas\\\tiny{\filemodprintdate{"tex/christmas.tex"}}}{christmas}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Canti per la Liturgia, per le Celebrazioni e per la Preghiera\\\tiny{\filemodprintdate{"tex/songsChapters/chiesa.tex"}}}{chiesa}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Jukebox\\\tiny{\filemodprintdate{"tex/songsChapters/jukebox.tex"}}}{jukebox}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Christmas\\\tiny{\filemodprintdate{"tex/songsChapters/christmas.tex"}}}{christmas}}
 \ifchorded
 %	New chapter
 %	Start on a right page and the title is in a blank page
@@ -29,7 +29,7 @@
 %	Songs of this chapter
 \songpos{0}
 \begin{songs}{chords}
-	\input{tex/chords.tex}
+	\input{tex/songsChapters/chords.tex}
 \end{songs}
 \songpos{3}
 \fi
@@ -43,7 +43,7 @@
 \newpage
 %	Songs of this chapter
 \begin{songs}{chiesa}
-	\input{tex/chiesa.tex}
+	\input{tex/songsChapters/chiesa.tex}
 \end{songs}
 
 %	New chapter
@@ -55,7 +55,7 @@
 \newpage
 %	Songs of this chapter
 \begin{songs}{jukebox}
-	\input{tex/jukebox.tex}
+	\input{tex/songsChapters/jukebox.tex}
 \end{songs}
 
 %	New chapter
@@ -67,7 +67,7 @@
 \newpage
 %	Songs of this chapter
 \begin{songs}{christmas}
-	\input{tex/christmas.tex}
+	\input{tex/songsChapters/christmas.tex}
 \end{songs}
 
 \newpage

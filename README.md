@@ -130,12 +130,12 @@ Finally you can write it.
 ```
 $ cd ./GuitarHub/src/
 $ cp templates/SongBox.tex tex/chapterName/
-$ cp templates/SongBody.tex tex/songs/
+$ cp templates/SongBody.tex tex/songsBodies/
 ```
 ##### *Renaming* the copy with the title name of the new song
 ```
 $ mv "tex/chapterName/TemplateSongBox.tex" "tex/chapterName/Title song.tex"
-$ mv "tex/songs/TemplateSongBody.tex" "tex/songs/Title song.tex"
+$ mv "tex/songsBodies/TemplateSongBody.tex" "tex/songsBodies/Title song.tex"
 ```
 ##### *Adding* the song in the chapter input file
 ```
