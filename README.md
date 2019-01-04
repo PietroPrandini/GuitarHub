@@ -110,6 +110,9 @@ Open src/tex/commons/GuitarHubBody.tex with a text editor and add it
 \songchapter{New Chapter} % full name of the new chapter
 \vspace*{\stretch{5}}
 \newpage
+% rear of the title page
+\vspace*{\fill}
+\newpage
 %	Songs of this chapter
 \begin{songs}{newChapter} % name declared in src/tex/commons/GuitarHubPreamble.tex
 	\input{tex/songsChapters/newChapter.tex} % input file .tex of the new chapter
@@ -139,7 +142,7 @@ $ mv "tex/songsBodies/TemplateSongBody.tex" "tex/songsBodies/Title song.tex"
 ```
 ##### *Adding* the song in the chapter input file
 ```
-$ echo '\input{"tex/songsChapters/chapterName/Title song.tex"}' >> tex/songsChapters/chapterName.tex
+$ echo $'\scleardpage\n\input{"tex/songsChapters/chapterName/Title song.tex"}' >> tex/songsChapters/chapterName.tex
 ```
 ##### *Start writing* the song
 *Warning: this command is an example, it isn't put the song by alphabetical order.*
@@ -181,3 +184,8 @@ $ pdflatex GuitarHubAlphabeticNoteNames.tex
 $ mv GuitarHubAlphabeticNoteNames.pdf ../GuitarHubAlphabeticNoteNames.pdf
 ```
 *Note: repeat this points for every type of the GuitarHub booklets*
+
+## A special thanks to
+* *Kevin Hamlen*, authors of the [songs package](http://songs.sourceforge.net/) and technical supporter of this project;
+* *Paweł Andrejczuk*, english supporter;
+* The other contributors.
