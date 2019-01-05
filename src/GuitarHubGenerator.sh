@@ -32,9 +32,9 @@ arara GuitarHub.tex
 mv GuitarHubAlphabeticNoteNames.pdf ../GuitarHubAlphabeticNoteNames.pdf
 mv GuitarHubSolfegeNoteNames.pdf ../GuitarHubSolfegeNoteNames.pdf
 mv GuitarHubLyrics.pdf ../GuitarHubLyrics.pdf
-mv GuitarHubAlphabeticNoteNamesBooklet.pdf ../GuitarHubAlphabeticNoteNamesBooklet.pdf
-mv GuitarHubLyricsBooklet.pdf ../GuitarHubLyricsBooklet.pdf
-mv GuitarHubSolfegeNoteNamesBooklet.pdf ../GuitarHubSolfegeNoteNamesBooklet.pdf
+mv GuitarHubAlphabeticNoteNamesBooklet.pdf ../FormattedAsBooklet/GuitarHubAlphabeticNoteNamesBooklet.pdf
+mv GuitarHubLyricsBooklet.pdf ../FormattedAsBooklet/GuitarHubLyricsBooklet.pdf
+mv GuitarHubSolfegeNoteNamesBooklet.pdf ../FormattedAsBooklet/GuitarHubSolfegeNoteNamesBooklet.pdf
 echo '
 --> pdf generated is moved to the main directory of GuitarHub
 '

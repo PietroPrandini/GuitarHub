@@ -32,9 +32,9 @@ It is highly recommended to print the content of this booklet and put it in a ri
 If you would like to have a printed version of the booklet you could:
 ### Download it
 Download the booklet format of GuitarHub:
-* [GuitarHubAlphabeticNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubAlphabeticNoteNamesBooklet.pdf)
-* [GuitarHubLyricsBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubLyricsBooklet.pdf)
-* [GuitarHubSolfegeNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNamesBooklet.pdf)
+* [GuitarHubAlphabeticNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/FormattedAsBooklet/GuitarHubAlphabeticNoteNamesBooklet.pdf)
+* [GuitarHubLyricsBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/FormattedAsBooklet/GuitarHubLyricsBooklet.pdf)
+* [GuitarHubSolfegeNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/FormattedAsBooklet/GuitarHubSolfegeNoteNamesBooklet.pdf)
 ### Print it
 Print the downloaded copy with these settings:
 ![printerSettings](src/img/forReadme/printerSettings.png)
@@ -189,4 +189,4 @@ $ mv GuitarHubAlphabeticNoteNames.pdf ../GuitarHubAlphabeticNoteNames.pdf
 ## A special thanks to
 * *Kevin Hamlen*, author of the [songs package](http://songs.sourceforge.net/) and technical supporter of this project;
 * *Paweł Andrejczuk*, english supporter;
-* The other contributors.
+* all the other contributors.
