@@ -189,5 +189,6 @@ $ mv GuitarHubAlphabeticNoteNames.pdf ../GuitarHubAlphabeticNoteNames.pdf
 ## A special thanks to
 * *Kevin Hamlen*, author of the [songs package](http://songs.sourceforge.net/) and technical supporter, he has provided the package that is used by the project and he has given fast problems' solution;
 * *Paweł Andrejczuk*, english supporter, he has improved the english text;
+* *Anna Libardi*, licence consultant, she has given some useful informations;
 * *Maria Zardini*, ecological supporter, she has recycled the tests' paper;
 * all the other contributors.
