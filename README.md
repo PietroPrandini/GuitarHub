@@ -172,7 +172,7 @@ $ pdflatex GuitarHubAlphabeticNoteNames.tex
 ```
 $ mv GuitarHubAlphabeticNoteNames.pdf ../GuitarHubAlphabeticNoteNames.pdf
 ```
-*Note: repeat these points for each of the GuitarHub booklets.*
+*Note: repeat these points for each of the GuitarHub booklets.*  
 
 ## A special thanks to
 * *Kevin Hamlen*, the author of the [Songs Package](http://songs.sourceforge.net/) and the technical supporter who provided the bundle used by the Project along with contributing to the problem-solving process;
