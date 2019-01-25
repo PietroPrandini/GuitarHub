@@ -145,7 +145,7 @@ Otherwise, if you prefer, you can generate them manually.
 $ cd /path/to/GuitarHub/src/
 $ sh GuitarHubGenerator.sh
 ```
-This command creates: the guitar chord booklet with songs in an alphabetical order; the guitar chord booklet with solfege note names; and the lyrics booklet on either single pages of the ISO A5 or in the booklet page settings ISO A4 in /path/to/GuitarHub/ .
+This command creates: the guitar chord booklet with songs in an alphabetical order; the guitar chord booklet with solfege note names; and the lyrics booklet on either single pages of the ISO A5 or in the booklet page settings ISO A4 in /path/to/GuitarHub/ .  
 Note: this script works with [arara](https://github.com/cereda/arara) and the [Songs Package](http://songs.sourceforge.net/) properly installed (pay attention to the  songidx rule, an example how it works with texlua is located in [src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml)).
 #### Generating the booklets manually, an example:
 ##### with Arara
