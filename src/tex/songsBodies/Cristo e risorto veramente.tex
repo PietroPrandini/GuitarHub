@@ -1,0 +1,101 @@
+%%% Writing chords %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Alphabetic note names:     A      B      C      D      E      F      G       %
+% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL     %
+%                                                                              %
+% Compatible notation:                                                         %
+%                                                                              %
+% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]    %
+% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]   %
+% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]   %
+% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]   %
+% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]  %
+% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]  %
+%                                                                              %
+%%% Notes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \textnote{}  % Notes for both lyric and chorded songs                        %
+% \musicnote{} % Notes visible only in chorded books                           %
+%                (not visible in lyric mode)                                   %
+%                                                                              %
+%%% Symbols %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \rep{n}                 % Repeat n times                                     %
+% \lrep ... \rrep \rep{n} % Margins of the repeat                              %
+% |                       % Measure bar                                        %
+%                                                                              %
+%%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
+% *                           % Used after \beginverse for making an           %
+%                             %   unnumbered verse                             %
+% \memorize                   % Used after \beginverse for using chords        %
+%                             %   with the symbol ^ in the next verses         %
+% \beginchorus ... \endchorus % Used for delimiters of a chorus                %
+% \ifchorded ... \fi          % Conditional sentences: only if chorded books   %
+% \iflyrics ... \fi           % Conditional sentences: only if lyrics book     %
+% \nolyrics                   % For parts with no lyrics                       %
+%                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Start of the song body
+
+%\meter{4}{4}
+
+%\ifchorded
+%	\beginverse*
+%		{\nolyrics Intro: }
+%	\endverse
+%\fi
+
+\beginchorus
+	\[D]Cristo è ri\[A]sorto vera\[D]mente, alle\[A]luia!
+	\[D]Gesù il vi\[A]vente quì con \[D]noi reste\[A]rà
+	\[D]Cristo Ge\[A]sù, \[Bm]Cristo Ge\[G]sù,
+	\[D]è il Si\[A]gnore della \[G]vi\[D]ta.
+\endchorus
+
+\beginverse\memorize
+	\[D]Morte, dov'\[G]è la tua vit\[D]toria?
+	\[D]Paura \[G]non mi puoi far \[A]più.
+	\[G]Se sulla \[A]croce io mori\[D]rò in\[A]sieme a \[Bm]Lui.
+	\[G]poi insieme a \[D]Lui risorge\[A]rò.
+\endverse
+
+\beginchorus
+	\[D]Cristo è ri\[A]sorto vera\[D]mente, alle\[A]luia!
+	\[D]Gesù il vi\[A]vente quì con \[D]noi reste\[A]rà
+	\[D]Cristo Ge\[A]sù, \[Bm]Cristo Ge\[G]sù,
+	\[D]è il Si\[A]gnore della \[G]vi\[D]ta.
+\endchorus
+
+\beginverse
+	^Tu, Signore, a^mante della ^vita,
+	^mi hai creato ^per l'eterni^tà.
+	^La vita ^mia Tu dal se^polcro ^strappe^rai,
+	^con questo mio ^corpo Ti ve^drò.
+\endverse
+
+\beginchorus
+	\[D]Cristo è ri\[A]sorto vera\[D]mente, alle\[A]luia!
+	\[D]Gesù il vi\[A]vente quì con \[D]noi reste\[A]rà
+	\[D]Cristo Ge\[A]sù, \[Bm]Cristo Ge\[G]sù,
+	\[D]è il Si\[A]gnore della \[G]vi\[D]ta.
+\endchorus
+
+\beginverse
+	^Tu mi hai do^nato la Tua ^vita,
+	io ^voglio do^nar la mia a ^Te.
+	^Fa che possa ^dire: “Cristo ^vive ^anche in ^me”
+	^e quel giorno ^io risorge^rò. \[B]
+\endverse
+
+\transpose{2}
+\beginchorus
+	\[D]Cristo è ri\[A]sorto vera\[D]mente, alle\[A]luia!
+	\[D]Gesù il vi\[A]vente quì con \[D]noi reste\[A]rà
+	\[D]Cristo Ge\[A]sù, \[Bm]Cristo Ge\[G]sù,
+	\[D]è il Si\[A]gnore della \[G]vi\[D]ta.
+\endchorus
+
+%\ifchorded
+%	\beginverse*
+%		{\nolyrics Strum: }
+%	\endverse
+%\fi
