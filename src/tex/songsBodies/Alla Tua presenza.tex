@@ -1,0 +1,66 @@
+%%% Writing chords %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Alphabetic note names:     A      B      C      D      E      F      G       %
+% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL     %
+%                                                                              %
+% Compatible notation:                                                         %
+%                                                                              %
+% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]    %
+% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]   %
+% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]   %
+% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]   %
+% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]  %
+% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]  %
+%                                                                              %
+%%% Notes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \textnote{}  % Notes for both lyric and chorded songs                        %
+% \musicnote{} % Notes visible only in chorded books                           %
+%                (not visible in lyric mode)                                   %
+%                                                                              %
+%%% Symbols %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \rep{n}                 % Repeat n times                                     %
+% \lrep ... \rrep \rep{n} % Margins of the repeat                              %
+% |                       % Measure bar                                        %
+%                                                                              %
+%%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
+% *                           % Used after \beginverse for making an           %
+%                             %   unnumbered verse                             %
+% \memorize                   % Used after \beginverse for using chords        %
+%                             %   with the symbol ^ in the next verses         %
+% \beginchorus ... \endchorus % Used for delimiters of a chorus                %
+% \ifchorded ... \fi          % Conditional sentences: only if chorded books   %
+% \iflyric ... \fi           % Conditional sentences: only if lyrics book     %
+% \nolyrics                   % For parts with no lyrics                       %
+%                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Start of the song body
+
+%\meter{4}{4}
+
+%\ifchorded
+%	\beginverse*
+%		{\nolyrics Intro: }
+%	\endverse
+%\fi
+
+\beginverse*\memorize
+	\[C]Alla Tua presenza \[Am]portaci o Signor,
+	nei Tuoi \[Dm]atri noi vogliamo dimo\[G]rar.
+	\[C]Nel Tuo Tempio intoneremo \[Am]inni a Te,
+	\[Dm]canti di lode alla Tua \[G]Maestà.
+\endverse
+
+\beginchorus
+	\[F]Il Tuo Santo \[G]Spirito ci \[Em]guidi là do\[Am]ve sei Tu,
+	\[Dm]alla Tua pre\[G]senza, Si\[C]gnore Ge\[C7]sù.
+	\[F]In eterno \[G]canteremo \[Em]gloria a Te Si\[Am]gnor,
+	\[Dm]alla Tua pre\[G]senza, \[Dm] alla Tua pre\[G]senza,
+	per \[Dm]sempre insieme a \[G]Te, Ge\[C]sù.
+\endchorus
+
+%\ifchorded
+%	\beginverse*
+%		{\nolyrics Strum: }
+%	\endverse
+%\fi
