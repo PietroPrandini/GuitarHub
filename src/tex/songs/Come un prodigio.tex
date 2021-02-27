@@ -1,0 +1,111 @@
+%%% Writing chords %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Alphabetic note names:     A      B      C      D      E      F      G       %
+% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL     %
+%                                                                              %
+% Compatible notation:                                                         %
+%                                                                              %
+% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]    %
+% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]   %
+% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]   %
+% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]   %
+% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]  %
+% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]  %
+%                                                                              %
+%%% Notes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \textnote{}  % Notes for both lyric and chorded songs                        %
+% \musicnote{} % Notes visible only in chorded books                           %
+%                (not visible in lyric mode)                                   %
+%                                                                              %
+%%% Symbols %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \rep{n}                 % Repeat n times                                     %
+% \lrep ... \rrep \rep{n} % Margins of the repeat                              %
+% |                       % Measure bar                                        %
+%                                                                              %
+%%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
+% *                           % Used after \beginverse for making an           %
+%                             %   unnumbered verse                             %
+% \memorize                   % Used after \beginverse for using chords        %
+%                             %   with the symbol ^ in the next verses         %
+% \beginchorus ... \endchorus % Used for delimiters of a chorus                %
+% \ifchorded ... \fi          % Conditional sentences: only if chorded books   %
+% \iflyric ... \fi            % Conditional sentences: only if lyrics book     %
+% \nolyrics                   % For parts with no lyrics                       %
+%                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Start of the song body
+
+%\meter{4}{4}
+
+\ifchorded
+	\beginverse*
+		{\nolyrics Intro: \[Am] \[F] \[C] \[G]}
+	\endverse
+\fi
+
+\beginverse\memorize
+Signore \[Am]tu mi scruti e co\[F]nosci
+Sai quando \[C]seggo e quando mi \[G]alzo.
+Riesci a ve\[Am]dere i miei pen\[F]sieri
+Sai quando \[C]io cammino e \[G]quando riposo
+\[B&]Ti sono note tutte le mie \[F]vie
+La mia \[C]parola non è ancora sulla lingua
+\[B&]E tu, Signore, già la co\[F]nosci tut\[G]ta
+\endverse
+
+\beginchorus
+\[Am]Sei tu che mi hai cre\[F]ato
+E mi hai tessuto nel \[C]seno di mia \[G]madre
+\[Am]Tu mi hai fatto come un pro\[F]digio
+Le tue opere \[C]sono stupende
+E per \[G]questo ti lodo
+\endchorus
+
+\ifchorded
+	\beginverse*
+		{\nolyrics Strum: \[Am] \[F] \[C] \[G]}
+	\endverse
+\fi
+
+\beginverse
+Di fronte e alle ^spalle tu mi cir^condi
+Poni su ^me la tua ^mano
+La tua sag^gezza, stupenda per ^me
+E’ troppo ^alta e io non ^la comprendo
+^Che sia in cielo o agli inferi ci ^sei
+Non si può ^mai fuggire dalla tua presenza
+^Ovunque la tua mano guide^rà la ^mia
+\endverse
+
+\beginverse
+E nel se^greto tu mi hai for^mato
+Mi hai intes^suto dalla ^terra
+Neanche le ^ossa ti eran na^scoste
+Ancora in^forme mi hanno ^visto i tuoi occhi
+^I miei giorni erano fis^sati
+Quando ^ancora non ne esisteva uno
+^E tutto quanto era scritto ^nel tuo li^bro
+\endverse
+
+\beginchorus
+\[Am]Sei tu che mi hai cre\[F]ato
+E mi hai tessuto nel \[C]seno di mia \[G]madre
+\[Am]Tu mi hai fatto come un pro\[F]digio
+Le tue opere \[C]sono stupende
+E per \[G]questo ti lodo
+\endchorus
+
+\ifchorded
+	\beginverse*
+		{\nolyrics Strum: \[F] \[Am] \[F] \[G]}
+	\endverse
+\fi
+
+\beginchorus
+\[Am]Sei tu che mi hai cre\[F]ato
+E mi hai tessuto nel \[C]seno di mia \[G]madre
+\[Am]Tu mi hai fatto come un pro\[F]digio
+Le tue opere \[C]sono stupende
+E per \[G]questo, per questo ti \[F]lodo.\[C]
+\endchorus
