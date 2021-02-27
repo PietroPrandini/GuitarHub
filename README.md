@@ -30,9 +30,9 @@ It is highly recommended to print the content of this booklet and put it in a ri
 Should you like to have a hard copy of the booklet you can:
 ### Download it
 Download the booklet:
-* [GuitarHubAlphabeticNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/FormattedAsBooklet/GuitarHubAlphabeticNoteNamesBooklet.pdf)
-* [GuitarHubLyricsBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/FormattedAsBooklet/GuitarHubLyricsBooklet.pdf)
-* [GuitarHubSolfegeNoteNamesBooklet.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/FormattedAsBooklet/GuitarHubSolfegeNoteNamesBooklet.pdf)
+* [GuitarHubAlphabeticNoteNamesToPrint.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/ToPrint/GuitarHubAlphabeticNoteNamesToPrint.pdf)
+* [GuitarHubLyricsToPrint.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/ToPrint/GuitarHubLyricsToPrint.pdf)
+* [GuitarHubSolfegeNoteNamesToPrint.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/ToPrint/GuitarHubSolfegeNoteNamesToPrint.pdf)
 ### Print it
 Print the downloaded file with these settings:
 ![printerSettings](src/img/forReadme/printerSettings.png)

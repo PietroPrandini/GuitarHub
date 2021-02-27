@@ -2,6 +2,7 @@
 
 INDEXLUAPATH=/usr/local/share/songs/
 PDFPATH=../
+PDFTOPRINTPATH=${PDFPATH}/ToPrint/
 
 isSuccess() {
 	exit_code=$1
@@ -37,6 +38,13 @@ for bookletToPrint in $(ls | grep GuitarHub | grep tex | grep ToPrint)
 do
 	echo "--> Compiling ${bookletToPrint}"
 	pdflatex ${bookletToPrint}
+	isSuccess $?
+done
+
+for pdf in $(ls | grep GuitarHub | grep ToPrint | grep pdf)
+do
+	echo "--> Moving ${pdf}"
+	mv ${pdf} ${PDFTOPRINTPATH}
 	isSuccess $?
 done
 
