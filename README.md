@@ -32,8 +32,8 @@ It is highly recommended to print the content of this booklet and put it in a ri
 * [GuitarHubSolfegeNoteNames.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNames.pdf)
 
 ## Useful links
-* [Print guide](https://github.com/PietroPrandini/GuitarHub/PRINT.md)
-* [Writer guide](https://github.com/PietroPrandini/GuitarHub/WRITE.md)
+* [Print guide](https://github.com/PietroPrandini/GuitarHub/blob/master/PRINT.md)
+* [Writer guide](https://github.com/PietroPrandini/GuitarHub/blob/master/WRITE.md)
 
 ## A special thanks to
 * *Kevin Hamlen*, the author of the [Songs Package](http://songs.sourceforge.net/) and the technical supporter who provided the bundle used by the Project along with contributing to the problem-solving process;
