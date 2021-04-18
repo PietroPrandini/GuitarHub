@@ -7,13 +7,17 @@
 \input{tex/commons/GuitarHubInfo.tex}
 
 %	Indexes
+%\ifchorded
 %\showindex[3]{\includegraphics[width=2cm]{img/chords.png}}{chords}
+%\fi
 %\showindex[3]{\includegraphics[width=2cm]{img/church.png}}{chiesa}
 %\showindex[3]{\includegraphics[width=2cm]{img/jukebox.png}}{jukebox}
 %\showindex[3]{\includegraphics[width=2cm]{img/christmas.png}}{christmas}
 
 %	Showing the lists of the songs
+\ifchorded
 {\makeatletter\def\SB@ellipspread#1#2{\begin{flushleft}- #1\par\end{flushleft}}\showindex[3]{\includegraphics[width=2cm]{img/chords.png}}{chords}}
+\fi
 {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/church.png}}{chiesa}}
 {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/jukebox.png}}{jukebox}}
 {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/christmas.png}}{christmas}}
@@ -22,7 +26,6 @@
 \vspace*{\stretch{3}}
 \songchapter{\includegraphics[width=5cm]{img/chords.png}}
 \vspace*{\stretch{5}}
-\newpage
 % rear of the title page
 \vspace*{\fill}
 \newpage
@@ -38,7 +41,6 @@
 \vspace*{\stretch{3}}
 \songchapter{\includegraphics[width=5cm]{img/church.png}}
 \vspace*{\stretch{5}}
-\newpage
 % rear of the title page
 \vspace*{\fill}
 \newpage
@@ -51,7 +53,6 @@
 \vspace*{\stretch{3}}
 \songchapter{\includegraphics[width=5cm]{img/jukebox.png}}
 \vspace*{\stretch{5}}
-\newpage
 % rear of the title page
 \vspace*{\fill}
 \newpage
@@ -64,7 +65,6 @@
 \vspace*{\stretch{3}}
 \songchapter{\includegraphics[width=5cm]{img/christmas.png}}
 \vspace*{\stretch{5}}
-\newpage
 % rear of the title page
 \vspace*{\fill}
 \newpage
