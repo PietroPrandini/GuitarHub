@@ -34,20 +34,6 @@ do
 	isSuccess $?
 done
 
-# for bookletToPrint in $(ls | grep GuitarHub | grep tex | grep ToPrint)
-# do
-# 	echo "--> Compiling ${bookletToPrint}"
-# 	pdflatex ${bookletToPrint}
-# 	isSuccess $?
-# done
-#
-# for pdf in $(ls | grep GuitarHub | grep ToPrint | grep pdf)
-# do
-# 	echo "--> Moving ${pdf}"
-# 	mv ${pdf} ${PDFTOPRINTPATH}
-# 	isSuccess $?
-# done
-#
 for pdf in $(ls | grep GuitarHub | grep pdf)
 do
 	echo "--> Moving ${pdf}"
