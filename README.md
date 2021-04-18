@@ -35,11 +35,11 @@ Print the downloaded file with these settings:
 ![printerSettings](src/img/forReadme/printerSettings.png)
 
 ## Make it
-### Cut each page into two equal parts like this:
+### Cut each page into two equal parts
 ![divide](src/img/forReadme/divide.jpg)
-### Make holes like these on every sheet:
+### Make holes on every sheet
 ![holes](src/img/forReadme/holes.jpg)
-###Assemble them into the GuitarHub booklet.
+### Assemble them into a ring notebook
 ![assemble](src/img/forReadme/assemble.jpg)
 
 ## Write it
