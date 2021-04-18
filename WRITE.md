@@ -10,10 +10,6 @@ The GuitarHub booklets are written in [LaTex](https://www.latex-project.org/) wi
 ## The Songs Package
 [Guide to installing the Songs Package](http://songs.sourceforge.net/downloads.html)
 
-## Arara
-[Arara](https://github.com/cereda/arara) is useful to easily generate the booklets and especially the indexes.
-Should you wish to use Arara you need to have properly installed the Songs Package as well as pay close attention to the rule of songidx (an example of how this rule works with texlua is presented in [src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml).
-
 ## A text editor or an IDE specific for LaTex documents
 A [text editor](https://en.wikipedia.org/wiki/Text_editor) or an IDE specific for LaTex documents are is useful in editing the songs and the code of this book.
 There are many text editors ([Atom](https://atom.io/), [Vim](https://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/)) and many IDE for LaTex ([Texmaker](http://www.xm1math.net/texmaker/), [TeXstudio](https://sourceforge.net/projects/texstudio/), [TeXworks](https://www.tug.org/texworks/)).  
@@ -44,17 +40,14 @@ Open src/tex/commons/GuitarHubBody.tex with a text editor and add it
 ```
 \begindocument
 %...
-%	New chapter
-%	Start on a right page and the title is in a blank page
-\checkodd
+%	Chapter first page
 \vspace*{\stretch{3}}
 \songchapter{New Chapter} % full name of the new chapter
 \vspace*{\stretch{5}}
-\newpage
-% rear of the title page
 \vspace*{\fill}
 \newpage
-%	Songs of this chapter
+
+%	Songs of the chapter
 \begin{songs}{newChapter} % name declared in src/tex/commons/GuitarHubPreamble.tex
 	\input{tex/chapters/newChapter.tex} % input file .tex of the new chapter
 \end{songs}
@@ -78,10 +71,12 @@ $ mv "tex/songs/TemplateSongBody.tex" "tex/songs/Title song.tex"
 ```
 ### *Adding* the song in the chapter input file
 ```
-$ echo $'\scleardpage\n\input{"tex/chapters/chapterName/Title song.tex"}' >> tex/chapters/chapterName.tex
+$ echo $'\input{"tex/chapters/chapterName/Title song.tex"}\sclearpage' >> tex/chapters/chapterName.tex
 ```
-### *Start writing* the song
 *Warning: this command is an example, it does not put the song in an alphabetical order.*
+
+### *Start writing* the song
+You can find some other songs in the [song project directory]{https://github.com/PietroPrandini/GuitarHub/tree/master/src/tex/songs} and a [useful cheat sheet]{https://github.com/PietroPrandini/GuitarHub/blob/master/CHEATSHEET.md} to support your writing experience.  
 
 ## Generating the booklets
 As you add some songs to GuitarHub platform, you would be able to generate the booklets. With the script src/GuitarHubGenerator.sh you can generate every booklet easily, only with a usage of a command.   
@@ -91,13 +86,9 @@ Otherwise, if you prefer, you can generate them manually.
 $ cd /path/to/GuitarHub/src/
 $ sh GuitarHubGenerator.sh
 ```
-This command creates: the guitar chord booklet with songs in an alphabetical order; the guitar chord booklet with solfege note names; and the lyrics booklet on either single pages of the ISO A5 or in the booklet page settings ISO A4 in /path/to/GuitarHub/ .  
-Note: this script works with [arara](https://github.com/cereda/arara) and the [Songs Package](http://songs.sourceforge.net/) properly installed (pay attention to the  songidx rule, an example how it works with texlua is located in [src/songidx.yaml](https://github.com/PietroPrandini/GuitarHub/blob/master/src/songidx.yaml)).
+This command creates: the guitar chord booklet with songs in an alphabetical order, the guitar chord booklet with solfege note names and the lyrics booklet /path/to/GuitarHub/ .  
+Note: this script works with a GNU/Linux environment.
 ## Generating the booklets manually, an example:
-### with Arara
-You can find the commands in src/GuitarHubGenerator.sh.
-
-### without Arara
 * Open a terminal and change the directory
 ```
 $ cd /path/to/GuitarHub/src/
@@ -119,10 +110,3 @@ $ pdflatex GuitarHubAlphabeticNoteNames.tex
 $ mv GuitarHubAlphabeticNoteNames.pdf ../GuitarHubAlphabeticNoteNames.pdf
 ```
 *Note: repeat these points for each of the GuitarHub booklets.*  
-
-# A special thanks to
-* *Kevin Hamlen*, the author of the [Songs Package](http://songs.sourceforge.net/) and the technical supporter who provided the bundle used by the Project along with contributing to the problem-solving process;
-* *Paweł Andrejczuk*, the linguistic expert who contributed to enhancing the English version of the Project;
-* *Anna Libardi*, the license consultant who provided useful data and information;
-* *Maria Zardini*, the environmental supporter who contributed to the ecological aspect of the Project;
-* all the other contributors.

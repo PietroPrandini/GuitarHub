@@ -16,7 +16,6 @@ It is highly recommended to print the content of this booklet and put it in a ri
 ## Features
 * the booklet is available to be printed at once, including all the songs till date and then you can expand it by adding the newly released songs without the necessity to reprint the whole booklet;
 * the format of a single page is ISO A5 which supports the idea of  portability;
-* each song starts at a page with an even number to support the updating process;
 * creating songs with musical note names in both absolute and solfege systems;
 
 ![alphabetic](src/img/forReadme/alphabetic.png) ![solfege](src/img/forReadme/solfege.png)
@@ -26,13 +25,24 @@ It is highly recommended to print the content of this booklet and put it in a ri
 * support for creating songs;
 * support for generating the booklets.
 
-## Download it!
+## Download it
 * [GuitarHubAlphabeticNoteNames.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubAlphabeticNoteNames.pdf)
 * [GuitarHubLyrics.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubLyrics.pdf)
 * [GuitarHubSolfegeNoteNames.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNames.pdf)
 
-## Useful links
-* [Print guide](https://github.com/PietroPrandini/GuitarHub/blob/master/PRINT.md)
+## Print it
+Print the downloaded file with these settings:
+![printerSettings](src/img/forReadme/printerSettings.png)
+
+## Make it
+##### Cut each page into two equal parts like this:
+![divide](src/img/forReadme/divide.jpg)
+###### Make holes like these on every sheet:
+![holes](src/img/forReadme/holes.jpg)
+##### Assemble them into the GuitarHub booklet.
+![assemble](src/img/forReadme/assemble.jpg)
+
+## Write it
 * [Writer guide](https://github.com/PietroPrandini/GuitarHub/blob/master/WRITE.md)
 
 ## A special thanks to
