@@ -1,6 +1,6 @@
-\documentclass[openright]{book}
+\documentclass[8pt,oneside]{extbook}
 %	Preamble
-\usepackage[a5paper,left=15mm,right=15mm,bottom=15mm,top=15mm]{geometry}
+\usepackage[a5paper,left=15mm,right=15mm,bottom=10mm,top=15mm]{geometry}
 \usepackage[utf8]{inputenc} % For special sybols
 \usepackage{graphicx} % For pictures
 \usepackage{wrapfig} % For wrapping pictures
@@ -13,6 +13,7 @@
 \usepackage{filemod} % For parsing the date of the files
 
 \renewcommand{\familydefault}{\sfdefault} % default font
+
 
 %	Header and footer
 \usepackage{fancyhdr}
@@ -29,25 +30,3 @@
 
 \usepackage[generate,ps2eps]{abc}
 
-%	Formatting: if the page is even, add a black page before.
-%	(Useful to format the start of a chapter)
-\newcommand{\checkodd}{
-	\ifthenelse{\isodd{\thepage}}{
-		%if page is odd: ok
-	}{
-		%else: page is even: add a page before
-		\vspace*{\fill}
-		\clearpage
-	}
-}
-%	Formatting: if the page is odd, add a black page before.
-%	(Useful to format the end of the book)
-\newcommand{\checkeven}{
-	\ifthenelse{\isodd{\thepage}}{
-		%page is odd: add a page before
-		\vspace*{\fill}
-		\clearpage
-	}{
-		%else: page is even: ok
-	}
-}

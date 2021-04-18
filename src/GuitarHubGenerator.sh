@@ -1,8 +1,8 @@
 #!/bin/bash
 
-INDEXLUAPATH=/usr/local/share/songs/
+INDEXLUAPATH=/opt/songs/share/songs/
 PDFPATH=../
-PDFTOPRINTPATH=${PDFPATH}/ToPrint/
+#PDFTOPRINTPATH=${PDFPATH}/ToPrint/
 
 isSuccess() {
 	exit_code=$1
@@ -34,20 +34,20 @@ do
 	isSuccess $?
 done
 
-for bookletToPrint in $(ls | grep GuitarHub | grep tex | grep ToPrint)
-do
-	echo "--> Compiling ${bookletToPrint}"
-	pdflatex ${bookletToPrint}
-	isSuccess $?
-done
-
-for pdf in $(ls | grep GuitarHub | grep ToPrint | grep pdf)
-do
-	echo "--> Moving ${pdf}"
-	mv ${pdf} ${PDFTOPRINTPATH}
-	isSuccess $?
-done
-
+# for bookletToPrint in $(ls | grep GuitarHub | grep tex | grep ToPrint)
+# do
+# 	echo "--> Compiling ${bookletToPrint}"
+# 	pdflatex ${bookletToPrint}
+# 	isSuccess $?
+# done
+#
+# for pdf in $(ls | grep GuitarHub | grep ToPrint | grep pdf)
+# do
+# 	echo "--> Moving ${pdf}"
+# 	mv ${pdf} ${PDFTOPRINTPATH}
+# 	isSuccess $?
+# done
+#
 for pdf in $(ls | grep GuitarHub | grep pdf)
 do
 	echo "--> Moving ${pdf}"

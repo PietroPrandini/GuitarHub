@@ -7,23 +7,20 @@
 \input{tex/commons/GuitarHubInfo.tex}
 
 %	Indexes
-\checkodd
-%\showindex[2]{Chords}{chords}
-%\showindex[2]{Canti per la Liturgia, per le Celebrazioni e per la Preghiera}{chiesa}
-%\showindex[2]{Jukebox}{jukebox}
-%\showindex[2]{Christmas}{christmas}
+%\showindex[3]{\includegraphics[width=2cm]{img/chords.png}}{chords}
+%\showindex[3]{\includegraphics[width=2cm]{img/church.png}}{chiesa}
+%\showindex[3]{\includegraphics[width=2cm]{img/jukebox.png}}{jukebox}
+%\showindex[3]{\includegraphics[width=2cm]{img/christmas.png}}{christmas}
 
 %	Showing the lists of the songs
-%{\makeatletter\def\SB@ellipspread#1#2{\begin{flushleft}- #1\par\end{flushleft}}\showindex[2]{Chords}{chords}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Canti per la Liturgia, per le Celebrazioni e per la Preghiera\\\tiny{ \filemodprintdate{"tex/chapters/chiesa.tex"} }}{chiesa}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Jukebox\\\tiny{ \filemodprintdate{"tex/chapters/jukebox.tex"} }}{jukebox}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[2]{Christmas\\\tiny{ \filemodprintdate{"tex/chapters/christmas.tex"} }}{christmas}}
+{\makeatletter\def\SB@ellipspread#1#2{\begin{flushleft}- #1\par\end{flushleft}}\showindex[3]{\includegraphics[width=2cm]{img/chords.png}}{chords}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/church.png}}{chiesa}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/jukebox.png}}{jukebox}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/christmas.png}}{christmas}}
 \ifchorded
 %	New chapter
-%	Start on a right page and the title is in a blank page
-\checkodd
 \vspace*{\stretch{3}}
-\songchapter{Chords}
+\songchapter{\includegraphics[width=5cm]{img/chords.png}}
 \vspace*{\stretch{5}}
 \newpage
 % rear of the title page
@@ -38,10 +35,8 @@
 \fi
 
 %	New chapter
-%	Start on a right page and the title is in a blank page
-\checkodd
 \vspace*{\stretch{3}}
-\songchapter{Canti per la Liturgia, per le Celebrazioni e per la Preghiera}
+\songchapter{\includegraphics[width=5cm]{img/church.png}}
 \vspace*{\stretch{5}}
 \newpage
 % rear of the title page
@@ -53,10 +48,8 @@
 \end{songs}
 
 %	New chapter
-%	Start on a right page and the title is in a blank page
-\checkodd
 \vspace*{\stretch{3}}
-\songchapter{Jukebox}
+\songchapter{\includegraphics[width=5cm]{img/jukebox.png}}
 \vspace*{\stretch{5}}
 \newpage
 % rear of the title page
@@ -68,10 +61,8 @@
 \end{songs}
 
 %	New chapter
-%	Start on a right page and the title is in a blank page
-\checkodd
 \vspace*{\stretch{3}}
-\songchapter{Christmas}
+\songchapter{\includegraphics[width=5cm]{img/christmas.png}}
 \vspace*{\stretch{5}}
 \newpage
 % rear of the title page
