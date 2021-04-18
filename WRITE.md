@@ -76,7 +76,7 @@ $ echo $'\input{"tex/chapters/chapterName/Title song.tex"}\sclearpage' >> tex/ch
 *Warning: this command is an example, it does not put the song in an alphabetical order.*
 
 ### *Start writing* the song
-You can find some other songs in the [song project directory]{https://github.com/PietroPrandini/GuitarHub/tree/master/src/tex/songs} and a [useful cheat sheet]{https://github.com/PietroPrandini/GuitarHub/blob/master/CHEATSHEET.md} to support your writing experience.  
+You can find some other songs in the [song project directory](https://github.com/PietroPrandini/GuitarHub/tree/master/src/tex/songs) and a [useful cheat sheet](https://github.com/PietroPrandini/GuitarHub/blob/master/CHEATSHEET.md) to support your writing experience.  
 
 ## Generating the booklets
 As you add some songs to GuitarHub platform, you would be able to generate the booklets. With the script src/GuitarHubGenerator.sh you can generate every booklet easily, only with a usage of a command.   

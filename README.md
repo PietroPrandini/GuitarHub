@@ -35,15 +35,17 @@ Print the downloaded file with these settings:
 ![printerSettings](src/img/forReadme/printerSettings.png)
 
 ## Make it
-##### Cut each page into two equal parts like this:
+### Cut each page into two equal parts like this:
 ![divide](src/img/forReadme/divide.jpg)
-###### Make holes like these on every sheet:
+### Make holes like these on every sheet:
 ![holes](src/img/forReadme/holes.jpg)
-##### Assemble them into the GuitarHub booklet.
+###Assemble them into the GuitarHub booklet.
 ![assemble](src/img/forReadme/assemble.jpg)
 
 ## Write it
 * [Writer guide](https://github.com/PietroPrandini/GuitarHub/blob/master/WRITE.md)
+* [Cheat sheet](https://github.com/PietroPrandini/GuitarHub/blob/master/CHEATSHEET.md)
+* [Templates](https://github.com/PietroPrandini/GuitarHub/tree/master/src/tex/songs)
 
 ## A special thanks to
 * *Kevin Hamlen*, the author of the [Songs Package](http://songs.sourceforge.net/) and the technical supporter who provided the bundle used by the Project along with contributing to the problem-solving process;
