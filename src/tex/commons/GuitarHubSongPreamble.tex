@@ -34,6 +34,9 @@
 %	The width of the shaded boxes that begin each alphabetic block of a large title index
 %\setlength{\idxheadwidth}{1cm}
 
+\renewcommand{\songtarget}[2]{\pdfbookmark[#1]{\songtitle}{#2}}
+\renewcommand{\songlink}[2]{\hyperlink{#1}{\songtitle}}
+
 %\sepindexesfalse
 %\sepindexestrue
 %\songtarget
