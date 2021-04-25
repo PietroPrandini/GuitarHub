@@ -32,13 +32,10 @@
 %\showindex[3]{\includegraphics[width=2cm]{img/christmas.png}}{christmas}
 
 %	Showing the lists of the songs
-\ifchorded
 {\makeatletter\def\SB@ellipspread#1#2{- #1#2\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/chords.png}}{chords}}
-\fi
 {\makeatletter\def\SB@ellipspread#1#2{- #1#2\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/church.png}}{chiesa}}
 {\makeatletter\def\SB@ellipspread#1#2{- #1#2\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/jukebox.png}}{jukebox}}
 {\makeatletter\def\SB@ellipspread#1#2{- #1#2\hspace*{\fill}\par}\showindex[3]{\includegraphics[width=2cm]{img/christmas.png}}{christmas}}
-\ifchorded
 %	New chapter
 \vspace*{\stretch{3}}
 \songchapter{\includegraphics[width=5cm]{img/chords.png}}
@@ -52,7 +49,6 @@
 	\input{tex/chapters/chords.tex}
 \end{songs}
 \songpos{3}
-\fi
 
 %	New chapter
 \vspace*{\stretch{3}}
