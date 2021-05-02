@@ -45,7 +45,7 @@ Print the downloaded file with these settings:
 ## Write it
 * [Writer guide](https://github.com/PietroPrandini/GuitarHub/blob/master/WRITE.md)
 * [Cheat sheet](https://github.com/PietroPrandini/GuitarHub/blob/master/CHEATSHEET.md)
-* [Templates](https://github.com/PietroPrandini/GuitarHub/tree/master/src/tex/songs)
+* [Templates](https://github.com/PietroPrandini/GuitarHub/tree/master/src/tex/templates)
 
 ## A special thanks to
 * *Kevin Hamlen*, the author of the [Songs Package](http://songs.sourceforge.net/) and the technical supporter who provided the bundle used by the Project along with contributing to the problem-solving process;
