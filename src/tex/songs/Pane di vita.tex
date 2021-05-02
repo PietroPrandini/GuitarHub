@@ -15,96 +15,55 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-%%% Writing chords %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Alphabetic note names:     A      B      C      D      E      F      G       %
-% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL     %
-%                                                                              %
-% Compatible notation:                                                         %
-%                                                                              %
-% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]    %
-% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]   %
-% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]   %
-% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]   %
-% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]  %
-% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]  %
-%                                                                              %
-%%% Notes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \textnote{}  % Notes for both lyric and chorded songs                        %
-% \musicnote{} % Notes visible only in chorded books                           %
-%                (not visible in lyric mode)                                   %
-%                                                                              %
-%%% Symbols %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \rep{n}                 % Repeat n times                                     %
-% \lrep ... \rrep \rep{n} % Margins of the repeat                              %
-% |                       % Measure bar                                        %
-%                                                                              %
-%%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
-% *                           % Used after \beginverse for making an           %
-%                             %   unnumbered verse                             %
-% \memorize                   % Used after \beginverse for using chords        %
-%                             %   with the symbol ^ in the next verses         %
-% \beginchorus ... \endchorus % Used for delimiters of a chorus                %
-% \ifchorded ... \fi          % Conditional sentences: only if chorded books   %
-% \iflyric ... \fi           % Conditional sentences: only if lyrics book     %
-% \nolyrics                   % For parts with no lyrics                       %
-%                                                                              %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Start of the song body
-
 \meter{4}{4}
 
 \ifchorded
-	\beginverse*
-		{\nolyrics Intro: |        | \[C] \[D] | \[C] \[C] | \[C] \[D] | \[C] \[C] |
-		| \[C] \[D] | \[G] \[C] | \[Am] \[Am] | \[G4] \[G] |}
-	\endverse
+
+\beginverse*
+{\nolyrics Intro: |        | \[C] \[D] | \[C] \[C] | \[C] \[D] | \[C] \[C] |
+| \[C] \[D] | \[G] \[C] | \[Am] \[Am] | \[G4] \[G] |}
+\endverse
+
 \fi
 
 \beginverse\memorize
-	\[G]Pane di vita \[C]sei,
-	spez\[G]zato per tutti \[C]noi,
-	chi ne \[C]man\[D]gia per \[G]sempre in \[C]Te vi\[D4]vrà. \[D]
-	Ve\[G]niamo al Tuo santo al\[C]tare,
-	\[G]mensa del Tuo a\[C]more,
-	come \[C]pa\[D]ne \[G]vieni in \[C]mezzo a \[D4]noi. \[D]
+\[G]Pane di vita \[C]sei,
+spez\[G]zato per tutti \[C]noi,
+chi ne \[C]man\[D]gia per \[G]sempre in \[C]Te vi\[D4]vrà. \[D]
+Ve\[G]niamo al Tuo santo al\[C]tare,
+\[G]mensa del Tuo a\[C]more,
+come \[C]pa\[D]ne \[G]vieni in \[C]mezzo a \[D4]noi. \[D]
 \endverse
 
 \beginchorus
-	Il Tuo \[G]corpo ci sazie\[C]rà,
-	il Tuo \[G]sangue ci salve\[C]rà,
-	\[A7]perché Si\[G]gnor, Tu sei \[B]morto per a\[Em]more
-	e ti \[A7]offri \[Am]og\[D]gi \[C]per \[D]noi.
-	Il Tuo \[G]corpo ci sazie\[C]rà,
-	il Tuo \[Em]sangue ci salve\[C]rà,
-	\[A7]perché Si\[G]gnor, Tu sei \[B]morto per a|\[Em]more
-	e ti \[A7]offri | \[Am]og\[D]gi per | \[C]noi. \[D] | \[G] \[C] | \[Am] | \[G] | 
+Il Tuo \[G]corpo ci sazie\[C]rà,
+il Tuo \[G]sangue ci salve\[C]rà,
+\[A7]perché Si\[G]gnor, Tu sei \[B]morto per a\[Em]more
+e ti \[A7]offri \[Am]og\[D]gi \[C]per \[D]noi.
+Il Tuo \[G]corpo ci sazie\[C]rà,
+il Tuo \[Em]sangue ci salve\[C]rà,
+\[A7]perché Si\[G]gnor, Tu sei \[B]morto per a|\[Em]more
+e ti \[A7]offri | \[Am]og\[D]gi per | \[C]noi. \[D] | \[G] \[C] | \[Am] | \[G] | 
 \endchorus
 
 \beginverse
-	^Fonte di vita ^sei,
-	^immensa cari^tà,
-	il Tuo ^san^gue ci ^dona l'e^terni^tà. ^
-	Ve^niamo al Tuo santo al^tare,
-	^mensa del Tuo a^more,
-	come ^vi^no ^vieni in ^mezzo a ^noi. ^
+^Fonte di vita ^sei,
+^immensa cari^tà,
+il Tuo ^san^gue ci ^dona l'e^terni^tà. ^
+Ve^niamo al Tuo santo al^tare,
+^mensa del Tuo a^more,
+come ^vi^no ^vieni in ^mezzo a ^noi. ^
 \endverse
 
 \beginchorus
-	Il Tuo \[G]corpo ci sazie\[C]rà,
-	il Tuo \[G]sangue ci salve\[C]rà,
-	\[A7]perché Si\[G]gnor, Tu sei \[B]morto per a\[Em]more
-	e ti \[A7]offri \[Am]og\[D]gi \[C]per \[D]noi.
-	Il Tuo \[G]corpo ci sazie\[C]rà,
-	il Tuo \[Em]sangue ci salve\[C]rà,
-	\[A7]perché Si\[G]gnor, Tu sei \[B]morto per a|\[Em]more
-	e ti \[A7]offri | \[Am]og\[D]gi per | \[C]noi. \[D] | \[G] \[C] |
-	|\[C] E ti offri | \[Am]oggi per | \[G]noi. | 
+Il Tuo \[G]corpo ci sazie\[C]rà,
+il Tuo \[G]sangue ci salve\[C]rà,
+\[A7]perché Si\[G]gnor, Tu sei \[B]morto per a\[Em]more
+e ti \[A7]offri \[Am]og\[D]gi \[C]per \[D]noi.
+Il Tuo \[G]corpo ci sazie\[C]rà,
+il Tuo \[Em]sangue ci salve\[C]rà,
+\[A7]perché Si\[G]gnor, Tu sei \[B]morto per a|\[Em]more
+e ti \[A7]offri | \[Am]og\[D]gi per | \[C]noi. \[D] | \[G] \[C] |
+|\[C] E ti offri | \[Am]oggi per | \[G]noi. | 
 \endchorus
 
-%\ifchorded
-%	\beginverse*
-%		{\nolyrics Strum: }
-%	\endverse
-%\fi

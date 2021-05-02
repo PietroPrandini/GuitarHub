@@ -15,50 +15,12 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-%%% Writing chords %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Alphabetic note names:     A      B      C      D      E      F      G       %
-% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL     %
-%                                                                              %
-% Compatible notation:                                                         %
-%                                                                              %
-% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]    %
-% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]   %
-% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]   %
-% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]   %
-% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]  %
-% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]  %
-%                                                                              %
-%%% Notes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \textnote{}  % Notes for both lyric and chorded songs                        %
-% \musicnote{} % Notes visible only in chorded books                           %
-%                (not visible in lyric mode)                                   %
-%                                                                              %
-%%% Symbols %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \rep{n}                 % Repeat n times                                     %
-% \lrep ... \rrep \rep{n} % Margins of the repeat                              %
-% |                       % Measure bar                                        %
-%                                                                              %
-%%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
-% *                           % Used after \beginverse for making an           %
-%                             %   unnumbered verse                             %
-% \memorize                   % Used after \beginverse for using chords        %
-%                             %   with the symbol ^ in the next verses         %
-% \beginchorus ... \endchorus % Used for delimiters of a chorus                %
-% \ifchorded ... \fi          % Conditional sentences: only if chorded books   %
-% \iflyric ... \fi            % Conditional sentences: only if lyrics book     %
-% \nolyrics                   % For parts with no lyrics                       %
-%                                                                              %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Start of the song body
-
-%\meter{4}{4}
-
 \ifchorded
-	\beginverse*
-		{\nolyrics Intro: \[C#m] \[A] \[E] \[B]}
-	\endverse
+
+\beginverse*
+{\nolyrics Intro: \[C#m] \[A] \[E] \[B]}
+\endverse
+
 \fi
 
 \beginverse\memorize
@@ -67,15 +29,14 @@ Tu vinci per \[E]me le mie bat\[B]taglie
 \[C#m] Proprio quando sono qui con \[A]te
 Tu vinci per \[E]me le mie infermi\[B]tà
 \endverse
+
 \beginchorus
 \[A] In te, Dio io trovo la forza
 \[B] Per non gettare la spugna
 \[C#m] Perché Cristo ha do\[B]nato il suo sangue
-
 \[A] In te, Dio io trovo la forza
 \[B] Per non gettare la spugna
 \[C#m] Perché Cristo è in \[B]me
-
 Tu sei la For\[E]za nella debo\[B]lezza
 Sei la spe\[C#m]ranza del cuore \[A]mio
 Tu sei la cer\[E]tezza in un mondo che è \[B]senza
@@ -83,9 +44,11 @@ Tu sei il mio \[C#m]Dio, non \[B]dubi\[A]to
 \endchorus
 
 \ifchorded
-	\beginverse*
-		{\nolyrics Strum: \[E] \[B] \[C#m] \[A]}
-	\endverse
+
+\beginverse*
+{\nolyrics Strum: \[E] \[B] \[C#m] \[A]}
+\endverse
+
 \fi
 
 \beginverse
@@ -96,9 +59,11 @@ Tu vinci per ^me le mie infermi^tà
 \endverse
 
 \ifchorded
-	\beginverse*
-		{\nolyrics Strum: \[E] \[B] \[C#m] \[A]} \rep{2}
-	\endverse
+
+\beginverse*
+{\nolyrics Strum: \[E] \[B] \[C#m] \[A]} \rep{2}
+\endverse
+
 \fi
 
 \beginverse
@@ -120,18 +85,19 @@ Io \[A]vincerò comun\[B]que
 Tu sei la For\[E]za nella debo\[B]lezza
 Sei la spe\[C#m]ranza del cuore \[A]mio
 \[A]Del cuore mio
-
 Tu sei la For\[E]za nella debo\[B]lezza
 Sei la spe\[C#m]ranza del cuore \[A]mio
 Tu sei la cer\[E]tezza in un mondo che è \[B]senza
 Tu sei il mio \[C#m]Dio, non \[B]dubi\[A]to
-
 Tu sei il mio \[E]Dio
 Non \[B]dubi\[A]to
 \endchorus
 
 \ifchorded
-	\beginverse*
-		{\nolyrics Strum: \[C#m] \[A] \[E] \[B]}
-	\endverse
+
+\beginverse*
+{\nolyrics Strum: \[C#m] \[A] \[E] \[B]}
+\endverse
+
 \fi
+

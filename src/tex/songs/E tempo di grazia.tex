@@ -15,104 +15,59 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-%%% Writing chords %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Alphabetic note names:     A      B      C      D      E      F      G       %
-% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL     %
-%                                                                              %
-% Compatible notation:                                                         %
-%                                                                              %
-% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]    %
-% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]   %
-% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]   %
-% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]   %
-% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]  %
-% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]  %
-%                                                                              %
-%%% Notes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \textnote{}  % Notes for both lyric and chorded songs                        %
-% \musicnote{} % Notes visible only in chorded books                           %
-%                (not visible in lyric mode)                                   %
-%                                                                              %
-%%% Symbols %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \rep{n}                 % Repeat n times                                     %
-% \lrep ... \rrep \rep{n} % Margins of the repeat                              %
-% |                       % Measure bar                                        %
-%                                                                              %
-%%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
-% *                           % Used after \beginverse for making an           %
-%                             %   unnumbered verse                             %
-% \memorize                   % Used after \beginverse for using chords        %
-%                             %   with the symbol ^ in the next verses         %
-% \beginchorus ... \endchorus % Used for delimiters of a chorus                %
-% \ifchorded ... \fi          % Conditional sentences: only if chorded books   %
-% \iflyrics ... \fi           % Conditional sentences: only if lyrics book     %
-% \nolyrics                   % For parts with no lyrics                       %
-%                                                                              %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Start of the song body
-
 \meter{4}{4}
 
 \ifchorded
-	\beginverse*
-		{\nolyrics Intro: | \[G] \[Am] | \[G] \[C] \[D] | \[G] \[Am] | \[G] \[C] \[D] | }
-	\endverse
+
+\beginverse*
+{\nolyrics Intro: | \[G] \[Am] | \[G] \[C] \[D] | \[G] \[Am] | \[G] \[C] \[D] | }
+\endverse
+
 \fi
 
 \beginverse\memorize
-	%verse
-	\[G]Siamo Chiesa, \[Am]popolo di \[G]Dio, \[C] \[D]
-	\[G]nel deserto \[Am]dell’umani\[D]tà;
-	\[Am]anche nelle tenebre \[G]dell’infedel\[Em]tà,      
-	\[Am]brilla la sua luce in mezzo a \[D]noi.
-	\[G]Nonostante \[Am]le malvagi\[G]tà, \[C] \[D]
-	\[G]le menzogne e \[Am]le ipocri\[D]sie,
-	\[Am]Dio ci offre ancora \[G]l’opportunità
-	\[Am]di tornare a vivere con \[D]Lui.
+\[G]Siamo Chiesa, \[Am]popolo di \[G]Dio, \[C] \[D]
+\[G]nel deserto \[Am]dell’umani\[D]tà;
+\[Am]anche nelle tenebre \[G]dell’infedel\[Em]tà,      
+\[Am]brilla la sua luce in mezzo a \[D]noi.
+\[G]Nonostante \[Am]le malvagi\[G]tà, \[C] \[D]
+\[G]le menzogne e \[Am]le ipocri\[D]sie,
+\[Am]Dio ci offre ancora \[G]l’opportunità
+\[Am]di tornare a vivere con \[D]Lui.
 \endverse
 
 \beginchorus
-	%chorus
-	È \[G]tempo di \[D]grazia per \[C]noi,
-	è \[G]tempo di \[D]tornare a \[C]Dio.
-	È \[Am]tempo di \[G]credere \[B]nella vita \[Em]che \[D]
-	\[C]nasce dall’incontro con Ge\[D]sù.
-	È \[G]tempo di \[D]grazia per \[C]noi,
-	è \[G]tempo di \[D]tornare a \[C]Dio,
-	\[Am]di ridare al\[G]l’anima \[B]la speranza \[Em]che \[D]
-	\[C]c’è salvezza \[D]per l’umani\[G]tà. \[C] \[D]
+È \[G]tempo di \[D]grazia per \[C]noi,
+è \[G]tempo di \[D]tornare a \[C]Dio.
+È \[Am]tempo di \[G]credere \[B]nella vita \[Em]che \[D]
+\[C]nasce dall’incontro con Ge\[D]sù.
+È \[G]tempo di \[D]grazia per \[C]noi,
+è \[G]tempo di \[D]tornare a \[C]Dio,
+\[Am]di ridare al\[G]l’anima \[B]la speranza \[Em]che \[D]
+\[C]c’è salvezza \[D]per l’umani\[G]tà. \[C] \[D]
 \endchorus
 
-%\ifchorded
-%	\beginverse*
-%		{\nolyrics Strum: }
-%	\endverse
-%\fi
-
 \beginverse
-	^Questo è il tempo ^della liber^tà, ^ ^
-	^dal peccato e ^dalla schiavi^tù;
-	^tempo di riprenderci la ^nostra digni^tà,
-	^di creatura, a immagine di ^Dio.
-	^Oggi, come ^ieri con Zac^cheo, ^ ^
-	^Dio si siede a ^tavola con ^noi,
-	^e ci offre ancora ^l’opportunità
-	^di tornare a vivere con ^Lui.
+^Questo è il tempo ^della liber^tà, ^ ^
+^dal peccato e ^dalla schiavi^tù;
+^tempo di riprenderci la ^nostra digni^tà,
+^di creatura, a immagine di ^Dio.
+^Oggi, come ^ieri con Zac^cheo, ^ ^
+^Dio si siede a ^tavola con ^noi,
+^e ci offre ancora ^l’opportunità
+^di tornare a vivere con ^Lui.
 \endverse
 
 \beginchorus
-	%chorus
-	È \[G]tempo di \[D]grazia per \[C]noi,
-	è \[G]tempo di \[D]tornare a \[C]Dio.
-	È \[Am]tempo di \[G]credere \[B]nella vita \[Em]che \[D]
-	\[C]nasce dall’incontro con Ge\[D]sù.
-	È \[G]tempo di \[D]grazia per \[C]noi,
-	è \[G]tempo di \[D]tornare a \[C]Dio,
-	\[Am]di ridare al\[G]l’anima \[B]la speranza \[Em]che \[D]
-	\[C]c’è salvezza \[D]per l’umani\[G]tà. \[Bm]
-	\[C]c’è salvezza \[D]per l’umani\[G]tà. \[Bm]
-	\[C]c’è salvezza \[D]per l’umani\[G]tà.
+È \[G]tempo di \[D]grazia per \[C]noi,
+è \[G]tempo di \[D]tornare a \[C]Dio.
+È \[Am]tempo di \[G]credere \[B]nella vita \[Em]che \[D]
+\[C]nasce dall’incontro con Ge\[D]sù.
+È \[G]tempo di \[D]grazia per \[C]noi,
+è \[G]tempo di \[D]tornare a \[C]Dio,
+\[Am]di ridare al\[G]l’anima \[B]la speranza \[Em]che \[D]
+\[C]c’è salvezza \[D]per l’umani\[G]tà. \[Bm]
+\[C]c’è salvezza \[D]per l’umani\[G]tà. \[Bm]
+\[C]c’è salvezza \[D]per l’umani\[G]tà.
 \endchorus
 

@@ -17,92 +17,74 @@
 
 \meter{4}{4}
 
-	\ifchorded
-	\beginverse* % * not count the verse
-		{\nolyrics Intro: | \[G] \[D] | \[Em] \[G] | \[C] \[G] | \[D4] \[D] |}
-	\endverse
-	\fi
+\ifchorded
 
-	\beginverse\memorize % \memorize is used to set the chords you would like to use with ^ in the next verses
-		%verse
-		\[G]Emmanu\[D]el, \[Em]tu sei qui con \[G]me,
-		\[C]vieni picco\[G]lissimo in\[Am]contro a \[D]me.
-		\[G]Emmanu\[D]el, a\[Em]mico silen\[Bm]zioso,
-		\[C]della tua pre\[G]senza riempi i \[Am]giorni \[D]miei.
-	\endverse
+\beginverse* 
+{\nolyrics Intro: | \[G] \[D] | \[Em] \[G] | \[C] \[G] | \[D4] \[D] |}
+\endverse
 
-	\beginchorus
-		%chorus
-		\[G]Sei la \[D]luce \[C]dentro \[G]me,
-		\[C]sei la \[G]via da\[Am]vanti a \[D]me.
-		\[G]Nella \[D]storia ir\[B]rompi \[Em]tu,
-		\[G] \[C] io ti ac\[D]colgo mio Sign|\[C]or. | \[G] | \[Am] \[D] |
-	\endchorus
+\fi
 
-	\beginverse
-		^Emmanu^el, ^tu sei qui con ^me,
-		^la tua dolce ^voce parla ^dentro ^me.
-		^Il cuore ^mio ^sente che ci ^sei
-		^e nell'amore ^vuoi guidare i ^passi ^miei.
-	\endverse
+\beginverse\memorize 
+\[G]Emmanu\[D]el, \[Em]tu sei qui con \[G]me,
+\[C]vieni picco\[G]lissimo in\[Am]contro a \[D]me.
+\[G]Emmanu\[D]el, a\[Em]mico silen\[Bm]zioso,
+\[C]della tua pre\[G]senza riempi i \[Am]giorni \[D]miei.
+\endverse
 
-	\beginchorus
-		%chorus
-		\[G]Sei la \[D]luce \[C]dentro \[G]me,
-		\[C]sei la \[G]via da\[Am]vanti a \[D]me.
-		\[G]Nella \[D]storia ir\[B]rompi \[Em]tu,
-		\[G] \[C] io ti ac\[D]colgo mio Si|\[G]gnor.
-	\endchorus
+\beginchorus
+\[G]Sei la \[D]luce \[C]dentro \[G]me,
+\[C]sei la \[G]via da\[Am]vanti a \[D]me.
+\[G]Nella \[D]storia ir\[B]rompi \[Em]tu,
+\[G] \[C] io ti ac\[D]colgo mio Sign|\[C]or. | \[G] | \[Am] \[D] |
+\endchorus
 
-	\ifchorded
-	\beginverse* % * not count the verse
-		{\nolyrics Strum: \[D] | \[Em] \[G] | \[C] \[G] | \[Am] \[D] \[E] |}
-	\endverse
-	\fi
+\beginverse
+^Emmanu^el, ^tu sei qui con ^me,
+^la tua dolce ^voce parla ^dentro ^me.
+^Il cuore ^mio ^sente che ci ^sei
+^e nell'amore ^vuoi guidare i ^passi ^miei.
+\endverse
 
-	\iflyric
-		\textnote{+1 tone}
-	\fi
+\beginchorus
+\[G]Sei la \[D]luce \[C]dentro \[G]me,
+\[C]sei la \[G]via da\[Am]vanti a \[D]me.
+\[G]Nella \[D]storia ir\[B]rompi \[Em]tu,
+\[G] \[C] io ti ac\[D]colgo mio Si|\[G]gnor.
+\endchorus
 
-	\transpose{2}
-	\beginverse
-		^Emmanu^el, ^tu sei qui con ^me,
-		^riempi di ^speranza tutti i ^sogni ^miei.
-		^Sei tu il mio ^re, il ^Dio della mia ^vita,
-		^fonte di sal^vezza per l'u^mani^tà.
-	\endverse
+\ifchorded
 
-	\beginchorus
-		%chorus
-		\[G]Sei la \[D]luce \[C]dentro \[G]me,
-		\[C]sei la \[G]via da\[Am]vanti a \[D]me.
-		\[G]Nella \[D]storia ir\[B]rompi \[Em]tu,
-		\[G] \[C] io ti ac\[D]colgo mio Si\[G]gnor. \[D]
-	\endchorus
+\beginverse* 
+{\nolyrics Strum: \[D] | \[Em] \[G] | \[C] \[G] | \[Am] \[D] \[E] |}
+\endverse
 
-	\beginchorus
-		%chorus
-		\[G]Sei la \[D]luce \[C]dentro \[G]me,
-		\[C]sei la \[G]via da\[Am]vanti a \[D]me.
-		\[G]Nella \[D]storia ir\[B]rompi \[Em]tu,
-		\[G] \[C] io ti ac\[D]colgo mio Si|\[C]gnor. | \[G] | \[Am] \[D] | \[G] |
-	\endchorus
+\fi
 
-%	\textnote{} % Notes for both lyric and chorded songs
-%	\musicnote{} % Notes visible only in chorded books (not visible in lyric mode)
-%	\rep{n} % Repeat n times
-%	\lrep ... \rrep \rep{n} % margins of the repeat
+\iflyric
 
-%	Writing chords
-%
-% Alphabetic note names:     A      B      C      D      E      F      G
-% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL
-%
-%	Compatible notation:
-%
-% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]
-% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]
-% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]
-% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]
-% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]
-% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]
+\textnote{+1 tone}
+\fi
+
+\transpose{2}
+\beginverse
+^Emmanu^el, ^tu sei qui con ^me,
+^riempi di ^speranza tutti i ^sogni ^miei.
+^Sei tu il mio ^re, il ^Dio della mia ^vita,
+^fonte di sal^vezza per l'u^mani^tà.
+\endverse
+
+\beginchorus
+\[G]Sei la \[D]luce \[C]dentro \[G]me,
+\[C]sei la \[G]via da\[Am]vanti a \[D]me.
+\[G]Nella \[D]storia ir\[B]rompi \[Em]tu,
+\[G] \[C] io ti ac\[D]colgo mio Si\[G]gnor. \[D]
+\endchorus
+
+\beginchorus
+\[G]Sei la \[D]luce \[C]dentro \[G]me,
+\[C]sei la \[G]via da\[Am]vanti a \[D]me.
+\[G]Nella \[D]storia ir\[B]rompi \[Em]tu,
+\[G] \[C] io ti ac\[D]colgo mio Si|\[C]gnor. | \[G] | \[Am] \[D] | \[G] |
+\endchorus
+

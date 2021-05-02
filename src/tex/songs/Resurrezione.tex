@@ -15,100 +15,55 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-%%% Writing chords %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Alphabetic note names:     A      B      C      D      E      F      G       %
-% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL     %
-%                                                                              %
-% Compatible notation:                                                         %
-%                                                                              %
-% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]    %
-% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]   %
-% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]   %
-% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]   %
-% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]  %
-% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]  %
-%                                                                              %
-%%% Notes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \textnote{}  % Notes for both lyric and chorded songs                        %
-% \musicnote{} % Notes visible only in chorded books                           %
-%                (not visible in lyric mode)                                   %
-%                                                                              %
-%%% Symbols %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \rep{n}                 % Repeat n times                                     %
-% \lrep ... \rrep \rep{n} % Margins of the repeat                              %
-% |                       % Measure bar                                        %
-%                                                                              %
-%%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
-% *                           % Used after \beginverse for making an           %
-%                             %   unnumbered verse                             %
-% \memorize                   % Used after \beginverse for using chords        %
-%                             %   with the symbol ^ in the next verses         %
-% \beginchorus ... \endchorus % Used for delimiters of a chorus                %
-% \ifchorded ... \fi          % Conditional sentences: only if chorded books   %
-% \iflyric ... \fi           % Conditional sentences: only if lyrics book     %
-% \nolyrics                   % For parts with no lyrics                       %
-%                                                                              %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Start of the song body
-
-%\meter{4}{4}
-
 \ifchorded
-	\beginverse*
-		{\nolyrics Intro: 	\[D] \[G] \[D] \[G]
-					\[D] \[G] \[A4] \[A]}
-	\endverse
+
+\beginverse*
+{\nolyrics Intro: \[D] \[G] \[D] \[G]
+\[D] \[G] \[A4] \[A]}
+\endverse
+
 \fi
 
 \beginverse\memorize
-	Che \[D]gioia ci hai \[G]dato, Si\[D]gnore del \[G]cielo
-	Si\[D]gnore del \[G]grande uni\[A4]ver\[A]so!
-	Che \[D]gioia ci hai \[G]dato, ve\[D]stito di \[G]luce
-	ve\[D]stito di \[A]gloria infi\[Bm]ni\[G]ta,
-	ve\[D]stito di \[A]gloria infi\[G]ni\[D]ta! \[G] \[D] \[G]
+Che \[D]gioia ci hai \[G]dato, Si\[D]gnore del \[G]cielo
+Si\[D]gnore del \[G]grande uni\[A4]ver\[A]so!
+Che \[D]gioia ci hai \[G]dato, ve\[D]stito di \[G]luce
+ve\[D]stito di \[A]gloria infi\[Bm]ni\[G]ta,
+ve\[D]stito di \[A]gloria infi\[G]ni\[D]ta! \[G] \[D] \[G]
 \endverse
 
 \beginverse
-	Ve^derTi ri^sorto, ve^derTi Si^gnore,
-	il ^cuore sta ^per impaz^zi^re!
-	Tu ^sei ritor^nato, Tu ^sei qui tra ^noi
-	e a^desso Ti a^vremo per ^sem^pre,
-	e a^desso Ti a^vremo per ^sem^pre. ^ ^ ^
+Ve^derTi ri^sorto, ve^derTi Si^gnore,
+il ^cuore sta ^per impaz^zi^re!
+Tu ^sei ritor^nato, Tu ^sei qui tra ^noi
+e a^desso Ti a^vremo per ^sem^pre,
+e a^desso Ti a^vremo per ^sem^pre. ^ ^ ^
 \endverse
 
 \beginverse
-	^ Chi cercate, ^donne, quag^giù,
-	chi cercate, ^donne, quag^giù?
-	Quello che era ^morto non è ^qu^i:
-	è ri^sorto, sì! come a^veva detto ^anche a voi,
-	^voi gridate a ^tutti che ^
-	^è risorto ^Lui,
-	a ^tutti che ^
-	^è risorto ^Lui! ^ ^ ^ 
+^ Chi cercate, ^donne, quag^giù,
+chi cercate, ^donne, quag^giù?
+Quello che era ^morto non è ^qu^i:
+è ri^sorto, sì! come a^veva detto ^anche a voi,
+^voi gridate a ^tutti che ^
+^è risorto ^Lui,
+a ^tutti che ^
+^è risorto ^Lui! ^ ^ ^ 
 \endverse
 
 \beginverse
-	^ Tu hai vinto il ^mondo, Ge^sù,
-	Tu hai vinto il ^mondo, Ge^sù,
-	liberiamo ^la felici^t^à!
-	E la ^morte, no, non ^esiste più, l’hai ^vinta Tu
-	e ^hai salvato ^tutti noi, ^
-	^uomini con ^Te,
-	^tutti noi, ^
-	^uomini con ^Te.
+^ Tu hai vinto il ^mondo, Ge^sù,
+Tu hai vinto il ^mondo, Ge^sù,
+liberiamo ^la felici^t^à!
+E la ^morte, no, non ^esiste più, l’hai ^vinta Tu
+e ^hai salvato ^tutti noi, ^
+^uomini con ^Te,
+^tutti noi, ^
+^uomini con ^Te.
 \endverse
-
-%1 e 2 strofa in sincrono con 3 e 4 niente sol re sol re sol prima di 5 e niente a fine di quinta, solo re
 
 \beginverse
-	\[G]Uomini con Te, uomini con Te.
-	Che \[D]gioia ci hai \[G]dato, Ti a\[D]vremo per \[G]sem\[D]pre. \[G] \[D] \[G] \[D]
+\[G]Uomini con Te, uomini con Te.
+Che \[D]gioia ci hai \[G]dato, Ti a\[D]vremo per \[G]sem\[D]pre. \[G] \[D] \[G] \[D]
 \endverse
 
-%\ifchorded
-%	\beginverse*
-%		{\nolyrics Strum: }
-%	\endverse
-%\fi

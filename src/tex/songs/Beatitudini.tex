@@ -15,99 +15,65 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-%%% Writing chords %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Alphabetic note names:     A      B      C      D      E      F      G       %
-% Solfedge note names:       LA     SI     DO     RE     MI     FA     SOL     %
-%                                                                              %
-% Compatible notation:                                                         %
-%                                                                              %
-% Naturals:                  \[A]   \[B]   \[C]   \[D]   \[E]   \[F]   \[G]    %
-% Flat (Bemolle):            \[A&]  \[B&]  \[C&]  \[D&]  \[E&]  \[F&]  \[G&]   %
-% Sharp (Diesis):            \[A#]  \[B#]  \[C#]  \[D#]  \[E#]  \[F#]  \[G#]   %
-% Minor:                     \[Am]  \[Bm]  \[Cm]  \[Dm]  \[Em]  \[Fm]  \[Gm]   %
-% Flat and minor:            \[A&m] \[B&m] \[C&m] \[D&m] \[E&m] \[F&m] \[G&m]  %
-% Sharp and minor:           \[A#m] \[B#m] \[C#m] \[D#m] \[E#m] \[F#m] \[G#m]  %
-%                                                                              %
-%%% Notes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \textnote{}  % Notes for both lyric and chorded songs                        %
-% \musicnote{} % Notes visible only in chorded books                           %
-%                (not visible in lyric mode)                                   %
-%                                                                              %
-%%% Symbols %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \rep{n}                 % Repeat n times                                     %
-% \lrep ... \rrep \rep{n} % Margins of the repeat                              %
-% |                       % Measure bar                                        %
-%                                                                              %
-%%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
-% *                           % Used after \beginverse for making an           %
-%                             %   unnumbered verse                             %
-% \memorize                   % Used after \beginverse for using chords        %
-%                             %   with the symbol ^ in the next verses         %
-% \beginchorus ... \endchorus % Used for delimiters of a chorus                %
-% \ifchorded ... \fi          % Conditional sentences: only if chorded books   %
-% \iflyric ... \fi           % Conditional sentences: only if lyrics book     %
-% \nolyrics                   % For parts with no lyrics                       %
-%                                                                              %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Start of the song body
-
 \meter{4}{4}
 
 \ifchorded
-	\beginverse*
-		{\nolyrics Intro: | \[C] \[Am] \[Dm] | \[G] \[Am] \[Dm] \[G] | \[C] |}
-	\endverse
+
+\beginverse*
+{\nolyrics Intro: | \[C] \[Am] \[Dm] | \[G] \[Am] \[Dm] \[G] | \[C] |}
+\endverse
+
 \fi
 
 \beginverse\memorize
-	\[C]Dove due o \[G]tre sono riu\[Am]niti nel mio \[F]nome
-	\[G] io sarò con \[C]loro, \[F] pregherò con \[G]loro,
-	\[E] amerò con \[Am]loro perché il mondo
-	venga a \[F]Te o \[G]Padre,
-	co\[C]noscere il Tuo a\[C7]more e avere \[F]vita \[Fm] con \[C]Te.
+\[C]Dove due o \[G]tre sono riu\[Am]niti nel mio \[F]nome
+\[G] io sarò con \[C]loro, \[F] pregherò con \[G]loro,
+\[E] amerò con \[Am]loro perché il mondo
+venga a \[F]Te o \[G]Padre,
+co\[C]noscere il Tuo a\[C7]more e avere \[F]vita \[Fm] con \[C]Te.
 \endverse
 
 \beginverse
-	^Voi che siete ^luce della ^terra, miei a^mici,
-	^ risplendete ^sempre ^ della vera ^luce,
-	^ perché il mondo ^creda nell'amore
-	che c'è in ^voi, o ^Padre,
-	con^sacrali per ^sempre e diano ^gloria ^ a ^Te. \[A7]
+^Voi che siete ^luce della ^terra, miei a^mici,
+^ risplendete ^sempre ^ della vera ^luce,
+^ perché il mondo ^creda nell'amore
+che c'è in ^voi, o ^Padre,
+con^sacrali per ^sempre e diano ^gloria ^ a ^Te. \[A7]
 \endverse
 
 \iflyric
-	\textnote{+1 tone}
+
+\textnote{+1 tone}
 \fi
 
 \transpose{2}
 \beginverse
-	^Ogni beati^tudine vi at^tende nel mio ^giorno,
-	^ se sarete u^niti, ^ se sarete ^pace,
-	^ se sarete ^puri perché voi vedrete
-	^Dio che è ^Padre,
-	in ^Lui la vostra ^vita gioia ^piena ^ sa^rà.
+^Ogni beati^tudine vi at^tende nel mio ^giorno,
+^ se sarete u^niti, ^ se sarete ^pace,
+^ se sarete ^puri perché voi vedrete
+^Dio che è ^Padre,
+in ^Lui la vostra ^vita gioia ^piena ^ sa^rà.
 \endverse
 
 \beginverse
-	^Voi che ora ^siete miei di^scepoli nel ^mondo,
-	^ siate testi^moni ^ di un amore im^menso,
-	^ date prova ^di quella speranza
-	che c'è in ^voi, co^raggio,
-	vi ^guiderò per ^sempre, io ri^mango ^ con ^voi. \[A7]
+^Voi che ora ^siete miei di^scepoli nel ^mondo,
+^ siate testi^moni ^ di un amore im^menso,
+^ date prova ^di quella speranza
+che c'è in ^voi, co^raggio,
+vi ^guiderò per ^sempre, io ri^mango ^ con ^voi. \[A7]
 \endverse
 
 \iflyric
-	\textnote{+1 tone}
+
+\textnote{+1 tone}
 \fi
 
 \transpose{2}
 \beginverse
-	^Spirito che ^animi la ^Chiesa e la rin^novi,
-	^ donale for^tezza, ^ fa' che sia fe^dele,
-	^ come Cristo ^che muore e risorge
-	perché il ^Regno del ^Padre
-	\lrep si ^compia in mezzo a ^noi e abbiamo ^vita ^ in ^Lui. \rrep \rep{2}
+^Spirito che ^animi la ^Chiesa e la rin^novi,
+^ donale for^tezza, ^ fa' che sia fe^dele,
+^ come Cristo ^che muore e risorge
+perché il ^Regno del ^Padre
+\lrep si ^compia in mezzo a ^noi e abbiamo ^vita ^ in ^Lui. \rrep \rep{2}
 \endverse
 
