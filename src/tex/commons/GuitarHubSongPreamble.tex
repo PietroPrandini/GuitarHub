@@ -1,17 +1,17 @@
 % Copyright 2018-2021 Pietro Prandini
-% 
+%
 % This file is part of GuitarHub.
-% 
+%
 % GuitarHub is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
 % the Free Software Foundation, either version 3 of the License, or
 % (at your option) any later version.
-% 
+%
 % GuitarHub is distributed in the hope that it will be useful,
 % but WITHOUT ANY WARRANTY; without even the implied warranty of
 % MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 % GNU General Public License for more details.
-% 
+%
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
@@ -26,10 +26,10 @@
 \newindex{jukebox}{jukebox}
 \newindex{christmas}{christmas}
 
-\indexsongsas{chords}{\thepage} 
-\indexsongsas{chiesa}{\thepage} 
-\indexsongsas{jukebox}{\thepage} 
-\indexsongsas{christmas}{\thepage} 
+\indexsongsas{chords}{\thepage}
+\indexsongsas{chiesa}{\thepage}
+\indexsongsas{jukebox}{\thepage}
+\indexsongsas{christmas}{\thepage}
 %	Fonts
 \renewcommand{\lyricfont}{}
 \renewcommand{\printchord}[1]{\bf#1}
@@ -54,7 +54,8 @@
 \renewcommand{\songtarget}[2]{\pdfbookmark[#1]{\songtitle}{#2}}
 \renewcommand{\songlink}[2]{\hyperlink{#1}{\songtitle}}
 
-%\sepindexesfalse
-%\sepindexestrue
-%\songtarget
-%\songlink
+\renewcommand{\clineparams}{
+\baselineskip=8pt
+\lineskiplimit=1pt
+\lineskip=1pt
+}
