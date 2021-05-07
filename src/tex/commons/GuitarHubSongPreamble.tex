@@ -20,16 +20,6 @@
 %\includeonlysongs{37,50,2}
 \prefersharps % For automatic transpositions
 
-%	Indexes
-\newindex{chords}{chords}
-\newindex{chiesa}{chiesa}
-\newindex{jukebox}{jukebox}
-\newindex{christmas}{christmas}
-
-\indexsongsas{chords}{\thepage}
-\indexsongsas{chiesa}{\thepage}
-\indexsongsas{jukebox}{\thepage}
-\indexsongsas{christmas}{\thepage}
 %	Fonts
 \renewcommand{\lyricfont}{}
 \renewcommand{\printchord}[1]{\bf#1}
@@ -52,10 +42,26 @@
 %\setlength{\idxheadwidth}{1cm}
 
 \renewcommand{\songtarget}[2]{\pdfbookmark[#1]{\songtitle}{#2}}
-\renewcommand{\songlink}[2]{\hyperlink{#1}{\songtitle}}
+%\renewcommand{\songlink}[2]{\hyperlink{#1}{\songtitle}}
 
 \renewcommand{\clineparams}{
 \baselineskip=8pt
 \lineskiplimit=1pt
 \lineskip=1pt
 }
+
+%	Indexes
+\newindex{chords}{chords}
+\newindex{pray}{pray}
+\newindex{jukebox}{jukebox}
+\newindex{christmas}{christmas}
+
+\newcommand\chordssym{\texorpdfstring{\includegraphics[width=2cm]{img/chords.png}}{Chords}}
+\newcommand\praysym{\texorpdfstring{\includegraphics[width=2cm]{img/church.png}}{Pray}}
+\newcommand\jukeboxsym{\texorpdfstring{\includegraphics[width=2cm]{img/jukebox.png}}{Jukebox}}
+\newcommand\christmassym{\texorpdfstring{\includegraphics[width=2cm]{img/christmas.png}}{Christmas}}
+
+\newcommand\chordsbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/chords.png}}{Chords}}
+\newcommand\praybigsym{\texorpdfstring{\includegraphics[width=5cm]{img/church.png}}{Pray}}
+\newcommand\jukeboxbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/jukebox.png}}{Jukebox}}
+\newcommand\christmasbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/christmas.png}}{Christmas}}

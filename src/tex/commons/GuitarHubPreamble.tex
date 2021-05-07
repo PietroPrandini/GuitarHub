@@ -16,44 +16,20 @@
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
 \documentclass[8pt,oneside]{extbook}
-%	Preamble
 \usepackage[a5paper,left=13mm,right=5mm,bottom=5mm,top=7mm]{geometry}
-\usepackage[utf8]{inputenc} % For special symbols
-\usepackage{graphicx} % For pictures
-\usepackage{wrapfig} % For wrapping pictures
-\usepackage{float} % for positioning
-\usepackage{latexsym} % For arrow
-\usepackage{ulem} % For \xout
-\usepackage{ifthen} % For if-then-else functions
-\usepackage[bookmarks,pdfencoding=auto]{hyperref} % For indexes
-\usepackage{qrcode} % For qrcodes
-\usepackage{filemod} % For parsing the date of the files
+\usepackage{graphicx}
+\usepackage[bookmarks,pdfencoding=auto]{hyperref}
+\usepackage{qrcode}
 
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
 \renewcommand{\familydefault}{\sfdefault} % default font
 
-
-%	Header and footer
 \usepackage{fancyhdr}
 	\pagestyle{fancy}
 	\fancyhf{}
-%	\fancyhead[L]{\sffamily\small\bfseries GuitarHub}
-%	\fancyhead[R]{\qrcode[hyperlink,height=5mm,version=0,level=L]{https://github.com/PietroPrandini/GuitarHub}}
-	%\fancyhead[C]{{\tiny\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub}}}
-
-	%\fancyfoot[C]{{\tiny\href{https://github.com/PietroPrandini/GuitarHub/graphs/contributors}{https://github.com/PietroPrandini/GuitarHub/graphs/contributors}}}
-
 	\renewcommand{\headrulewidth}{0pt}
 	\renewcommand{\footrulewidth}{0pt}
 
 \usepackage[generate,ps2eps]{abc}
-
-% Index titles
-\newcommand\chordssym{\texorpdfstring{\includegraphics[width=2cm]{img/chords.png}}{Chords}}
-\newcommand\praysym{\texorpdfstring{\includegraphics[width=2cm]{img/church.png}}{Pray}}
-\newcommand\jukeboxsym{\texorpdfstring{\includegraphics[width=2cm]{img/jukebox.png}}{Jukebox}}
-\newcommand\christmassym{\texorpdfstring{\includegraphics[width=2cm]{img/christmas.png}}{Christmas}}
-
-\newcommand\chordsbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/chords.png}}{Chords}}
-\newcommand\praybigsym{\texorpdfstring{\includegraphics[width=5cm]{img/church.png}}{Pray}}
-\newcommand\jukeboxbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/jukebox.png}}{Jukebox}}
-\newcommand\christmasbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/christmas.png}}{Christmas}}

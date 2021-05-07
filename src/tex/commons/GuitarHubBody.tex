@@ -15,33 +15,33 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-%	Begin the book
 \begin{document}
 
-\input{tex/commons/GuitarHubFirstPage.tex} % Front page
-\input{tex/commons/GuitarHubLicence.tex} % Licence page
+\input{tex/commons/GuitarHubFirstPage.tex}\setcounter{page}{2}
+\input{tex/commons/GuitarHubLicence.tex}
 \input{tex/commons/GuitarHubPreface.tex}
 \input{tex/commons/GuitarHubInfo.tex}
 
+
 %	Indexes
-%\ifchorded
-%\showindex[3]{\includegraphics[width=2cm]{img/chords.png}}{chords}
-%\fi
-%\showindex[3]{\includegraphics[width=2cm]{img/church.png}}{chiesa}
-%\showindex[3]{\includegraphics[width=2cm]{img/jukebox.png}}{jukebox}
-%\showindex[3]{\includegraphics[width=2cm]{img/christmas.png}}{christmas}
+%\showindex[3]{\chordssym}{chords}
+%\showindex[3]{\praysym}{pray}
+%\showindex[3]{\jukeboxsym}{jukebox}
+%\showindex[3]{\christmassym}{christmas}
 
 %	Showing the lists of the songs
-{\makeatletter\def\SB@ellipspread#1#2{- #1#2\hspace*{\fill}\par}\showindex[3]{\chordssym}{chords}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1#2\hspace*{\fill}\par}\showindex[3]{\praysym}{chiesa}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1#2\hspace*{\fill}\par}\showindex[3]{\jukeboxsym}{jukebox}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1#2\hspace*{\fill}\par}\showindex[3]{\christmassym}{christmas}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\chordssym}{chords}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\praysym}{pray}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\jukeboxsym}{jukebox}}
+{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\christmassym}{christmas}}
+
 
 \vspace*{\stretch{3}}
 \songchapter{\chordsbigsym}
 \vspace*{\stretch{5}}
 \vspace*{\fill}
 \newpage
+
 \songpos{0}
 \begin{songs}{chords}
 	\input{tex/chapters/chords.tex}
@@ -53,24 +53,29 @@
 \vspace*{\stretch{5}}
 \vspace*{\fill}
 \newpage
-\begin{songs}{chiesa}
-	\input{tex/chapters/chiesa.tex}
+
+\begin{songs}{pray}
+	\input{tex/chapters/pray.tex}
 \end{songs}
+
 
 \vspace*{\stretch{3}}
 \songchapter{\jukeboxbigsym}
 \vspace*{\stretch{5}}
 \vspace*{\fill}
 \newpage
+
 \begin{songs}{jukebox}
 	\input{tex/chapters/jukebox.tex}
 \end{songs}
+
 
 \vspace*{\stretch{3}}
 \songchapter{\christmasbigsym}
 \vspace*{\stretch{5}}
 \vspace*{\fill}
 \newpage
+
 \begin{songs}{christmas}
 	\input{tex/chapters/christmas.tex}
 \end{songs}
