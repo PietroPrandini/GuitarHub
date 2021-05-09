@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-PATHTOCLEAN="./ ./tex/main"
+PATHTOCLEAN=". ./tex/main"
 
 isSuccess() {
 	exit_code=$1
@@ -34,8 +34,8 @@ for path in ${PATHTOCLEAN}
 do
   for file in $(ls ${path} | grep ".aux\|.log\|.out\|.sbx\|.sxc\|.sxd")
   do
-    echo "removing ${file}"
-    rm $file
+    echo "removing ${path}/${file}"
+    rm $path/$file
     isSuccess $?
   done
 done

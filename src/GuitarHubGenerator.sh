@@ -17,9 +17,9 @@
 # You should have received a copy of the GNU General Public License
 # along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-INDEXLUAPATH=/opt/songs/share/songs/
-PDFPATH=../
-#PDFTOPRINTPATH=${PDFPATH}/ToPrint/
+INDEXLUAPATH="/opt/songs/share/songs/"
+PDFPATH="../"
+MAINPATH="tex/main"
 
 isSuccess() {
 	exit_code=$1
@@ -28,25 +28,38 @@ isSuccess() {
 		echo "OK!"
 	else
 		echo "KO! Exit code: ${exit_code}"
-		exit
+		exit 1
 	fi
 }
 
 echo '
 --> Generating the booklets <--'
-#arara GuitarHub.tex
 
-for booklet in $(ls | grep GuitarHub | grep tex | grep -v ToPrint)
+for booklet in $(ls $MAINPATH | grep GuitarHub | grep tex)
 do
 	echo "--> Compiling ${booklet}"
-	pdflatex ${booklet}
+	pdflatex $MAINPATH/${booklet}
 	isSuccess $?
 	for index in $(ls | grep .sxd)
 	do
 		echo "--> Generating ${index} index"
-		texlua ${INDEXLUAPATH}songidx.lua ${index} $(echo ${index} | sed s/sxd/sbx)
+		texlua ${INDEXLUAPATH}songidx.lua ${index} $(echo "${index}" | sed s/sxd/sbx)
 		isSuccess $?
 	done
+	pdflatex $MAINPATH/${booklet}
+	isSuccess $?
+done
+
+for pdf in $(ls | grep GuitarHub | grep pdf)
+do
+	echo "--> Moving ${pdf}"
+	mv ${pdf} ${MAINPATH}
+	isSuccess $?
+done
+
+for booklet in $(ls | grep GuitarHub | grep tex)
+do
+	echo "--> Composing ${booklet}"
 	pdflatex ${booklet}
 	isSuccess $?
 done
