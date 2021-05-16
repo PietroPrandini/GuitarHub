@@ -18,8 +18,8 @@
 # along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
 INDEXLUAPATH="/opt/songs/share/songs/"
-PDFPATH="../"
-MAINPATH="tex/main"
+PDFPATH=".."
+MAINPATH="."
 
 isSuccess() {
 	exit_code=$1
@@ -50,24 +50,10 @@ do
 	isSuccess $?
 done
 
-for pdf in $(ls | grep GuitarHub | grep pdf)
+for pdf in $(ls $MAINPATH | grep GuitarHub | grep pdf)
 do
 	echo "--> Moving ${pdf}"
-	mv ${pdf} ${MAINPATH}
-	isSuccess $?
-done
-
-for booklet in $(ls | grep GuitarHub | grep tex)
-do
-	echo "--> Composing ${booklet}"
-	pdflatex ${booklet}
-	isSuccess $?
-done
-
-for pdf in $(ls | grep GuitarHub | grep pdf)
-do
-	echo "--> Moving ${pdf}"
-	mv ${pdf} ${PDFPATH}
+	mv $MAINPATH/${pdf} ${PDFPATH}
 	isSuccess $?
 done
 

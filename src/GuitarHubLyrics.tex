@@ -15,9 +15,7 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-\documentclass[a4paper]{article}
-\usepackage[final]{pdfpages}
-
-\begin{document}
-	\includepdf[pages=-,nup=1x2,landscape]{tex/main/GuitarHubLyrics.pdf}
-\end{document}
+\input{tex/commons/GuitarHubPreamble.tex}
+\usepackage[lyric]{songs}
+\input{tex/commons/GuitarHubSongPreamble.tex}
+\input{tex/commons/GuitarHubBody.tex}
