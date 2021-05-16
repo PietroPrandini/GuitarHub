@@ -26,7 +26,7 @@
 
 \setlength{\versenumwidth}{0.3cm}
 
-\songcolumns{2} % Number of columns for every page
+\songcolumns{1} % Number of columns for every page
 
 %	Page-breanking and column-breaking
 \spenalty=-10000	% At song boundaries (-10000: the break is required)
@@ -65,3 +65,7 @@
 \newcommand\praybigsym{\texorpdfstring{\includegraphics[width=5cm]{img/church.png}}{Pray}}
 \newcommand\jukeboxbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/jukebox.png}}{Jukebox}}
 \newcommand\christmasbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/christmas.png}}{Christmas}}
+
+\newenvironment{twocolssongs}
+  {\ifchorded\small\songcolumns{2}\fi}
+  {\ifchorded\normalsize\songcolumns{1}\fi}
