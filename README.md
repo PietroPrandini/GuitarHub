@@ -33,7 +33,7 @@ It is highly recommended to print the content of this booklet and put it in a ri
 ## Print it
 Print the downloaded file with these settings:
 - A4 sheet size (210x297mm)
-- One sided
+- Two pages per sheet
 - Scaling: none
 
 ## Make it

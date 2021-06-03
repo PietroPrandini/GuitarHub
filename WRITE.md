@@ -95,21 +95,13 @@ $ cd /path/to/GuitarHub/src/
 ```
 * Initial compiling (generate files for creating the indexes)
 ```
-$ pdflatex tex/main/GuitarHubAlphabeticNoteNames.tex
+$ pdflatex GuitarHubAlphabeticNoteNames.tex
 ```
 * Generate the indexes (repeat for each of the chapters)
 ```
 $ texlua /usr/local/share/songs/songidx.lua "chapterName.sxd"
 ```
 * Final compiling (add the generated indexes)
-```
-$ pdflatex tex/main/GuitarHubAlphabeticNoteNames.tex
-```
-* Move the generated .pdf of to the main directory of the tex source sompiled
-```
-$ mv GuitarHubAlphabeticNoteNames.pdf tex/main/GuitarHubAlphabeticNoteNames.pdf
-```
-* Compiling the booklet
 ```
 $ pdflatex GuitarHubAlphabeticNoteNames.tex
 ```
