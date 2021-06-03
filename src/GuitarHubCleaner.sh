@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-PATHTOCLEAN=". ./tex/main"
+PATHTOCLEAN="."
 
 isSuccess() {
 	exit_code=$1
@@ -39,3 +39,4 @@ do
     isSuccess $?
   done
 done
+
