@@ -27,6 +27,7 @@
 \setlength{\versenumwidth}{0.3cm}
 
 \songcolumns{1} % Number of columns for every page
+\columnsep=1mm
 
 %	Page-breanking and column-breaking
 \spenalty=-10000	% At song boundaries (-10000: the break is required)
@@ -44,11 +45,11 @@
 \renewcommand{\songtarget}[2]{\pdfbookmark[#1]{\songtitle}{#2}}
 %\renewcommand{\songlink}[2]{\hyperlink{#1}{\songtitle}}
 
-\renewcommand{\clineparams}{
-\baselineskip=8pt
-\lineskiplimit=1pt
-\lineskip=1pt
-}
+%\renewcommand{\clineparams}{
+%\baselineskip=8pt
+%\lineskiplimit=1pt
+%\lineskip=1pt
+%}
 
 %	Indexes
 \newindex{chords}{chords}
@@ -66,8 +67,20 @@
 \newcommand\jukeboxbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/jukebox.png}}{Jukebox}}
 \newcommand\christmasbigsym{\texorpdfstring{\includegraphics[width=5cm]{img/christmas.png}}{Christmas}}
 
-\newenvironment{twocolssongs}
-  {\ifchorded\songcolumns{2}\small\fi}
-  {\ifchorded\songcolumns{1}\normalsize\fi}
+\newenvironment{twocolssong}
+  {\ifchorded\songcolumns{2}\fi}
+  {\ifchorded\songcolumns{1}\fi}
+\newenvironment{smallsong}
+  {\ifchorded\small\fi}
+  {\ifchorded\normalsize\fi}
+\newenvironment{footnotesizesong}
+  {\ifchorded\footnotesize\fi}
+  {\ifchorded\normalsize\fi}
+\newenvironment{scriptsizesong}
+  {\ifchorded\scriptsize\fi}
+  {\ifchorded\normalsize\fi}
+\newenvironment{tinysong}
+  {\ifchorded\tiny\fi}
+  {\ifchorded\normalsize\fi}
 
 \newcommand\newsongpage{\iflyric\brk\sclearpage\else\sclearpage\fi}
