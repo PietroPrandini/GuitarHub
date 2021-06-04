@@ -26,9 +26,9 @@ It is highly recommended to print the content of this booklet and put it in a ri
 * support for generating the booklets.
 
 ## Download it
-* [GuitarHubAlphabeticNoteNames.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubAlphabeticNoteNames.pdf)
-* [GuitarHubLyrics.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubLyrics.pdf)
-* [GuitarHubSolfegeNoteNames.pdf](https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNames.pdf)
+* [GuitarHubAlphabeticNoteNames.pdf](https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubAlphabeticNoteNames.pdf)
+* [GuitarHubLyrics.pdf](https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubLyrics.pdf)
+* [GuitarHubSolfegeNoteNames.pdf](https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubSolfegeNoteNames.pdf)
 
 ## Print it
 Print the downloaded file with these settings:
