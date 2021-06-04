@@ -33,12 +33,13 @@
 
 %	Showing the lists of the songs
 \small
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\chordssym}{chords}}
+\ifchorded{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\chordssym}{chords}}\fi
 {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\praysym}{pray}}
 {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\jukeboxsym}{jukebox}}
 {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\christmassym}{christmas}}
 \normalsize
 
+\ifchorded
 \vspace*{\stretch{3}}
 \songchapter{\chordsbigsym}
 \vspace*{\stretch{5}}
@@ -50,6 +51,7 @@
 	\input{tex/chapters/chords.tex}
 \end{songs}
 \songpos{3}
+\fi
 
 \vspace*{\stretch{3}}
 \songchapter{\praybigsym}
