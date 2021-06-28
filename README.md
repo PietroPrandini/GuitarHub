@@ -44,6 +44,9 @@ Print the downloaded file with these settings:
 ### Assemble them into a ring notebook
 ![assemble](src/img/forReadme/assemble.jpg)
 
+## Update it
+From the [commit 52ce89c](https://github.com/PietroPrandini/GuitarHub/commit/52ce89ca96925727faf718a87e9bd916d5a24eb0) you can download only the new pages added to the book. See [GuitarHubUpdate.pdf](https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubUpdate.pdf) and update it!  
+
 ## Write it
 * [Writer guide](https://github.com/PietroPrandini/GuitarHub/blob/master/WRITE.md)
 * [Cheat sheet](https://github.com/PietroPrandini/GuitarHub/blob/master/CHEATSHEET.md)
