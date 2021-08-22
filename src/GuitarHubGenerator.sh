@@ -35,7 +35,7 @@ isSuccess() {
 echo '
 --> Generating the booklets <--'
 
-for booklet in $(ls $MAINPATH | grep GuitarHub | grep tex)
+for booklet in $(ls $MAINPATH | grep GuitarHub | grep -v Update | grep tex)
 do
 	echo "--> Compiling ${booklet}"
 	pdflatex $MAINPATH/${booklet}
@@ -46,6 +46,13 @@ do
 		texlua ${INDEXLUAPATH}songidx.lua ${index} $(echo "${index}" | sed s/sxd/sbx)
 		isSuccess $?
 	done
+	pdflatex $MAINPATH/${booklet}
+	isSuccess $?
+done
+
+for booklet in $(ls $MAINPATH | grep GuitarHub | grep Update | grep tex)
+do
+	echo "--> Compiling ${booklet}"
 	pdflatex $MAINPATH/${booklet}
 	isSuccess $?
 done
