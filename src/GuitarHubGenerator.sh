@@ -35,7 +35,7 @@ isSuccess() {
 echo '
 --> Generating the booklets <--'
 
-for booklet in $(ls $MAINPATH | grep GuitarHub | grep tex)
+for booklet in $(ls $MAINPATH | grep GuitarHub | grep -v Update | grep tex)
 do
 	echo "--> Compiling ${booklet}"
 	pdflatex $MAINPATH/${booklet}
@@ -50,7 +50,21 @@ do
 	isSuccess $?
 done
 
-for pdf in $(ls $MAINPATH | grep GuitarHub | grep pdf)
+for pdf in $(ls $MAINPATH | grep GuitarHub | grep -v Update | grep pdf)
+do
+	echo "--> Moving ${pdf}"
+	mv $MAINPATH/${pdf} ${PDFPATH}
+	isSuccess $?
+done
+
+for booklet in $(ls $MAINPATH | grep GuitarHub | grep Update | grep tex)
+do
+	echo "--> Compiling ${booklet}"
+	pdflatex $MAINPATH/${booklet}
+	isSuccess $?
+done
+
+for pdf in $(ls $MAINPATH | grep GuitarHub | grep Update | grep pdf)
 do
 	echo "--> Moving ${pdf}"
 	mv $MAINPATH/${pdf} ${PDFPATH}
