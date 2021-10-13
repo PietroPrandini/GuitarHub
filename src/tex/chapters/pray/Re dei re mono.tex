@@ -15,11 +15,14 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-\documentclass[a4paper]{article}
-\usepackage[final]{pdfpages}
+\begin{twocolssong}\begin{footnotesizesong}
+\beginsong{Re dei re}[
+,cr={\centering{\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub}\\\href{http://creativecommons.org/licenses/by-sa/4.0/}{\textbf{CC BY-SA}} 2018-2021 Pietro Prandini}}
+]
 
-\begin{document}
-  \includepdf[pages={4,5,10,11,13,91,92,93,118,119,156},nup=1x2,landscape]{../GuitarHubAlphabeticNoteNames.pdf}
-  \includepdf[pages={4,{}},nup=1x2,landscape]{../GuitarHubLyrics.pdf}
-  \includepdf[pages={4,5,10,11,13,91,92,93,118,119,156},nup=1x2,landscape]{../GuitarHubSolfegeNoteNames.pdf}
-\end{document}
+\transpose{0}
+
+\input{"tex/songs/Re dei re mono.tex"}
+
+\endsong
+\end{footnotesizesong}\end{twocolssong}
