@@ -18,7 +18,10 @@ It is highly recommended to print the content of this booklet and put it in a ri
 * the format of a single page is ISO A5 which supports the idea of  portability;
 * creating songs with musical note names in both absolute and solfege systems and providing the lyrics at the same time;
 
-![alphabetic](src/img/forReadme/alphabetic.png) ![solfege](src/img/forReadme/solfege.png) ![lyrics](src/img/forReadme/lyrics.png)
+![alphabetic](src/img/forReadme/alphabetic.png)  
+![solfege](src/img/forReadme/solfege.png)  
+![lyrics](src/img/forReadme/lyrics.png)  
+
 * easy and automatic transposition of the chords;
 * ability to add your favourite songs;
 * the book is licensed by a Free Culture License;
