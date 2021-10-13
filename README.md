@@ -16,9 +16,9 @@ It is highly recommended to print the content of this booklet and put it in a ri
 ## Features
 * the booklet is available to be printed at once, including all the songs till date and then you can expand it by adding the newly released songs without the necessity to reprint the whole booklet;
 * the format of a single page is ISO A5 which supports the idea of  portability;
-* creating songs with musical note names in both absolute and solfege systems;
+* creating songs with musical note names in both absolute and solfege systems and providing the lyrics at the same time;
 
-![alphabetic](src/img/forReadme/alphabetic.png) ![solfege](src/img/forReadme/solfege.png)
+![alphabetic](src/img/forReadme/alphabetic.png) ![solfege](src/img/forReadme/solfege.png) ![lyrics](src/img/forReadme/lyrics.png)
 * easy and automatic transposition of the chords;
 * ability to add your favourite songs;
 * the book is licensed by a Free Culture License;
