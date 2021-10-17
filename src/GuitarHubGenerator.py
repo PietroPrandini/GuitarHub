@@ -90,5 +90,3 @@ for trash in os.listdir(src):
     ):
         log("Removing " + trash)
         os.remove(os.path.join(src, trash))
-
-os.chdir(root)
