@@ -43,7 +43,7 @@ def check(status):
 
 def pdflatex(tex):
     log("Producing a " + tex.replace(tex_extension, "") + " draft and the index(es)")
-    status = os.system("pdflatex " + tex)
+    status = os.system("pdflatex " + os.path.join(src, tex))
     check(status)
     for index in os.listdir(src):
         if index.endswith(index_in_extension):
@@ -52,16 +52,19 @@ def pdflatex(tex):
                 "texlua "
                 + songidx
                 + " "
-                + index
+                + os.path.join(src, index)
                 + " "
-                + index.replace(index_in_extension, index_out_extesion)
+                + os.path.join(
+                    src, index.replace(index_in_extension, index_out_extesion)
+                )
             )
             check(status)
     log("Finalizing " + tex.replace(tex_extension, ""))
-    status = os.system("pdflatex " + tex)
+    status = os.system("pdflatex " + os.path.join(src, tex))
     check(status)
 
 
+os.chdir(src)
 log("Generating the booklets")
 for tex in os.listdir(src):
     if tex.endswith(tex_extension) and not tex.endswith(update_extension):
@@ -86,4 +89,6 @@ for trash in os.listdir(src):
         or os.path.isdir(os.path.join(src, trash))
     ):
         log("Removing " + trash)
-        os.remove(trash)
+        os.remove(os.path.join(src, trash))
+
+os.chdir(root)
