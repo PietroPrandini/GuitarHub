@@ -18,9 +18,9 @@
 # along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 import os
 
-src = os.path.dirname(os.path.abspath(__file__))
+root = os.path.dirname(os.path.abspath(__file__))
+src = os.path.join(root, "src")
 songidx = os.path.join(os.path.join(src, "songidx"), "songidx.lua")
-root = os.path.abspath(os.path.join(src, os.pardir))
 tex_extension = ".tex"
 update_extension = "Update.tex"
 index_in_extension = ".sxd"
@@ -43,24 +43,25 @@ def check(status):
 
 def pdflatex(tex):
     log("Producing a " + tex.replace(tex_extension, "") + " draft and the index(es)")
-    status = os.system("pdflatex " + os.path.join(src, tex))
+    status = os.system('pdflatex "' + os.path.join(src, tex) + '"')
     check(status)
     for index in os.listdir(src):
         if index.endswith(index_in_extension):
             log("Producing " + index.replace(index_in_extension, "") + " index")
             status = os.system(
-                "texlua "
+                'texlua "'
                 + songidx
-                + " "
+                + '" "'
                 + os.path.join(src, index)
-                + " "
+                + '" "'
                 + os.path.join(
                     src, index.replace(index_in_extension, index_out_extesion)
                 )
+                + '"'
             )
             check(status)
     log("Finalizing " + tex.replace(tex_extension, ""))
-    status = os.system("pdflatex " + os.path.join(src, tex))
+    status = os.system('pdflatex "' + os.path.join(src, tex) + '"')
     check(status)
 
 
