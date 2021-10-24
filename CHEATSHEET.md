@@ -34,4 +34,27 @@
 % \nolyrics                   % For parts with no lyrics                       %
 %                                                                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Writing boxes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% /begin{twocolssong} ...\end{twocolssong}            % Format the song in two %
+%                                                       columns                %
+% /begin{smallsong} ... \end{smallsong}               % If the song is chorded,%
+%                                                       format the song font to%
+%                                                       small                  %
+% /begin{footnotesizesong} ... \end{footnotesizesong} % If the song is chorded,%
+%                                                       format the song font to%
+%                                                       footnotesize           %
+% /begin{scriptsizesong} ... \end{scriptsizesong}     % If the song is chorded,%
+%                                                       format the song font to%
+%                                                       scriptsize             %
+% /begin{tinysong} ... \end{tinysong}                 % If the song is chorded,%
+%                                                       format the song font to%
+%                                                       tiny                   %
+%                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Writing chapters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newsongpage % Break the page here and start the next one                    %
+%                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ```
