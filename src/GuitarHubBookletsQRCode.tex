@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[paperwidth=42mm,paperheight=99mm]{geometry}
+\usepackage{graphicx}
+\usepackage[bookmarks,pdfencoding=auto]{hyperref}
+\usepackage{qrcode}
+\pagenumbering{gobble}
+
+\begin{document}
+  \begin{center}
+    \vspace*{\stretch{4}}
+    \includegraphics[width=3cm]{img/chords.png}\par
+    \vspace*{\stretch{2}}
+    \qrcode[hyperlink,height=3cm]
+      {https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubAlphabeticNoteNames.pdf}\par
+    \vspace*{\stretch{2}}
+    \newpage
+
+    \vspace*{\fill}
+    \qrcode[hyperlink,height=3cm]
+      {https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubLyrics.pdf}\par
+    \vspace*{\fill}
+    \newpage
+
+    \vspace*{\fill}
+    \qrcode[hyperlink,height=3cm]
+      {https://github.com/PietroPrandini/GuitarHub/blob/master/GuitarHubSolfegeNoteNames.pdf}\par
+    \vspace*{\fill}
+  \end{center}
+\end{document}

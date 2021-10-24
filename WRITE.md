@@ -68,7 +68,7 @@ Open src/tex/commons/GuitarHubBody.tex with a text editor and add it
 %...
 %	Chapter first page
 \vspace*{\stretch{3}}
-\songchapter{New Chapter} % full name of the new chapter
+\songchapter{New Chapter}
 \vspace*{\stretch{5}}
 \vspace*{\fill}
 \newpage
@@ -87,8 +87,8 @@ Each song is connected to an existing chapter. If the chapter does not exist yet
 ### *Copying* the templates from src/ to the proper directories:
 ```
 $ cd ./GuitarHub/src/
-$ cp templates/SongBox.tex tex/chapters/chapterName/
-$ cp templates/SongBody.tex tex/songs/
+$ cp tex/templates/SongBox.tex tex/chapters/chapterName/
+$ cp tex/templates/SongBody.tex tex/songs/
 ```
 ### *Renaming* the copy with the title of the new song
 ```
