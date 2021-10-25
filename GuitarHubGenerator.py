@@ -21,6 +21,7 @@ import os
 root = os.path.dirname(os.path.abspath(__file__))
 src = os.path.join(root, "src")
 songidx = os.path.join(os.path.join(src, "songidx"), "songidx.lua")
+qrcode = os.path.join(os.path.join(src, "tex"), "qrcode")
 tex_extension = ".tex"
 update_extension = "Update.tex"
 index_in_extension = ".sxd"
@@ -36,6 +37,7 @@ def log(str):
 def check(status):
     if status != 0:
         log("KO!")
+        input("Press Enter to exit...")
         exit()
     else:
         log("OK!")
@@ -75,6 +77,18 @@ log("Generating the updates")
 for tex in os.listdir(src):
     if tex.endswith(update_extension):
         pdflatex(tex)
+
+log("Generating qrcodes")
+for tex in os.listdir(qrcode):
+    if tex.endswith(tex_extension):
+        status = os.system('pdflatex "' + os.path.join(qrcode, tex) + '"')
+        check(status)
+        os.replace(
+            os.path.join(src, tex.replace(tex_extension, pdf_extension)),
+            os.path.join(
+                os.path.join(root, "qrcode"), tex.replace(tex_extension, pdf_extension)
+            ),
+        )
 
 log("Moving the pdf in the " + root + "directory")
 for pdf in os.listdir(src):

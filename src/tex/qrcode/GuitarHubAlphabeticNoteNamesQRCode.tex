@@ -1,0 +1,20 @@
+\documentclass[10pt]{book}
+\usepackage[paperwidth=42mm,paperheight=99mm,margin=0mm]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{qrcode}
+\usepackage{tikz}
+\usepackage{xspace}
+\pagenumbering{gobble}
+
+\input{tex/qrcode/utils/picandqrcode.tex}
+\newcommand\pic{img/chords.png}
+\newcommand\link{https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubAlphabeticNoteNames.pdf}
+
+\begin{document}
+\begin{center}
+  \vspace*{\fill}
+  \picandqrcode{\pic}{\link}
+  \vspace*{\fill}
+\end{center}
+\end{document}
