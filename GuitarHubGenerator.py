@@ -73,11 +73,6 @@ for tex in os.listdir(src):
     if tex.endswith(tex_extension) and not tex.endswith(update_extension):
         pdflatex(tex)
 
-log("Generating the updates")
-for tex in os.listdir(src):
-    if tex.endswith(update_extension):
-        pdflatex(tex)
-
 log("Generating qrcodes")
 for tex in os.listdir(qrcode):
     if tex.endswith(tex_extension):
@@ -89,6 +84,17 @@ for tex in os.listdir(qrcode):
                 os.path.join(root, "qrcode"), tex.replace(tex_extension, pdf_extension)
             ),
         )
+
+log("Moving the pdf in the " + root + "directory")
+for pdf in os.listdir(src):
+    if pdf.endswith(pdf_extension):
+        log("Moving " + pdf)
+        os.replace(os.path.join(src, pdf), os.path.join(root, pdf))
+
+log("Generating the updates")
+for tex in os.listdir(src):
+    if tex.endswith(update_extension):
+        pdflatex(tex)
 
 log("Moving the pdf in the " + root + "directory")
 for pdf in os.listdir(src):
