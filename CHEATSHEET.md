@@ -21,6 +21,7 @@
 % \rep{n}                 % Repeat n times                                     %
 % \lrep ... \rrep \rep{n} % Margins of the repeat                              %
 % |                       % Measure bar                                        %
+% \echo{ ... }            % Echo                                               %
 %                                                                              %
 %%% Other Syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \beginverse ... \endverse   % Used for delimiters of a numbered verse        %
