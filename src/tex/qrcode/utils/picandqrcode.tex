@@ -1,9 +1,10 @@
-\newcommand\picandqrcode[2]{
-  \begin{tikzpicture}[x=35mm,y=92mm]
+\newcommand\picandqrcode[3]{
+  \begin{tikzpicture}[x=40mm,y=95mm]
     \draw[gray,rounded corners=2mm,thick]
-  		(0,0) -- (0,1) -- (1,1) -- (1,0) -- (0,0);
-    \node(title) at (0.5,0.9) {{\sffamily\huge\bfseries GuitarHub}};
-    \node (link) at (0.5,0.6) {\qrcode[hyperlink,height=3cm]{#2}};
-    \node (pic) at (0.5,0.2) {\includegraphics[width=3cm]{#1}};
+  		(0.5,0) -- (0,0) -- (0,1) -- (1,1) -- (1,0) -- (0,0) -- (0.5,0);
+    \node (title) at (0.5,0.9) {{\sffamily\huge\bfseries GuitarHub}};
+    \node (title) at (0.5,0.84) {{\sffamily\footnotesize\bfseries #1}};
+    \node (link)  at (0.5,0.6) {\qrcode[hyperlink,height=3cm]{#2}};
+    \node (pic)   at (0.5,0.2) {\includegraphics[width=3cm]{#3}};
   \end{tikzpicture}
 }
