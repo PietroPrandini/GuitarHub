@@ -15,11 +15,12 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-\documentclass[a4paper]{article}
-\usepackage[final]{pdfpages}
+\beginsong{Venite fedeli}[
+,cr={\centering{\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub}\\\href{http://creativecommons.org/licenses/by-sa/4.0/}{\textbf{CC BY-SA}} 2018-2021 Pietro Prandini}}
+]
 
-\begin{document}
-  \includepdf[pages={6,17,28,44,48,70,71,86,89,90,92,96,101,120,132,133,134,135,144,176,177},nup=1x2,landscape]{../GuitarHubAlphabeticNoteNames.pdf}
-  \includepdf[pages={5,12,21,31,34,47,48,59,62,63,65,67,72,87,96},nup=1x2,landscape]{../GuitarHubLyrics.pdf}
-  \includepdf[pages={6,17,28,44,48,70,71,86,89,90,92,96,101,120,132,133,134,135,144,176,177},nup=1x2,landscape]{../GuitarHubSolfegeNoteNames.pdf}
-\end{document}
+\transpose{2}
+
+\input{"tex/songs/Venite fedeli.tex"}
+
+\endsong
