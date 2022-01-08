@@ -21,7 +21,15 @@ import os
 root = os.path.dirname(os.path.abspath(__file__))
 src = os.path.join(root, "src")
 songidx = os.path.join(
-    os.path.join(src, os.path.join("tex", os.path.join("pkg", "songidx"))),
+    os.path.join(
+        src, os.path.join(
+            "tex", os.path.join(
+                "utils", os.path.join(
+                    "songs", "songidx"
+                )
+            )
+        )
+    ),
     "songidx.lua",
 )
 qrcode = os.path.join(os.path.join(src, "tex"), "qrcode")
