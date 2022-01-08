@@ -15,11 +15,20 @@
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-\documentclass[a4paper]{article}
-\usepackage[final]{pdfpages}
+\begin{twocolssong}
+\beginsong{Apri i miei occhi Signore}[
+%by={%Authors, composers, and other contributors}
+,cr={\centering{\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub}\\\href{http://creativecommons.org/licenses/by-sa/4.0/}{\textbf{CC BY-SA}} Maria Zardini 2018-2021}}
+%,li={%Licensing information}
+%,sr={%Related scripture references}
+%,index={%An extra index entry for a line of lyrics}
+%,ititle={%An extra index entry for a hidden title}
+]
 
-\begin{document}
-  \includepdf[pages={6,17,19,29,30,46,50,68,69,74,75,90,93-95,100,101,104,107,109,127,139-142,151,183,184},nup=1x2,landscape]{../GuitarHubAlphabeticNoteNames.pdf}
-  \includepdf[pages={5,12,14,22,23,33,36,47,50,51,62,65-67,70,71,74,77,79,93,102},nup=1x2,landscape]{../GuitarHubLyrics.pdf}
-  \includepdf[pages={6,17,19,29,30,46,50,68,69,74,75,90,93-95,100,101,104,107,109,127,139-142,151,183,184},nup=1x2,landscape]{../GuitarHubSolfegeNoteNames.pdf}
-\end{document}
+%\capo{0}
+\transpose{0}
+
+\input{"tex/songs/Apri i miei occhi Signore.tex"}
+
+\endsong
+\end{twocolssong}
