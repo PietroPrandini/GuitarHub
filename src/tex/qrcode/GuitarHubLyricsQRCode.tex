@@ -1,20 +1,9 @@
-\documentclass[10pt]{article}
-\usepackage[%
-  paperwidth=41mm,paperheight=96mm,%
-  margin=0mm,top=0.35mm,bottom=0.35mm%
-]{geometry}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{qrcode}
-\usepackage{tikz}
-\usepackage{xspace}
-\pagenumbering{gobble}
+\input{tex/qrcode/utils/qrpreamble.tex}
 
-\input{tex/qrcode/utils/picandqrcode.tex}
 \newcommand\booktype{}
 \newcommand\link{https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubLyrics.pdf}
 \newcommand\pic{img/microphone.png}
 
 \begin{document}
-\input{tex/qrcode/utils/single.tex}
+\picandqrcode{\booktype}{\link}{\pic}
 \end{document}

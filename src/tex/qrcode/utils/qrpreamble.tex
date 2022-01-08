@@ -1,0 +1,21 @@
+\documentclass[20pt,a4paper]{extarticle}
+\usepackage[margin=0mm,top=5mm]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{qrcode}
+\usepackage{tikz}
+\usepackage{xspace}
+\pagenumbering{gobble}
+
+\newcommand\picandqrcode[3]{
+  \begin{center}
+  \begin{tikzpicture}[x=200mm,y=287mm]
+    \draw[gray,rounded corners=2mm,thick]
+  		(0.5,0) -- (0,0) -- (0,1) -- (1,1) -- (1,0) -- (0,0) -- (0.5,0);
+    \node (pic)   at (0.5,0.85) {\includegraphics[width=7cm]{#3}};
+    \node (link)  at (0.5,0.45) {\qrcode[hyperlink,height=12cm]{#2}};
+    \node (title) at (0.8,0.1) {{\sffamily\huge\bfseries GuitarHub}};
+    \node (title) at (0.8,0.08) {{\sffamily\footnotesize\bfseries #1}};
+  \end{tikzpicture}
+  \end{center}
+}
