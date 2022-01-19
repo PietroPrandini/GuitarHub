@@ -1,0 +1,58 @@
+% Copyright 2018-2022 Pietro Prandini
+%
+% This file is part of GuitarHub.
+%
+% GuitarHub is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% GuitarHub is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
+
+
+% PicAndQrCode - Example of use
+%
+% 1. Set the variables in the preable
+%
+% \newcommand\booktype{A  B  C  ...}
+% \newcommand\link{https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubAlphabeticNoteNames.pdf}
+% \newcommand\pic{img/chords.png}
+%
+% 2. Use it in a document environment
+%
+% \picandqrcode{\booktype}{\link}{\pic}
+%
+% Note: this command is specific for the a5 paper
+\newcommand\picandqrcode[3]{
+  \begin{center}
+  \begin{tikzpicture}[x=129mm,y=198mm]
+    \draw[gray,rounded corners=2mm,thick]
+  		(0.5,0) -- (0,0) -- (0,1) -- (1,1) -- (1,0) -- (0,0) -- (0.5,0);
+    \node (pic)   at (0.5,0.82) {\includegraphics[width=5cm]{#3}};
+    \node (link)  at (0.5,0.45) {\qrcode[hyperlink,height=7cm]{#2}};
+    \node (title) at (0.8,0.12) {{\sffamily\huge\bfseries GuitarHub}};
+    \node (title) at (0.8,0.1) {{\sffamily\footnotesize\bfseries #1}};
+  \end{tikzpicture}
+  \end{center}
+}
+
+% Lyrics variables
+\newcommand\booktypelyrics{}
+\newcommand\linklyrics{https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubLyrics.pdf}
+\newcommand\piclyrics{img/microphone.png}
+
+% Alphabetic chords variables
+\newcommand\booktypealphabeticchords{A  B  C  ...}
+\newcommand\linkalphabeticchords{https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubAlphabeticNoteNames.pdf}
+\newcommand\picalphabeticchords{img/chords.png}
+
+% Solfege chords variables
+\newcommand\booktypesolfegechords{LA SI DO ...}
+\newcommand\linksolfegechords{https://github.com/PietroPrandini/GuitarHub/raw/master/GuitarHubSolfegeNoteNames.pdf}
+\newcommand\picsolfegechords{img/chords.png}
