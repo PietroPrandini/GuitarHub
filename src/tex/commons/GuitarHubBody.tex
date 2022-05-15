@@ -18,13 +18,13 @@
 \begin{document}
 
 \input{tex/commons/GuitarHubFirstPage.tex}\setcounter{page}{2}
-\input{tex/commons/GuitarHubLicence.tex}
-\input{tex/commons/GuitarHubPreface.tex}
-\input{tex/commons/GuitarHubInfo.tex}
+%\input{tex/commons/GuitarHubLicence.tex}
+%\input{tex/commons/GuitarHubPreface.tex}
+%\input{tex/commons/GuitarHubInfo.tex}
 
-\picandqrcode{\booktypelyrics}{\linklyrics}{\piclyrics}\newpage
-\picandqrcode{\booktypealphabeticchords}{\linkalphabeticchords}{\picalphabeticchords}\newpage
-\picandqrcode{\booktypesolfegechords}{\linksolfegechords}{\picsolfegechords}\newpage
+%\picandqrcode{\booktypelyrics}{\linklyrics}{\piclyrics}\newpage
+%\picandqrcode{\booktypealphabeticchords}{\linkalphabeticchords}{\picalphabeticchords}\newpage
+%\picandqrcode{\booktypesolfegechords}{\linksolfegechords}{\picsolfegechords}\newpage
 
 %	Indexes with song numbers
 %\footnotesize
@@ -35,58 +35,58 @@
 %\normalsize
 
 %	Showing the lists of the songs
-\footnotesize
-\ifchorded{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\chordssym}{chords}}\fi
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\praysym}{pray}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\jukeboxsym}{jukebox}}
-{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\christmassym}{christmas}}
-\normalsize
+% \footnotesize
+% \ifchorded{\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\chordssym}{chords}}\fi
+% {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\praysym}{pray}}
+% {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\jukeboxsym}{jukebox}}
+% {\makeatletter\def\SB@ellipspread#1#2{- #1\hspace*{\fill}\par}\showindex[3]{\christmassym}{christmas}}
+% \normalsize
 
-\ifchorded
-\vspace*{\stretch{3}}
-\songchapter{\chordsbigsym}
-\vspace*{\stretch{5}}
-\vspace*{\fill}
-\newpage
+% \ifchorded
+% \vspace*{\stretch{3}}
+% \songchapter{\chordsbigsym}
+% \vspace*{\stretch{5}}
+% \vspace*{\fill}
+% \newpage
 
-\songpos{0}
-\begin{songs}{chords}
-	\input{tex/chapters/chords.tex}
-\end{songs}
-\songpos{3}
-\fi
+% \songpos{0}
+% \begin{songs}{chords}
+% 	\input{tex/chapters/chords.tex}
+% \end{songs}
+% \songpos{3}
+% \fi
 
-\vspace*{\stretch{3}}
-\songchapter{\praybigsym}
-\vspace*{\stretch{5}}
-\vspace*{\fill}
-\newpage
+% \vspace*{\stretch{3}}
+% \songchapter{\praybigsym}
+% \vspace*{\stretch{5}}
+% \vspace*{\fill}
+% \newpage
 
 \begin{songs}{pray}
 	\input{tex/chapters/pray.tex}
 \end{songs}
 
 
-\vspace*{\stretch{3}}
-\songchapter{\jukeboxbigsym}
-\vspace*{\stretch{5}}
-\vspace*{\fill}
-\newpage
+% \vspace*{\stretch{3}}
+% \songchapter{\jukeboxbigsym}
+% \vspace*{\stretch{5}}
+% \vspace*{\fill}
+% \newpage
 
-\begin{songs}{jukebox}
-	\input{tex/chapters/jukebox.tex}
-\end{songs}
+% \begin{songs}{jukebox}
+% 	\input{tex/chapters/jukebox.tex}
+% \end{songs}
 
 
-\vspace*{\stretch{3}}
-\songchapter{\christmasbigsym}
-\vspace*{\stretch{5}}
-\vspace*{\fill}
-\newpage
+% \vspace*{\stretch{3}}
+% \songchapter{\christmasbigsym}
+% \vspace*{\stretch{5}}
+% \vspace*{\fill}
+% \newpage
 
-\begin{songs}{christmas}
-	\input{tex/chapters/christmas.tex}
-\end{songs}
+% \begin{songs}{christmas}
+% 	\input{tex/chapters/christmas.tex}
+% \end{songs}
 
 \newpage
 
