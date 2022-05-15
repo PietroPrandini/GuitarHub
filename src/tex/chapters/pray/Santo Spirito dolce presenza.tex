@@ -1,39 +1,34 @@
 % Copyright 2018-2022 Pietro Prandini
-%
+% 
 % This file is part of GuitarHub.
-%
+% 
 % GuitarHub is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
 % the Free Software Foundation, either version 3 of the License, or
 % (at your option) any later version.
-%
+% 
 % GuitarHub is distributed in the hope that it will be useful,
 % but WITHOUT ANY WARRANTY; without even the implied warranty of
 % MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 % GNU General Public License for more details.
-%
+% 
 % You should have received a copy of the GNU General Public License
 % along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 
-\documentclass[a5paper]{article}
-\usepackage[final]{pdfpages}
+\begin{twocolssong}
+\beginsong{Santo Spirito, dolce presenza}[
+%by={%Authors, composers, and other contributors}
+,cr={\centering{\href{https://github.com/PietroPrandini/GuitarHub}{https://github.com/PietroPrandini/GuitarHub}\\\href{http://creativecommons.org/licenses/by-sa/4.0/}{\textbf{CC BY-SA}} Pietro Prandini 2018-2022}}
+%,li={%Licensing information}
+%,sr={%Related scripture references}
+%,index={%An extra index entry for a line of lyrics}
+%,ititle={%An extra index entry for a hidden title}
+]
 
-\begin{document}
-  \includepdf[%
-    nup=1x1,% 1 sheet -> 1 page (Note: set a5paper).
-    %nup=1x2,landscape,% 1 sheet -> 2 page (Note: set a4paper).
-    pages={9,46,114,135}%
-  ]{../GuitarHubAlphabeticNoteNames.pdf}
+%\capo{0}
+\transpose{0}
 
-  \includepdf[%
-    nup=1x1,% 1 sheet -> 1 page (Note: set a5paper).
-    %nup=1x2,landscape,% 1 sheet -> 2 page (Note: set a4paper).
-    pages={8,32,75,93}%
-  ]{../GuitarHubLyrics.pdf}
+\input{"tex/songs/Santo Spirito dolce presenza.tex"}
 
-  \includepdf[%
-    nup=1x1,% 1 sheet -> 1 page (Note: set a5paper).
-    %nup=1x2,landscape,% 1 sheet -> 2 page (Note: set a4paper).
-    pages={9,46,114,135}%
-  ]{../GuitarHubSolfegeNoteNames.pdf}
-\end{document}
+\endsong
+\end{twocolssong}
