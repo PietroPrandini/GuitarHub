@@ -54,7 +54,14 @@ def check(status):
         log("OK!")
 
 
+
 def pdflatex(tex):
+    log("Producing a " + tex.replace(tex_extension, pdf_extension))
+    status = os.system('pdflatex "' + os.path.join(src, tex) + '"')
+    check(status)
+
+
+def booklet(tex):
     log("Producing a " + tex.replace(tex_extension, "") + " draft and the index(es)")
     status = os.system('pdflatex "' + os.path.join(src, tex) + '"')
     check(status)
@@ -79,11 +86,6 @@ def pdflatex(tex):
 
 
 os.chdir(src)
-log("Generating the booklets")
-for tex in os.listdir(src):
-    if tex.endswith(tex_extension) and not tex.endswith(update_extension):
-        pdflatex(tex)
-
 log("Generating qrcodes")
 for tex in os.listdir(qrcode):
     if tex.endswith(tex_extension):
@@ -95,6 +97,11 @@ for tex in os.listdir(qrcode):
                 os.path.join(root, "qrcode"), tex.replace(tex_extension, pdf_extension)
             ),
         )
+
+log("Generating the booklets")
+for tex in os.listdir(src):
+    if tex.endswith(tex_extension) and not tex.endswith(update_extension):
+        booklet(tex)
 
 log("Moving the pdf in the " + root + "directory")
 for pdf in os.listdir(src):

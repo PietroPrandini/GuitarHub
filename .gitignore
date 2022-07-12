@@ -1,6 +1,9 @@
 **/*.aux
+**/*.fdb_latexmk
+**/*.fls
 **/*.log
 **/*.out
 **/*.sbx
 **/*.sxc
 **/*.sxd
+**/*.synctex.gz
