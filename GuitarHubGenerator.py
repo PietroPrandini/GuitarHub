@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright 2018-2023 Pietro Prandini
+# Copyright 2018-2024 Pietro Prandini
 #
 # This file is part of GuitarHub.
 #
