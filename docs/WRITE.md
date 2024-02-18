@@ -37,8 +37,8 @@ Double clik on the [GuitarHubGenerator](GuitarHubGenerator.py) file.
 Open a terminal and execute the next commands.
 ```
 cd "/path/to/GuitarHub/"
-chmod +x ./GuitarHubGenerator.py #(you may need to do this only for the first time)
-./GuitarHubGenerator.py
+chmod +x ./tools/guitarhub-generator/guitarhub-generator.py #(you may need to do this only for the first time)
+./tools/guitarhub-generator/guitarhub-generator.py
 ```
 
 ## Setting up a new chapter

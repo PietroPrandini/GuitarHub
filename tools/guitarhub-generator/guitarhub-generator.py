@@ -18,7 +18,7 @@
 # along with GuitarHub.  If not, see <https://www.gnu.org/licenses/>.
 import os
 
-root = os.path.dirname(os.path.abspath(__file__))
+root = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir), os.pardir)
 src = os.path.join(root, "src")
 songidx = os.path.join(
     os.path.join(
@@ -94,7 +94,7 @@ for tex in os.listdir(qrcode):
         os.replace(
             os.path.join(src, tex.replace(tex_extension, pdf_extension)),
             os.path.join(
-                os.path.join(root, "qrcode"), tex.replace(tex_extension, pdf_extension)
+                os.path.join(root, "share"), tex.replace(tex_extension, pdf_extension)
             ),
         )
 

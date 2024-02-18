@@ -24,12 +24,13 @@ import unidecode
 
 
 if len(sys.argv) != 3:
-    print("Use guide: add_song.py \"<title>\" \"<chapter>\"")
+    print("Use guide: add-song.py \"<title>\" \"<chapter>\"")
     exit(1)
 
 title = sys.argv[1]
 chapter = sys.argv[2]
-src_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir)
+root = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir), os.pardir)
+src_dir = os.path.join(root, "src")
 tex_dir = os.path.join(src_dir, "tex")
 chapters_dir = os.path.join(tex_dir, "chapters")
 
