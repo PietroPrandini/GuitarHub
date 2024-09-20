@@ -11,9 +11,9 @@ docker build -t add-song .
 
 ## Execute
 
-Generate the books.
+Add the song.
 
 ```
-docker run -it --rm -v /path/to/GuitarHub:/GuitarHub -t add-song
+docker run -it --rm -v /path/to/GuitarHub:/GuitarHub -t add-song "<title>" "<chapter>"
 ```
 
